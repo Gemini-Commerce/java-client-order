@@ -34,6 +34,8 @@ All URIs are relative to *https://dom.api.gogemini.io*
 | [**listOrdersByCustomer**](OrderApi.md#listOrdersByCustomer) | **POST** /order.Order/ListOrdersByCustomer | List Orders by Customer |
 | [**listOrdersByNumbers**](OrderApi.md#listOrdersByNumbers) | **POST** /order.Order/ListOrdersByNumbers | List Orders by Numbers |
 | [**listShipments**](OrderApi.md#listShipments) | **POST** /order.Order/ListShipments | List Shipments |
+| [**orderAddDocument**](OrderApi.md#orderAddDocument) | **POST** /order.Order/AddDocument | Documents |
+| [**orderRemoveDocumentByCode**](OrderApi.md#orderRemoveDocumentByCode) | **POST** /order.Order/RemoveDocumentByCode |  |
 | [**printOrdersLabels**](OrderApi.md#printOrdersLabels) | **POST** /order.Order/PrintOrdersLabels | Print Orders Labels |
 | [**quashFulfillment**](OrderApi.md#quashFulfillment) | **POST** /order.Order/QuashFulfillment | Quash Fulfillment |
 | [**quashShipment**](OrderApi.md#quashShipment) | **POST** /order.Order/QuashShipment | Quash Shipment |
@@ -76,6 +78,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderApproveOrderRequest body = new OrderApproveOrderRequest(); // OrderApproveOrderRequest | 
     try {
@@ -104,7 +112,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -140,6 +148,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderAssignShipmentRequest body = new OrderAssignShipmentRequest(); // OrderAssignShipmentRequest | 
     try {
@@ -168,7 +182,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -204,6 +218,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCalculateRefundRequest body = new OrderCalculateRefundRequest(); // OrderCalculateRefundRequest | 
     try {
@@ -232,7 +252,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -268,6 +288,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCancelFulfillmentRequest body = new OrderCancelFulfillmentRequest(); // OrderCancelFulfillmentRequest | 
     try {
@@ -296,7 +322,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -332,6 +358,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCancelOrderRequest body = new OrderCancelOrderRequest(); // OrderCancelOrderRequest | 
     try {
@@ -360,7 +392,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -396,6 +428,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCancelShipmentRequest body = new OrderCancelShipmentRequest(); // OrderCancelShipmentRequest | 
     try {
@@ -424,7 +462,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -460,6 +498,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCompleteShipmentPackingRequest body = new OrderCompleteShipmentPackingRequest(); // OrderCompleteShipmentPackingRequest | 
     try {
@@ -488,7 +532,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -524,6 +568,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateFulfillmentRequest body = new OrderCreateFulfillmentRequest(); // OrderCreateFulfillmentRequest | 
     try {
@@ -552,7 +602,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -588,6 +638,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateOrderRequest body = new OrderCreateOrderRequest(); // OrderCreateOrderRequest | 
     try {
@@ -616,7 +672,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -652,6 +708,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateHistoryRequest body = new OrderCreateHistoryRequest(); // OrderCreateHistoryRequest | 
     try {
@@ -680,7 +742,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -716,6 +778,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreatePaymentRequest body = new OrderCreatePaymentRequest(); // OrderCreatePaymentRequest | 
     try {
@@ -744,7 +812,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -780,6 +848,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreatePaymentTransactionRequest body = new OrderCreatePaymentTransactionRequest(); // OrderCreatePaymentTransactionRequest | 
     try {
@@ -808,7 +882,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -844,6 +918,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateRefundRequest body = new OrderCreateRefundRequest(); // OrderCreateRefundRequest | 
     try {
@@ -872,7 +952,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -908,6 +988,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateRefundTransactionRequest body = new OrderCreateRefundTransactionRequest(); // OrderCreateRefundTransactionRequest | 
     try {
@@ -936,7 +1022,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -972,6 +1058,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderCreateShipmentRequest body = new OrderCreateShipmentRequest(); // OrderCreateShipmentRequest | 
     try {
@@ -1000,7 +1092,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1036,6 +1128,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderDeleteOrderRequest body = new OrderDeleteOrderRequest(); // OrderDeleteOrderRequest | 
     try {
@@ -1064,7 +1162,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1100,6 +1198,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetFulfillmentRequest body = new OrderGetFulfillmentRequest(); // OrderGetFulfillmentRequest | 
     try {
@@ -1128,7 +1232,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1164,6 +1268,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetOrderRequest body = new OrderGetOrderRequest(); // OrderGetOrderRequest | 
     try {
@@ -1192,7 +1302,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1228,6 +1338,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetOrderByCartIdRequest body = new OrderGetOrderByCartIdRequest(); // OrderGetOrderByCartIdRequest | 
     try {
@@ -1256,7 +1372,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1292,6 +1408,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetOrderByOrderNumberRequest body = new OrderGetOrderByOrderNumberRequest(); // OrderGetOrderByOrderNumberRequest | 
     try {
@@ -1320,7 +1442,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1356,6 +1478,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetPaymentRequest body = new OrderGetPaymentRequest(); // OrderGetPaymentRequest | 
     try {
@@ -1384,7 +1512,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1420,6 +1548,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetShipmentRequest body = new OrderGetShipmentRequest(); // OrderGetShipmentRequest | 
     try {
@@ -1448,7 +1582,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1484,6 +1618,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderGetTransactionRequest body = new OrderGetTransactionRequest(); // OrderGetTransactionRequest | 
     try {
@@ -1512,7 +1652,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1548,6 +1688,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderHoldOrderRequest body = new OrderHoldOrderRequest(); // OrderHoldOrderRequest | 
     try {
@@ -1576,7 +1722,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1612,6 +1758,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderImportOrderRequest body = new OrderImportOrderRequest(); // OrderImportOrderRequest | 
     try {
@@ -1640,7 +1792,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1676,6 +1828,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderListFulfillmentsRequest body = new OrderListFulfillmentsRequest(); // OrderListFulfillmentsRequest | 
     try {
@@ -1704,7 +1862,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1740,6 +1898,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderListOrdersRequest body = new OrderListOrdersRequest(); // OrderListOrdersRequest | 
     try {
@@ -1768,7 +1932,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1804,6 +1968,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderListOrdersByCustomerRequest body = new OrderListOrdersByCustomerRequest(); // OrderListOrdersByCustomerRequest | 
     try {
@@ -1832,7 +2002,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1868,6 +2038,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderListOrdersByNumbersRequest body = new OrderListOrdersByNumbersRequest(); // OrderListOrdersByNumbersRequest | 
     try {
@@ -1896,7 +2072,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1932,6 +2108,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderListShipmentsRequest body = new OrderListShipmentsRequest(); // OrderListShipmentsRequest | 
     try {
@@ -1960,7 +2142,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -1973,6 +2155,142 @@ No authorization required
 | **200** | OK |  -  |
 | **401** | Unauthorized |  -  |
 | **500** | An internal error occurred is thrown when an incompatible payload is sent |  -  |
+| **0** | An unexpected error response. |  -  |
+
+<a id="orderAddDocument"></a>
+# **orderAddDocument**
+> Object orderAddDocument(body)
+
+Documents
+
+### Example
+```java
+// Import classes:
+import GeminiCommerce_Order.ApiClient;
+import GeminiCommerce_Order.ApiException;
+import GeminiCommerce_Order.Configuration;
+import GeminiCommerce_Order.auth.*;
+import GeminiCommerce_Order.models.*;
+import org.openapitools.client.api.OrderApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://dom.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
+    OrderApi apiInstance = new OrderApi(defaultClient);
+    OrderAddDocumentRequest body = new OrderAddDocumentRequest(); // OrderAddDocumentRequest | 
+    try {
+      Object result = apiInstance.orderAddDocument(body);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling OrderApi#orderAddDocument");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**OrderAddDocumentRequest**](OrderAddDocumentRequest.md)|  | |
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[Authorization](../README.md#Authorization)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | A successful response. |  -  |
+| **0** | An unexpected error response. |  -  |
+
+<a id="orderRemoveDocumentByCode"></a>
+# **orderRemoveDocumentByCode**
+> Object orderRemoveDocumentByCode(body)
+
+
+
+### Example
+```java
+// Import classes:
+import GeminiCommerce_Order.ApiClient;
+import GeminiCommerce_Order.ApiException;
+import GeminiCommerce_Order.Configuration;
+import GeminiCommerce_Order.auth.*;
+import GeminiCommerce_Order.models.*;
+import org.openapitools.client.api.OrderApi;
+
+public class Example {
+  public static void main(String[] args) {
+    ApiClient defaultClient = Configuration.getDefaultApiClient();
+    defaultClient.setBasePath("https://dom.api.gogemini.io");
+    
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
+    OrderApi apiInstance = new OrderApi(defaultClient);
+    OrderRemoveDocumentByCodeRequest body = new OrderRemoveDocumentByCodeRequest(); // OrderRemoveDocumentByCodeRequest | 
+    try {
+      Object result = apiInstance.orderRemoveDocumentByCode(body);
+      System.out.println(result);
+    } catch (ApiException e) {
+      System.err.println("Exception when calling OrderApi#orderRemoveDocumentByCode");
+      System.err.println("Status code: " + e.getCode());
+      System.err.println("Reason: " + e.getResponseBody());
+      System.err.println("Response headers: " + e.getResponseHeaders());
+      e.printStackTrace();
+    }
+  }
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+|------------- | ------------- | ------------- | -------------|
+| **body** | [**OrderRemoveDocumentByCodeRequest**](OrderRemoveDocumentByCodeRequest.md)|  | |
+
+### Return type
+
+**Object**
+
+### Authorization
+
+[Authorization](../README.md#Authorization)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+### HTTP response details
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+| **200** | A successful response. |  -  |
 | **0** | An unexpected error response. |  -  |
 
 <a id="printOrdersLabels"></a>
@@ -1996,6 +2314,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderPrintOrdersLabelsRequest body = new OrderPrintOrdersLabelsRequest(); // OrderPrintOrdersLabelsRequest | 
     try {
@@ -2024,7 +2348,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2060,6 +2384,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderQuashFulfillmentRequest body = new OrderQuashFulfillmentRequest(); // OrderQuashFulfillmentRequest | 
     try {
@@ -2088,7 +2418,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2124,6 +2454,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderQuashShipmentRequest body = new OrderQuashShipmentRequest(); // OrderQuashShipmentRequest | 
     try {
@@ -2152,7 +2488,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2188,6 +2524,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReceiveFulfillmentRequest body = new OrderReceiveFulfillmentRequest(); // OrderReceiveFulfillmentRequest | 
     try {
@@ -2216,7 +2558,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2252,6 +2594,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReportFulfillmentErrorRequest body = new OrderReportFulfillmentErrorRequest(); // OrderReportFulfillmentErrorRequest | 
     try {
@@ -2280,7 +2628,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2316,6 +2664,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReportFulfillmentNotResolvableRequest body = new OrderReportFulfillmentNotResolvableRequest(); // OrderReportFulfillmentNotResolvableRequest | 
     try {
@@ -2344,7 +2698,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2380,6 +2734,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReportFulfillmentReadyRequest body = new OrderReportFulfillmentReadyRequest(); // OrderReportFulfillmentReadyRequest | 
     try {
@@ -2408,7 +2768,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2444,6 +2804,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReportShipmentDeliveryRequest body = new OrderReportShipmentDeliveryRequest(); // OrderReportShipmentDeliveryRequest | 
     try {
@@ -2472,7 +2838,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2508,6 +2874,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderReportShipmentMissingStockRequest body = new OrderReportShipmentMissingStockRequest(); // OrderReportShipmentMissingStockRequest | 
     try {
@@ -2536,7 +2908,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2572,6 +2944,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderResolveShipmentMissingStockRequest body = new OrderResolveShipmentMissingStockRequest(); // OrderResolveShipmentMissingStockRequest | 
     try {
@@ -2600,7 +2978,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2636,6 +3014,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderRetryFulfillmentRequest body = new OrderRetryFulfillmentRequest(); // OrderRetryFulfillmentRequest | 
     try {
@@ -2664,7 +3048,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2700,6 +3084,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderSearchOrdersRequest body = new OrderSearchOrdersRequest(); // OrderSearchOrdersRequest | 
     try {
@@ -2728,7 +3118,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2764,6 +3154,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderSendFulfillmentRequest body = new OrderSendFulfillmentRequest(); // OrderSendFulfillmentRequest | 
     try {
@@ -2792,7 +3188,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2828,6 +3224,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderSendOrderNotificationRequest body = new OrderSendOrderNotificationRequest(); // OrderSendOrderNotificationRequest | 
     try {
@@ -2856,7 +3258,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2892,6 +3294,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderStartFulfillmentProcessingRequest body = new OrderStartFulfillmentProcessingRequest(); // OrderStartFulfillmentProcessingRequest | 
     try {
@@ -2920,7 +3328,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -2956,6 +3364,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderStartShipmentProcessingRequest body = new OrderStartShipmentProcessingRequest(); // OrderStartShipmentProcessingRequest | 
     try {
@@ -2984,7 +3398,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3020,6 +3434,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderUnholdOrderRequest body = new OrderUnholdOrderRequest(); // OrderUnholdOrderRequest | 
     try {
@@ -3048,7 +3468,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3084,6 +3504,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderUpdateOrderRequest body = new OrderUpdateOrderRequest(); // OrderUpdateOrderRequest | 
     try {
@@ -3112,7 +3538,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 
@@ -3148,6 +3574,12 @@ public class Example {
     ApiClient defaultClient = Configuration.getDefaultApiClient();
     defaultClient.setBasePath("https://dom.api.gogemini.io");
     
+    // Configure API key authorization: Authorization
+    ApiKeyAuth Authorization = (ApiKeyAuth) defaultClient.getAuthentication("Authorization");
+    Authorization.setApiKey("YOUR API KEY");
+    // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+    //Authorization.setApiKeyPrefix("Token");
+
     OrderApi apiInstance = new OrderApi(defaultClient);
     OrderUpdatePaymentRequest body = new OrderUpdatePaymentRequest(); // OrderUpdatePaymentRequest | 
     try {
@@ -3176,7 +3608,7 @@ public class Example {
 
 ### Authorization
 
-No authorization required
+[Authorization](../README.md#Authorization)
 
 ### HTTP request headers
 

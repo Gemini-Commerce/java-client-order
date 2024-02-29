@@ -53,7 +53,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderTransaction
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderTransaction {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -82,9 +82,11 @@ public class OrderTransaction {
   public OrderTransaction() {
   }
 
-  public OrderTransaction createdAt(OffsetDateTime createdAt) {
+  public OrderTransaction(
+     OffsetDateTime createdAt
+  ) {
+    this();
     this.createdAt = createdAt;
-    return this;
   }
 
    /**
@@ -96,9 +98,6 @@ public class OrderTransaction {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
 
 
   public OrderTransaction paymentId(String paymentId) {

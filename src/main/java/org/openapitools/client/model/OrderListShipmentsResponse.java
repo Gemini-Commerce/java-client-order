@@ -52,7 +52,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderListShipmentsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderListShipmentsResponse {
   public static final String SERIALIZED_NAME_SHIPMENTS = "shipments";
   @SerializedName(SERIALIZED_NAME_SHIPMENTS)

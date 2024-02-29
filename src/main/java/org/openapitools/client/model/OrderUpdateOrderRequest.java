@@ -20,9 +20,7 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
 import org.openapitools.client.model.UpdateOrderRequestPayload;
 
 import com.google.gson.Gson;
@@ -52,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderUpdateOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderUpdateOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -68,7 +66,7 @@ public class OrderUpdateOrderRequest {
 
   public static final String SERIALIZED_NAME_FIELD_MASK = "fieldMask";
   @SerializedName(SERIALIZED_NAME_FIELD_MASK)
-  private List<String> fieldMask;
+  private String fieldMask;
 
   public OrderUpdateOrderRequest() {
   }
@@ -82,7 +80,7 @@ public class OrderUpdateOrderRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -101,7 +99,7 @@ public class OrderUpdateOrderRequest {
    * Get id
    * @return id
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getId() {
     return id;
   }
@@ -130,16 +128,8 @@ public class OrderUpdateOrderRequest {
   }
 
 
-  public OrderUpdateOrderRequest fieldMask(List<String> fieldMask) {
+  public OrderUpdateOrderRequest fieldMask(String fieldMask) {
     this.fieldMask = fieldMask;
-    return this;
-  }
-
-  public OrderUpdateOrderRequest addFieldMaskItem(String fieldMaskItem) {
-    if (this.fieldMask == null) {
-      this.fieldMask = new ArrayList<>();
-    }
-    this.fieldMask.add(fieldMaskItem);
     return this;
   }
 
@@ -148,11 +138,11 @@ public class OrderUpdateOrderRequest {
    * @return fieldMask
   **/
   @javax.annotation.Nullable
-  public List<String> getFieldMask() {
+  public String getFieldMask() {
     return fieldMask;
   }
 
-  public void setFieldMask(List<String> fieldMask) {
+  public void setFieldMask(String fieldMask) {
     this.fieldMask = fieldMask;
   }
 
@@ -215,6 +205,8 @@ public class OrderUpdateOrderRequest {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("id");
   }
 
  /**
@@ -237,20 +229,26 @@ public class OrderUpdateOrderRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderUpdateOrderRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderUpdateOrderRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
+      if (!jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
       }
       // validate the optional field `payload`
       if (jsonObj.get("payload") != null && !jsonObj.get("payload").isJsonNull()) {
         UpdateOrderRequestPayload.validateJsonElement(jsonObj.get("payload"));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("fieldMask") != null && !jsonObj.get("fieldMask").isJsonNull() && !jsonObj.get("fieldMask").isJsonArray()) {
-        throw new IllegalArgumentException(String.format("Expected the field `fieldMask` to be an array in the JSON string but got `%s`", jsonObj.get("fieldMask").toString()));
+      if ((jsonObj.get("fieldMask") != null && !jsonObj.get("fieldMask").isJsonNull()) && !jsonObj.get("fieldMask").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `fieldMask` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fieldMask").toString()));
       }
   }
 

@@ -20,7 +20,10 @@ import com.google.gson.annotations.SerializedName;
 import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import org.openapitools.client.model.OrderOrderBy;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +52,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderListOrdersByCustomerRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderListOrdersByCustomerRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -67,6 +70,10 @@ public class OrderListOrdersByCustomerRequest {
   @SerializedName(SERIALIZED_NAME_PAGE_TOKEN)
   private String pageToken;
 
+  public static final String SERIALIZED_NAME_ORDER_BY = "orderBy";
+  @SerializedName(SERIALIZED_NAME_ORDER_BY)
+  private List<OrderOrderBy> orderBy;
+
   public OrderListOrdersByCustomerRequest() {
   }
 
@@ -79,7 +86,7 @@ public class OrderListOrdersByCustomerRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -98,7 +105,7 @@ public class OrderListOrdersByCustomerRequest {
    * Get customerGrn
    * @return customerGrn
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getCustomerGrn() {
     return customerGrn;
   }
@@ -146,6 +153,33 @@ public class OrderListOrdersByCustomerRequest {
   }
 
 
+  public OrderListOrdersByCustomerRequest orderBy(List<OrderOrderBy> orderBy) {
+    this.orderBy = orderBy;
+    return this;
+  }
+
+  public OrderListOrdersByCustomerRequest addOrderByItem(OrderOrderBy orderByItem) {
+    if (this.orderBy == null) {
+      this.orderBy = new ArrayList<>();
+    }
+    this.orderBy.add(orderByItem);
+    return this;
+  }
+
+   /**
+   * Get orderBy
+   * @return orderBy
+  **/
+  @javax.annotation.Nullable
+  public List<OrderOrderBy> getOrderBy() {
+    return orderBy;
+  }
+
+  public void setOrderBy(List<OrderOrderBy> orderBy) {
+    this.orderBy = orderBy;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -159,12 +193,13 @@ public class OrderListOrdersByCustomerRequest {
     return Objects.equals(this.tenantId, orderListOrdersByCustomerRequest.tenantId) &&
         Objects.equals(this.customerGrn, orderListOrdersByCustomerRequest.customerGrn) &&
         Objects.equals(this.pageSize, orderListOrdersByCustomerRequest.pageSize) &&
-        Objects.equals(this.pageToken, orderListOrdersByCustomerRequest.pageToken);
+        Objects.equals(this.pageToken, orderListOrdersByCustomerRequest.pageToken) &&
+        Objects.equals(this.orderBy, orderListOrdersByCustomerRequest.orderBy);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, customerGrn, pageSize, pageToken);
+    return Objects.hash(tenantId, customerGrn, pageSize, pageToken, orderBy);
   }
 
   @Override
@@ -175,6 +210,7 @@ public class OrderListOrdersByCustomerRequest {
     sb.append("    customerGrn: ").append(toIndentedString(customerGrn)).append("\n");
     sb.append("    pageSize: ").append(toIndentedString(pageSize)).append("\n");
     sb.append("    pageToken: ").append(toIndentedString(pageToken)).append("\n");
+    sb.append("    orderBy: ").append(toIndentedString(orderBy)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -201,9 +237,12 @@ public class OrderListOrdersByCustomerRequest {
     openapiFields.add("customerGrn");
     openapiFields.add("pageSize");
     openapiFields.add("pageToken");
+    openapiFields.add("orderBy");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("customerGrn");
   }
 
  /**
@@ -226,15 +265,36 @@ public class OrderListOrdersByCustomerRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderListOrdersByCustomerRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderListOrdersByCustomerRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      if ((jsonObj.get("customerGrn") != null && !jsonObj.get("customerGrn").isJsonNull()) && !jsonObj.get("customerGrn").isJsonPrimitive()) {
+      if (!jsonObj.get("customerGrn").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `customerGrn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("customerGrn").toString()));
       }
       if ((jsonObj.get("pageToken") != null && !jsonObj.get("pageToken").isJsonNull()) && !jsonObj.get("pageToken").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `pageToken` to be a primitive type in the JSON string but got `%s`", jsonObj.get("pageToken").toString()));
+      }
+      if (jsonObj.get("orderBy") != null && !jsonObj.get("orderBy").isJsonNull()) {
+        JsonArray jsonArrayorderBy = jsonObj.getAsJsonArray("orderBy");
+        if (jsonArrayorderBy != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("orderBy").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `orderBy` to be an array in the JSON string but got `%s`", jsonObj.get("orderBy").toString()));
+          }
+
+          // validate the optional field `orderBy` (array)
+          for (int i = 0; i < jsonArrayorderBy.size(); i++) {
+            OrderOrderBy.validateJsonElement(jsonArrayorderBy.get(i));
+          };
+        }
       }
   }
 

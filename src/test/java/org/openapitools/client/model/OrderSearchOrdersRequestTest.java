@@ -115,4 +115,12 @@ public class OrderSearchOrdersRequestTest {
         // TODO: test paymentFilter
     }
 
+    /**
+     * Test the property 'agentGrn'
+     */
+    @Test
+    public void agentGrnTest() {
+        // TODO: test agentGrn
+    }
+
 }

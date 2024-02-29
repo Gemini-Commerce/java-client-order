@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
 **paymentId**| **String** |   | [optional]
 **id**| **String** |   | [optional]
 **items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional]

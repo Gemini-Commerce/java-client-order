@@ -1,6 +1,5 @@
 .github/workflows/maven.yml
 .gitignore
-.openapi-generator-ignore
 .travis.yml
 README.md
 api/openapi.yaml
@@ -9,6 +8,9 @@ build.sbt
 docs/CreateOrderRequestInitialPayment.md
 docs/ImportOrderRequestImportedPayment.md
 docs/InitialPaymentInitialTransaction.md
+docs/ItemProductConfigurationStep.md
+docs/OptionImage.md
+docs/OrderAddDocumentRequest.md
 docs/OrderApi.md
 docs/OrderApproveOrderRequest.md
 docs/OrderAssignShipmentRequest.md
@@ -29,6 +31,7 @@ docs/OrderCreateRefundTransactionRequest.md
 docs/OrderCreateShipmentRequest.md
 docs/OrderCurrency.md
 docs/OrderDataCustomerInfo.md
+docs/OrderDataDocument.md
 docs/OrderDataHistory.md
 docs/OrderDataPaymentInfo.md
 docs/OrderDataPromotionInfo.md
@@ -79,6 +82,7 @@ docs/OrderRefund.md
 docs/OrderRefundAmount.md
 docs/OrderRefundAmountCode.md
 docs/OrderRefundItem.md
+docs/OrderRemoveDocumentByCodeRequest.md
 docs/OrderReportFulfillmentErrorRequest.md
 docs/OrderReportFulfillmentNotResolvableRequest.md
 docs/OrderReportFulfillmentReadyRequest.md
@@ -103,6 +107,7 @@ docs/OrderUpdateOrderRequest.md
 docs/OrderUpdatePaymentRequest.md
 docs/PaymentCcInfo.md
 docs/PrintOrdersLabelsResponseFailedOrder.md
+docs/ProductConfigurationStepOption.md
 docs/ProtobufAny.md
 docs/ProtobufNullValue.md
 docs/RpcStatus.md
@@ -143,6 +148,9 @@ src/main/java/org/openapitools/client/model/AbstractOpenApiSchema.java
 src/main/java/org/openapitools/client/model/CreateOrderRequestInitialPayment.java
 src/main/java/org/openapitools/client/model/ImportOrderRequestImportedPayment.java
 src/main/java/org/openapitools/client/model/InitialPaymentInitialTransaction.java
+src/main/java/org/openapitools/client/model/ItemProductConfigurationStep.java
+src/main/java/org/openapitools/client/model/OptionImage.java
+src/main/java/org/openapitools/client/model/OrderAddDocumentRequest.java
 src/main/java/org/openapitools/client/model/OrderApproveOrderRequest.java
 src/main/java/org/openapitools/client/model/OrderAssignShipmentRequest.java
 src/main/java/org/openapitools/client/model/OrderByDirection.java
@@ -162,6 +170,7 @@ src/main/java/org/openapitools/client/model/OrderCreateRefundTransactionRequest.
 src/main/java/org/openapitools/client/model/OrderCreateShipmentRequest.java
 src/main/java/org/openapitools/client/model/OrderCurrency.java
 src/main/java/org/openapitools/client/model/OrderDataCustomerInfo.java
+src/main/java/org/openapitools/client/model/OrderDataDocument.java
 src/main/java/org/openapitools/client/model/OrderDataHistory.java
 src/main/java/org/openapitools/client/model/OrderDataPaymentInfo.java
 src/main/java/org/openapitools/client/model/OrderDataPromotionInfo.java
@@ -212,6 +221,7 @@ src/main/java/org/openapitools/client/model/OrderRefund.java
 src/main/java/org/openapitools/client/model/OrderRefundAmount.java
 src/main/java/org/openapitools/client/model/OrderRefundAmountCode.java
 src/main/java/org/openapitools/client/model/OrderRefundItem.java
+src/main/java/org/openapitools/client/model/OrderRemoveDocumentByCodeRequest.java
 src/main/java/org/openapitools/client/model/OrderReportFulfillmentErrorRequest.java
 src/main/java/org/openapitools/client/model/OrderReportFulfillmentNotResolvableRequest.java
 src/main/java/org/openapitools/client/model/OrderReportFulfillmentReadyRequest.java
@@ -236,6 +246,7 @@ src/main/java/org/openapitools/client/model/OrderUpdateOrderRequest.java
 src/main/java/org/openapitools/client/model/OrderUpdatePaymentRequest.java
 src/main/java/org/openapitools/client/model/PaymentCcInfo.java
 src/main/java/org/openapitools/client/model/PrintOrdersLabelsResponseFailedOrder.java
+src/main/java/org/openapitools/client/model/ProductConfigurationStepOption.java
 src/main/java/org/openapitools/client/model/ProtobufAny.java
 src/main/java/org/openapitools/client/model/ProtobufNullValue.java
 src/main/java/org/openapitools/client/model/RpcStatus.java
@@ -245,6 +256,9 @@ src/test/java/org/openapitools/client/api/OrderApiTest.java
 src/test/java/org/openapitools/client/model/CreateOrderRequestInitialPaymentTest.java
 src/test/java/org/openapitools/client/model/ImportOrderRequestImportedPaymentTest.java
 src/test/java/org/openapitools/client/model/InitialPaymentInitialTransactionTest.java
+src/test/java/org/openapitools/client/model/ItemProductConfigurationStepTest.java
+src/test/java/org/openapitools/client/model/OptionImageTest.java
+src/test/java/org/openapitools/client/model/OrderAddDocumentRequestTest.java
 src/test/java/org/openapitools/client/model/OrderApproveOrderRequestTest.java
 src/test/java/org/openapitools/client/model/OrderAssignShipmentRequestTest.java
 src/test/java/org/openapitools/client/model/OrderByDirectionTest.java
@@ -264,6 +278,7 @@ src/test/java/org/openapitools/client/model/OrderCreateRefundTransactionRequestT
 src/test/java/org/openapitools/client/model/OrderCreateShipmentRequestTest.java
 src/test/java/org/openapitools/client/model/OrderCurrencyTest.java
 src/test/java/org/openapitools/client/model/OrderDataCustomerInfoTest.java
+src/test/java/org/openapitools/client/model/OrderDataDocumentTest.java
 src/test/java/org/openapitools/client/model/OrderDataHistoryTest.java
 src/test/java/org/openapitools/client/model/OrderDataPaymentInfoTest.java
 src/test/java/org/openapitools/client/model/OrderDataPromotionInfoTest.java
@@ -314,6 +329,7 @@ src/test/java/org/openapitools/client/model/OrderRefundAmountCodeTest.java
 src/test/java/org/openapitools/client/model/OrderRefundAmountTest.java
 src/test/java/org/openapitools/client/model/OrderRefundItemTest.java
 src/test/java/org/openapitools/client/model/OrderRefundTest.java
+src/test/java/org/openapitools/client/model/OrderRemoveDocumentByCodeRequestTest.java
 src/test/java/org/openapitools/client/model/OrderReportFulfillmentErrorRequestTest.java
 src/test/java/org/openapitools/client/model/OrderReportFulfillmentNotResolvableRequestTest.java
 src/test/java/org/openapitools/client/model/OrderReportFulfillmentReadyRequestTest.java
@@ -338,6 +354,7 @@ src/test/java/org/openapitools/client/model/OrderUpdateOrderRequestTest.java
 src/test/java/org/openapitools/client/model/OrderUpdatePaymentRequestTest.java
 src/test/java/org/openapitools/client/model/PaymentCcInfoTest.java
 src/test/java/org/openapitools/client/model/PrintOrdersLabelsResponseFailedOrderTest.java
+src/test/java/org/openapitools/client/model/ProductConfigurationStepOptionTest.java
 src/test/java/org/openapitools/client/model/ProtobufAnyTest.java
 src/test/java/org/openapitools/client/model/ProtobufNullValueTest.java
 src/test/java/org/openapitools/client/model/RpcStatusTest.java

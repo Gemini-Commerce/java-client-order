@@ -6,23 +6,23 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
-**number**| **String** |   | [optional]
+**tenantId**| **String** |   |
+**number**| **String** |   |
 **channel**| **String** |   | [optional]
-**market**| **String** |   | [optional]
-**locale**| **String** |   | [optional]
-**items**| [**List<OrderOrderDataItem>**](OrderOrderDataItem.md) |   | [optional]
+**market**| **String** |   |
+**locale**| **String** |   |
+**items**| [**List<OrderOrderDataItem>**](OrderOrderDataItem.md) |   | [default to new ArrayList<>()]
 **paymentsInfo**| [**List<OrderDataPaymentInfo>**](OrderDataPaymentInfo.md) |   | [optional]
 **shipmentsInfo**| [**List<OrderDataShipmentInfo>**](OrderDataShipmentInfo.md) |   | [optional]
 **promotions**| [**List<OrderDataPromotionInfo>**](OrderDataPromotionInfo.md) |   | [optional]
 **payments**| [**List<CreateOrderRequestInitialPayment>**](CreateOrderRequestInitialPayment.md) |   | [optional]
-**currency**| [**OrderCurrency**](OrderCurrency.md) |  for more information please, see Model/OrderCurrency.php  | [optional] [default to OrderCurrency.XXX]
-**subtotals**| [**Map<String, OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [optional] [default to new HashMap<>()]
-**totals**| [**Map<String, OrderDataTotal>**](OrderDataTotal.md) |   | [optional] [default to new HashMap<>()]
-**vatIncluded**| **Boolean** |   | [optional]
-**billingAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
-**shippingAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
-**customerInfo**| [**OrderDataCustomerInfo**](OrderDataCustomerInfo.md) |   | [optional]
+**currency**| [**OrderCurrency**](OrderCurrency.md) |  for more information please, see Model/OrderCurrency.php  | [default to OrderCurrency.XXX]
+**subtotals**| [**Map<String, OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [default to new HashMap<>()]
+**totals**| [**Map<String, OrderDataTotal>**](OrderDataTotal.md) |   | [default to new HashMap<>()]
+**vatIncluded**| **Boolean** |   |
+**billingAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   |
+**shippingAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   |
+**customerInfo**| [**OrderDataCustomerInfo**](OrderDataCustomerInfo.md) |   |
 **cartGrn**| **String** |   | [optional]
 **onHold**| **Boolean** |   | [optional]
 **notes**| **String** |   | [optional]

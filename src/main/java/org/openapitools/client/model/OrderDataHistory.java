@@ -50,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderDataHistory
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderDataHistory {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -67,9 +67,13 @@ public class OrderDataHistory {
   public OrderDataHistory() {
   }
 
-  public OrderDataHistory createdAt(OffsetDateTime createdAt) {
+  public OrderDataHistory(
+     OffsetDateTime createdAt, 
+     String status
+  ) {
+    this();
     this.createdAt = createdAt;
-    return this;
+    this.status = status;
   }
 
    /**
@@ -81,15 +85,7 @@ public class OrderDataHistory {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
 
-
-  public OrderDataHistory status(String status) {
-    this.status = status;
-    return this;
-  }
 
    /**
    * Get status
@@ -100,9 +96,6 @@ public class OrderDataHistory {
     return status;
   }
 
-  public void setStatus(String status) {
-    this.status = status;
-  }
 
 
   public OrderDataHistory comment(String comment) {

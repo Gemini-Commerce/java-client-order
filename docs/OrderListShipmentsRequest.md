@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
+**tenantId**| **String** |   |
 **orderId**| **String** |   | [optional]
 
 

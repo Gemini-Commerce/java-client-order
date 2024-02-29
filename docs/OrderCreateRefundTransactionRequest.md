@@ -6,8 +6,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
-**refundId**| **String** |   | [optional]
+**tenantId**| **String** |   |
+**refundId**| **String** |   |
 **parentTransactionId**| **String** |   | [optional]
 **type**| [**OrderTransactionType**](OrderTransactionType.md) |  for more information please, see Model/OrderTransactionType.php  | [optional] [default to OrderTransactionType.UNKNOWN]
 **additionalInfo**| **String** |   | [optional]

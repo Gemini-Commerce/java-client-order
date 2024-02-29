@@ -14,6 +14,7 @@
 package org.openapitools.client.api;
 
 import GeminiCommerce_Order.ApiException;
+import org.openapitools.client.model.OrderAddDocumentRequest;
 import org.openapitools.client.model.OrderApproveOrderRequest;
 import org.openapitools.client.model.OrderAssignShipmentRequest;
 import org.openapitools.client.model.OrderCalculateRefundRequest;
@@ -60,6 +61,7 @@ import org.openapitools.client.model.OrderQuashFulfillmentRequest;
 import org.openapitools.client.model.OrderQuashShipmentRequest;
 import org.openapitools.client.model.OrderReceiveFulfillmentRequest;
 import org.openapitools.client.model.OrderRefund;
+import org.openapitools.client.model.OrderRemoveDocumentByCodeRequest;
 import org.openapitools.client.model.OrderReportFulfillmentErrorRequest;
 import org.openapitools.client.model.OrderReportFulfillmentNotResolvableRequest;
 import org.openapitools.client.model.OrderReportFulfillmentReadyRequest;
@@ -452,6 +454,28 @@ public class OrderApiTest {
     public void listShipmentsTest() throws ApiException {
         OrderListShipmentsRequest body = null;
         OrderListShipmentsResponse response = api.listShipments(body);
+        // TODO: test validations
+    }
+
+    /**
+     * Documents
+     *
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void orderAddDocumentTest() throws ApiException {
+        OrderAddDocumentRequest body = null;
+        Object response = api.orderAddDocument(body);
+        // TODO: test validations
+    }
+
+    /**
+     * @throws ApiException if the Api call fails
+     */
+    @Test
+    public void orderRemoveDocumentByCodeTest() throws ApiException {
+        OrderRemoveDocumentByCodeRequest body = null;
+        Object response = api.orderRemoveDocumentByCode(body);
         // TODO: test validations
     }
 

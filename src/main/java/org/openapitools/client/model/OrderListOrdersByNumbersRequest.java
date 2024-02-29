@@ -51,7 +51,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderListOrdersByNumbersRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderListOrdersByNumbersRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -59,7 +59,7 @@ public class OrderListOrdersByNumbersRequest {
 
   public static final String SERIALIZED_NAME_NUMBERS = "numbers";
   @SerializedName(SERIALIZED_NAME_NUMBERS)
-  private List<String> numbers;
+  private List<String> numbers = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAGE_SIZE = "pageSize";
   @SerializedName(SERIALIZED_NAME_PAGE_SIZE)
@@ -81,7 +81,7 @@ public class OrderListOrdersByNumbersRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -108,7 +108,7 @@ public class OrderListOrdersByNumbersRequest {
    * Get numbers
    * @return numbers
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<String> getNumbers() {
     return numbers;
   }
@@ -214,6 +214,8 @@ public class OrderListOrdersByNumbersRequest {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("numbers");
   }
 
  /**
@@ -236,12 +238,21 @@ public class OrderListOrdersByNumbersRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderListOrdersByNumbersRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderListOrdersByNumbersRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      // ensure the optional json data is an array if present
-      if (jsonObj.get("numbers") != null && !jsonObj.get("numbers").isJsonNull() && !jsonObj.get("numbers").isJsonArray()) {
+      // ensure the required json array is present
+      if (jsonObj.get("numbers") == null) {
+        throw new IllegalArgumentException("Expected the field `linkedContent` to be an array in the JSON string but got `null`");
+      } else if (!jsonObj.get("numbers").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `numbers` to be an array in the JSON string but got `%s`", jsonObj.get("numbers").toString()));
       }
       if ((jsonObj.get("pageToken") != null && !jsonObj.get("pageToken").isJsonNull()) && !jsonObj.get("pageToken").isJsonPrimitive()) {

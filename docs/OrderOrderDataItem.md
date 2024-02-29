@@ -19,6 +19,8 @@ Name | Type | Description | Notes
 **rowVatAmount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **discountAmount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **rowBasePrice**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**unitCustomPrice**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**rowCustomPrice**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatPercentage**| **Float** |   | [optional]
 **vatInaccurate**| **Boolean** |   | [optional]
 **vatCalculated**| **Boolean** |   | [optional]
@@ -31,6 +33,7 @@ Name | Type | Description | Notes
 **shipmentInfoReference**| **String** |   | [optional]
 **promotionGrn**| **List<String>** |   | [optional]
 **productIsVirtual**| **Boolean** |   | [optional]
+**productConfiguration**| [**List<ItemProductConfigurationStep>**](ItemProductConfigurationStep.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

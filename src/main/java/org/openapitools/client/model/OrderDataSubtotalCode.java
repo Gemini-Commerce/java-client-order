@@ -24,7 +24,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
 /**
- * Gets or Sets OrderDataSubtotalCode
+ *  - ITEMS: gross discount items amount.  - ITEMS_DISCOUNTED: discounted items amount.  - DISCOUNT: discount amount. It is a NEGATIVE amount.
  */
 @JsonAdapter(OrderDataSubtotalCode.Adapter.class)
 public enum OrderDataSubtotalCode {

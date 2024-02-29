@@ -54,7 +54,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderRefund
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderRefund {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -91,9 +91,11 @@ public class OrderRefund {
   public OrderRefund() {
   }
 
-  public OrderRefund createdAt(OffsetDateTime createdAt) {
+  public OrderRefund(
+     OffsetDateTime createdAt
+  ) {
+    this();
     this.createdAt = createdAt;
-    return this;
   }
 
    /**
@@ -105,9 +107,6 @@ public class OrderRefund {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
 
 
   public OrderRefund paymentId(String paymentId) {

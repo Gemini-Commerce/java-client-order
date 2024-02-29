@@ -49,7 +49,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderCreateHistoryRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderCreateHistoryRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -75,7 +75,7 @@ public class OrderCreateHistoryRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -94,7 +94,7 @@ public class OrderCreateHistoryRequest {
    * Get orderId
    * @return orderId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getOrderId() {
     return orderId;
   }
@@ -178,6 +178,8 @@ public class OrderCreateHistoryRequest {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("orderId");
   }
 
  /**
@@ -200,11 +202,18 @@ public class OrderCreateHistoryRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateHistoryRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderCreateHistoryRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      if ((jsonObj.get("orderId") != null && !jsonObj.get("orderId").isJsonNull()) && !jsonObj.get("orderId").isJsonPrimitive()) {
+      if (!jsonObj.get("orderId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `orderId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderId").toString()));
       }
       if ((jsonObj.get("comment") != null && !jsonObj.get("comment").isJsonNull()) && !jsonObj.get("comment").isJsonPrimitive()) {

@@ -6,8 +6,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**status**| **String** |   | [optional]
+**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
+**status**| **String** |   | [optional] [readonly]
 **comment**| **String** |   | [optional]
 
 

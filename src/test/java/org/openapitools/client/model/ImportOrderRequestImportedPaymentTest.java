@@ -73,4 +73,12 @@ public class ImportOrderRequestImportedPaymentTest {
         // TODO: test ccInfo
     }
 
+    /**
+     * Test the property 'isUpfront'
+     */
+    @Test
+    public void isUpfrontTest() {
+        // TODO: test isUpfront
+    }
+
 }

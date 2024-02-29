@@ -50,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderDataPromotionInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderDataPromotionInfo {
   public static final String SERIALIZED_NAME_PROMOTION_GRN = "promotionGrn";
   @SerializedName(SERIALIZED_NAME_PROMOTION_GRN)
@@ -127,7 +127,7 @@ public class OrderDataPromotionInfo {
    * Get type
    * @return type
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getType() {
     return type;
   }
@@ -165,7 +165,7 @@ public class OrderDataPromotionInfo {
    * Get name
    * @return name
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getName() {
     return name;
   }
@@ -203,7 +203,7 @@ public class OrderDataPromotionInfo {
    * Get amount
    * @return amount
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderMoney getAmount() {
     return amount;
   }
@@ -387,6 +387,9 @@ public class OrderDataPromotionInfo {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("type");
+    openapiRequiredFields.add("name");
+    openapiRequiredFields.add("amount");
   }
 
  /**
@@ -409,26 +412,31 @@ public class OrderDataPromotionInfo {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderDataPromotionInfo` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderDataPromotionInfo.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("promotionGrn") != null && !jsonObj.get("promotionGrn").isJsonNull()) && !jsonObj.get("promotionGrn").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `promotionGrn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("promotionGrn").toString()));
       }
-      if ((jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) && !jsonObj.get("type").isJsonPrimitive()) {
+      if (!jsonObj.get("type").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `type` to be a primitive type in the JSON string but got `%s`", jsonObj.get("type").toString()));
       }
       if ((jsonObj.get("additionalInfo") != null && !jsonObj.get("additionalInfo").isJsonNull()) && !jsonObj.get("additionalInfo").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `additionalInfo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("additionalInfo").toString()));
       }
-      if ((jsonObj.get("name") != null && !jsonObj.get("name").isJsonNull()) && !jsonObj.get("name").isJsonPrimitive()) {
+      if (!jsonObj.get("name").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `name` to be a primitive type in the JSON string but got `%s`", jsonObj.get("name").toString()));
       }
       if ((jsonObj.get("description") != null && !jsonObj.get("description").isJsonNull()) && !jsonObj.get("description").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `description` to be a primitive type in the JSON string but got `%s`", jsonObj.get("description").toString()));
       }
-      // validate the optional field `amount`
-      if (jsonObj.get("amount") != null && !jsonObj.get("amount").isJsonNull()) {
-        OrderMoney.validateJsonElement(jsonObj.get("amount"));
-      }
+      // validate the required field `amount`
+      OrderMoney.validateJsonElement(jsonObj.get("amount"));
       if ((jsonObj.get("couponCode") != null && !jsonObj.get("couponCode").isJsonNull()) && !jsonObj.get("couponCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `couponCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("couponCode").toString()));
       }

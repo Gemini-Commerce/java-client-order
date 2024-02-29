@@ -25,6 +25,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.OrderPostalAddress;
 import org.openapitools.client.model.OrderShipmentItem;
+import org.openapitools.client.model.ShipmentTracking;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -53,7 +54,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderCreateShipmentRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderCreateShipmentRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -65,7 +66,7 @@ public class OrderCreateShipmentRequest {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderShipmentItem> items;
+  private List<OrderShipmentItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
@@ -78,6 +79,14 @@ public class OrderCreateShipmentRequest {
   public static final String SERIALIZED_NAME_RETURN_ADDRESS = "returnAddress";
   @SerializedName(SERIALIZED_NAME_RETURN_ADDRESS)
   private OrderPostalAddress returnAddress;
+
+  public static final String SERIALIZED_NAME_TRACKING = "tracking";
+  @SerializedName(SERIALIZED_NAME_TRACKING)
+  private List<ShipmentTracking> tracking;
+
+  public static final String SERIALIZED_NAME_RETURN_TRACKING = "returnTracking";
+  @SerializedName(SERIALIZED_NAME_RETURN_TRACKING)
+  private List<ShipmentTracking> returnTracking;
 
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -99,7 +108,7 @@ public class OrderCreateShipmentRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -118,7 +127,7 @@ public class OrderCreateShipmentRequest {
    * Get orderId
    * @return orderId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getOrderId() {
     return orderId;
   }
@@ -145,7 +154,7 @@ public class OrderCreateShipmentRequest {
    * Get items
    * @return items
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<OrderShipmentItem> getItems() {
     return items;
   }
@@ -164,7 +173,7 @@ public class OrderCreateShipmentRequest {
    * Get address
    * @return address
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderPostalAddress getAddress() {
     return address;
   }
@@ -209,6 +218,60 @@ public class OrderCreateShipmentRequest {
 
   public void setReturnAddress(OrderPostalAddress returnAddress) {
     this.returnAddress = returnAddress;
+  }
+
+
+  public OrderCreateShipmentRequest tracking(List<ShipmentTracking> tracking) {
+    this.tracking = tracking;
+    return this;
+  }
+
+  public OrderCreateShipmentRequest addTrackingItem(ShipmentTracking trackingItem) {
+    if (this.tracking == null) {
+      this.tracking = new ArrayList<>();
+    }
+    this.tracking.add(trackingItem);
+    return this;
+  }
+
+   /**
+   * Get tracking
+   * @return tracking
+  **/
+  @javax.annotation.Nullable
+  public List<ShipmentTracking> getTracking() {
+    return tracking;
+  }
+
+  public void setTracking(List<ShipmentTracking> tracking) {
+    this.tracking = tracking;
+  }
+
+
+  public OrderCreateShipmentRequest returnTracking(List<ShipmentTracking> returnTracking) {
+    this.returnTracking = returnTracking;
+    return this;
+  }
+
+  public OrderCreateShipmentRequest addReturnTrackingItem(ShipmentTracking returnTrackingItem) {
+    if (this.returnTracking == null) {
+      this.returnTracking = new ArrayList<>();
+    }
+    this.returnTracking.add(returnTrackingItem);
+    return this;
+  }
+
+   /**
+   * Get returnTracking
+   * @return returnTracking
+  **/
+  @javax.annotation.Nullable
+  public List<ShipmentTracking> getReturnTracking() {
+    return returnTracking;
+  }
+
+  public void setReturnTracking(List<ShipmentTracking> returnTracking) {
+    this.returnTracking = returnTracking;
   }
 
 
@@ -266,13 +329,15 @@ public class OrderCreateShipmentRequest {
         Objects.equals(this.address, orderCreateShipmentRequest.address) &&
         Objects.equals(this.fromAddress, orderCreateShipmentRequest.fromAddress) &&
         Objects.equals(this.returnAddress, orderCreateShipmentRequest.returnAddress) &&
+        Objects.equals(this.tracking, orderCreateShipmentRequest.tracking) &&
+        Objects.equals(this.returnTracking, orderCreateShipmentRequest.returnTracking) &&
         Objects.equals(this.code, orderCreateShipmentRequest.code) &&
         Objects.equals(this.method, orderCreateShipmentRequest.method);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, orderId, items, address, fromAddress, returnAddress, code, method);
+    return Objects.hash(tenantId, orderId, items, address, fromAddress, returnAddress, tracking, returnTracking, code, method);
   }
 
   @Override
@@ -285,6 +350,8 @@ public class OrderCreateShipmentRequest {
     sb.append("    address: ").append(toIndentedString(address)).append("\n");
     sb.append("    fromAddress: ").append(toIndentedString(fromAddress)).append("\n");
     sb.append("    returnAddress: ").append(toIndentedString(returnAddress)).append("\n");
+    sb.append("    tracking: ").append(toIndentedString(tracking)).append("\n");
+    sb.append("    returnTracking: ").append(toIndentedString(returnTracking)).append("\n");
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    method: ").append(toIndentedString(method)).append("\n");
     sb.append("}");
@@ -315,11 +382,17 @@ public class OrderCreateShipmentRequest {
     openapiFields.add("address");
     openapiFields.add("fromAddress");
     openapiFields.add("returnAddress");
+    openapiFields.add("tracking");
+    openapiFields.add("returnTracking");
     openapiFields.add("code");
     openapiFields.add("method");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("orderId");
+    openapiRequiredFields.add("items");
+    openapiRequiredFields.add("address");
   }
 
  /**
@@ -342,31 +415,32 @@ public class OrderCreateShipmentRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateShipmentRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
-        JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
-      }
-      if ((jsonObj.get("orderId") != null && !jsonObj.get("orderId").isJsonNull()) && !jsonObj.get("orderId").isJsonPrimitive()) {
-        throw new IllegalArgumentException(String.format("Expected the field `orderId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderId").toString()));
-      }
-      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
-        JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
-        if (jsonArrayitems != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("items").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
-          }
 
-          // validate the optional field `items` (array)
-          for (int i = 0; i < jsonArrayitems.size(); i++) {
-            OrderShipmentItem.validateJsonElement(jsonArrayitems.get(i));
-          };
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderCreateShipmentRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
         }
       }
-      // validate the optional field `address`
-      if (jsonObj.get("address") != null && !jsonObj.get("address").isJsonNull()) {
-        OrderPostalAddress.validateJsonElement(jsonObj.get("address"));
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
+      if (!jsonObj.get("orderId").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `orderId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("orderId").toString()));
+      }
+      // ensure the json data is an array
+      if (!jsonObj.get("items").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
+      }
+
+      JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+      // validate the required field `items` (array)
+      for (int i = 0; i < jsonArrayitems.size(); i++) {
+        OrderShipmentItem.validateJsonElement(jsonArrayitems.get(i));
+      };
+      // validate the required field `address`
+      OrderPostalAddress.validateJsonElement(jsonObj.get("address"));
       // validate the optional field `fromAddress`
       if (jsonObj.get("fromAddress") != null && !jsonObj.get("fromAddress").isJsonNull()) {
         OrderPostalAddress.validateJsonElement(jsonObj.get("fromAddress"));
@@ -374,6 +448,34 @@ public class OrderCreateShipmentRequest {
       // validate the optional field `returnAddress`
       if (jsonObj.get("returnAddress") != null && !jsonObj.get("returnAddress").isJsonNull()) {
         OrderPostalAddress.validateJsonElement(jsonObj.get("returnAddress"));
+      }
+      if (jsonObj.get("tracking") != null && !jsonObj.get("tracking").isJsonNull()) {
+        JsonArray jsonArraytracking = jsonObj.getAsJsonArray("tracking");
+        if (jsonArraytracking != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("tracking").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `tracking` to be an array in the JSON string but got `%s`", jsonObj.get("tracking").toString()));
+          }
+
+          // validate the optional field `tracking` (array)
+          for (int i = 0; i < jsonArraytracking.size(); i++) {
+            ShipmentTracking.validateJsonElement(jsonArraytracking.get(i));
+          };
+        }
+      }
+      if (jsonObj.get("returnTracking") != null && !jsonObj.get("returnTracking").isJsonNull()) {
+        JsonArray jsonArrayreturnTracking = jsonObj.getAsJsonArray("returnTracking");
+        if (jsonArrayreturnTracking != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("returnTracking").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `returnTracking` to be an array in the JSON string but got `%s`", jsonObj.get("returnTracking").toString()));
+          }
+
+          // validate the optional field `returnTracking` (array)
+          for (int i = 0; i < jsonArrayreturnTracking.size(); i++) {
+            ShipmentTracking.validateJsonElement(jsonArrayreturnTracking.get(i));
+          };
+        }
       }
       if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));

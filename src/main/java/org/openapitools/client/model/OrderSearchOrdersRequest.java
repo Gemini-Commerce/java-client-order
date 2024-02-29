@@ -55,7 +55,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderSearchOrdersRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderSearchOrdersRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -93,6 +93,10 @@ public class OrderSearchOrdersRequest {
   @SerializedName(SERIALIZED_NAME_PAYMENT_FILTER)
   private OrderPaymentFilter paymentFilter;
 
+  public static final String SERIALIZED_NAME_AGENT_GRN = "agentGrn";
+  @SerializedName(SERIALIZED_NAME_AGENT_GRN)
+  private String agentGrn;
+
   public OrderSearchOrdersRequest() {
   }
 
@@ -105,7 +109,7 @@ public class OrderSearchOrdersRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -275,6 +279,25 @@ public class OrderSearchOrdersRequest {
   }
 
 
+  public OrderSearchOrdersRequest agentGrn(String agentGrn) {
+    this.agentGrn = agentGrn;
+    return this;
+  }
+
+   /**
+   * Get agentGrn
+   * @return agentGrn
+  **/
+  @javax.annotation.Nullable
+  public String getAgentGrn() {
+    return agentGrn;
+  }
+
+  public void setAgentGrn(String agentGrn) {
+    this.agentGrn = agentGrn;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -293,12 +316,13 @@ public class OrderSearchOrdersRequest {
         Objects.equals(this.statusFilter, orderSearchOrdersRequest.statusFilter) &&
         Objects.equals(this.fromDate, orderSearchOrdersRequest.fromDate) &&
         Objects.equals(this.toDate, orderSearchOrdersRequest.toDate) &&
-        Objects.equals(this.paymentFilter, orderSearchOrdersRequest.paymentFilter);
+        Objects.equals(this.paymentFilter, orderSearchOrdersRequest.paymentFilter) &&
+        Objects.equals(this.agentGrn, orderSearchOrdersRequest.agentGrn);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter);
+    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter, agentGrn);
   }
 
   @Override
@@ -314,6 +338,7 @@ public class OrderSearchOrdersRequest {
     sb.append("    fromDate: ").append(toIndentedString(fromDate)).append("\n");
     sb.append("    toDate: ").append(toIndentedString(toDate)).append("\n");
     sb.append("    paymentFilter: ").append(toIndentedString(paymentFilter)).append("\n");
+    sb.append("    agentGrn: ").append(toIndentedString(agentGrn)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -345,9 +370,11 @@ public class OrderSearchOrdersRequest {
     openapiFields.add("fromDate");
     openapiFields.add("toDate");
     openapiFields.add("paymentFilter");
+    openapiFields.add("agentGrn");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
   }
 
  /**
@@ -370,8 +397,15 @@ public class OrderSearchOrdersRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderSearchOrdersRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderSearchOrdersRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
       if ((jsonObj.get("searchQuery") != null && !jsonObj.get("searchQuery").isJsonNull()) && !jsonObj.get("searchQuery").isJsonPrimitive()) {
@@ -401,6 +435,9 @@ public class OrderSearchOrdersRequest {
       // validate the optional field `paymentFilter`
       if (jsonObj.get("paymentFilter") != null && !jsonObj.get("paymentFilter").isJsonNull()) {
         OrderPaymentFilter.validateJsonElement(jsonObj.get("paymentFilter"));
+      }
+      if ((jsonObj.get("agentGrn") != null && !jsonObj.get("agentGrn").isJsonNull()) && !jsonObj.get("agentGrn").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `agentGrn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("agentGrn").toString()));
       }
   }
 

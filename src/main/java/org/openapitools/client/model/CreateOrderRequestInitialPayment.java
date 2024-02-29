@@ -52,7 +52,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * CreateOrderRequestInitialPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class CreateOrderRequestInitialPayment {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -86,7 +86,7 @@ public class CreateOrderRequestInitialPayment {
    * Get code
    * @return code
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getCode() {
     return code;
   }
@@ -124,7 +124,7 @@ public class CreateOrderRequestInitialPayment {
    * Get amount
    * @return amount
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderMoney getAmount() {
     return amount;
   }
@@ -233,6 +233,8 @@ public class CreateOrderRequestInitialPayment {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("code");
+    openapiRequiredFields.add("amount");
   }
 
  /**
@@ -255,17 +257,22 @@ public class CreateOrderRequestInitialPayment {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `CreateOrderRequestInitialPayment` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : CreateOrderRequestInitialPayment.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("code") != null && !jsonObj.get("code").isJsonNull()) && !jsonObj.get("code").isJsonPrimitive()) {
+      if (!jsonObj.get("code").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `code` to be a primitive type in the JSON string but got `%s`", jsonObj.get("code").toString()));
       }
       if ((jsonObj.get("additionalInfo") != null && !jsonObj.get("additionalInfo").isJsonNull()) && !jsonObj.get("additionalInfo").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `additionalInfo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("additionalInfo").toString()));
       }
-      // validate the optional field `amount`
-      if (jsonObj.get("amount") != null && !jsonObj.get("amount").isJsonNull()) {
-        OrderMoney.validateJsonElement(jsonObj.get("amount"));
-      }
+      // validate the required field `amount`
+      OrderMoney.validateJsonElement(jsonObj.get("amount"));
       // validate the optional field `ccInfo`
       if (jsonObj.get("ccInfo") != null && !jsonObj.get("ccInfo").isJsonNull()) {
         PaymentCcInfo.validateJsonElement(jsonObj.get("ccInfo"));

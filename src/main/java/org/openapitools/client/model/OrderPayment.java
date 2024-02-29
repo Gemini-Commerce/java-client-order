@@ -54,7 +54,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderPayment {
   public static final String SERIALIZED_NAME_ORDER_ID = "orderId";
   @SerializedName(SERIALIZED_NAME_ORDER_ID)
@@ -131,7 +131,7 @@ public class OrderPayment {
   }
 
    /**
-   * Get code
+   * payment type stripe, paypal..
    * @return code
   **/
   @javax.annotation.Nullable

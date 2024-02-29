@@ -6,8 +6,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
+**updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
 **orderId**| **String** |   | [optional]
 **id**| **String** |   | [optional]
 **status**| **String** |   | [optional]

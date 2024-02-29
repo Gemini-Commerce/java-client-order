@@ -6,11 +6,11 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
-**orderId**| **String** |   | [optional]
-**code**| **String** |   | [optional]
+**tenantId**| **String** |   |
+**orderId**| **String** |   |
+**code**| **String** |   |
 **additionalInfo**| **String** |   | [optional]
-**amount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**amount**| [**OrderMoney**](OrderMoney.md) |   |
 **ccInfo**| [**PaymentCcInfo**](PaymentCcInfo.md) |   | [optional]
 
 

@@ -6,10 +6,10 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
-**paymentId**| **String** |   | [optional]
+**tenantId**| **String** |   |
+**paymentId**| **String** |   |
 **items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional]
-**amounts**| [**List<OrderRefundAmount>**](OrderRefundAmount.md) |   | [optional]
+**amounts**| [**List<OrderRefundAmount>**](OrderRefundAmount.md) |   | [default to new ArrayList<>()]
 **note**| **String** |   | [optional]
 **additionalInfo**| **String** |   | [optional]
 

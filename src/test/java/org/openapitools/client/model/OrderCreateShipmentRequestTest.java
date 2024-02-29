@@ -24,6 +24,7 @@ import java.util.Arrays;
 import java.util.List;
 import org.openapitools.client.model.OrderPostalAddress;
 import org.openapitools.client.model.OrderShipmentItem;
+import org.openapitools.client.model.ShipmentTracking;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
@@ -87,6 +88,22 @@ public class OrderCreateShipmentRequestTest {
     @Test
     public void returnAddressTest() {
         // TODO: test returnAddress
+    }
+
+    /**
+     * Test the property 'tracking'
+     */
+    @Test
+    public void trackingTest() {
+        // TODO: test tracking
+    }
+
+    /**
+     * Test the property 'returnTracking'
+     */
+    @Test
+    public void returnTrackingTest() {
+        // TODO: test returnTracking
     }
 
     /**

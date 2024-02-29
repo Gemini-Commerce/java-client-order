@@ -6,12 +6,14 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tenantId**| **String** |   | [optional]
-**orderId**| **String** |   | [optional]
-**items**| [**List<OrderShipmentItem>**](OrderShipmentItem.md) |   | [optional]
-**address**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
+**tenantId**| **String** |   |
+**orderId**| **String** |   |
+**items**| [**List<OrderShipmentItem>**](OrderShipmentItem.md) |   | [default to new ArrayList<>()]
+**address**| [**OrderPostalAddress**](OrderPostalAddress.md) |   |
 **fromAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
 **returnAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
+**tracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional]
+**returnTracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional]
 **code**| **String** |   | [optional]
 **method**| **String** |   | [optional]
 

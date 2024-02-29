@@ -109,4 +109,36 @@ public class OrderDataCustomerInfoTest {
         // TODO: test taxCode
     }
 
+    /**
+     * Test the property 'sdiCode'
+     */
+    @Test
+    public void sdiCodeTest() {
+        // TODO: test sdiCode
+    }
+
+    /**
+     * Test the property 'fiscalCode'
+     */
+    @Test
+    public void fiscalCodeTest() {
+        // TODO: test fiscalCode
+    }
+
+    /**
+     * Test the property 'companyName'
+     */
+    @Test
+    public void companyNameTest() {
+        // TODO: test companyName
+    }
+
+    /**
+     * Test the property 'agentGrn'
+     */
+    @Test
+    public void agentGrnTest() {
+        // TODO: test agentGrn
+    }
+
 }

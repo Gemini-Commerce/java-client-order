@@ -55,7 +55,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderShipment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderShipment {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -104,9 +104,13 @@ public class OrderShipment {
   public OrderShipment() {
   }
 
-  public OrderShipment createdAt(OffsetDateTime createdAt) {
+  public OrderShipment(
+     OffsetDateTime createdAt, 
+     OffsetDateTime updatedAt
+  ) {
+    this();
     this.createdAt = createdAt;
-    return this;
+    this.updatedAt = updatedAt;
   }
 
    /**
@@ -118,15 +122,7 @@ public class OrderShipment {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
 
-
-  public OrderShipment updatedAt(OffsetDateTime updatedAt) {
-    this.updatedAt = updatedAt;
-    return this;
-  }
 
    /**
    * Get updatedAt
@@ -137,9 +133,6 @@ public class OrderShipment {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
-    this.updatedAt = updatedAt;
-  }
 
 
   public OrderShipment orderId(String orderId) {

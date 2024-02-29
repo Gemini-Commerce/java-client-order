@@ -63,7 +63,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderImportOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderImportOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -103,19 +103,19 @@ public class OrderImportOrderRequest {
 
   public static final String SERIALIZED_NAME_PAYMENTS = "payments";
   @SerializedName(SERIALIZED_NAME_PAYMENTS)
-  private List<ImportOrderRequestImportedPayment> payments;
+  private List<ImportOrderRequestImportedPayment> payments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENTS_INFO = "paymentsInfo";
   @SerializedName(SERIALIZED_NAME_PAYMENTS_INFO)
-  private List<OrderDataPaymentInfo> paymentsInfo;
+  private List<OrderDataPaymentInfo> paymentsInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SHIPMENTS_INFO = "shipmentsInfo";
   @SerializedName(SERIALIZED_NAME_SHIPMENTS_INFO)
-  private List<OrderDataShipmentInfo> shipmentsInfo;
+  private List<OrderDataShipmentInfo> shipmentsInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderOrderDataItem> items;
+  private List<OrderOrderDataItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SUBTOTALS = "subtotals";
   @SerializedName(SERIALIZED_NAME_SUBTOTALS)
@@ -145,7 +145,7 @@ public class OrderImportOrderRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -183,7 +183,7 @@ public class OrderImportOrderRequest {
    * Get number
    * @return number
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getNumber() {
     return number;
   }
@@ -221,7 +221,7 @@ public class OrderImportOrderRequest {
    * Get market
    * @return market
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getMarket() {
     return market;
   }
@@ -240,7 +240,7 @@ public class OrderImportOrderRequest {
    * Get locale
    * @return locale
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getLocale() {
     return locale;
   }
@@ -259,7 +259,7 @@ public class OrderImportOrderRequest {
    * Get customerInfo
    * @return customerInfo
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderDataCustomerInfo getCustomerInfo() {
     return customerInfo;
   }
@@ -278,7 +278,7 @@ public class OrderImportOrderRequest {
    * Get shippingAddress
    * @return shippingAddress
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderPostalAddress getShippingAddress() {
     return shippingAddress;
   }
@@ -297,7 +297,7 @@ public class OrderImportOrderRequest {
    * Get billingAddress
    * @return billingAddress
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderPostalAddress getBillingAddress() {
     return billingAddress;
   }
@@ -324,7 +324,7 @@ public class OrderImportOrderRequest {
    * Get payments
    * @return payments
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<ImportOrderRequestImportedPayment> getPayments() {
     return payments;
   }
@@ -351,7 +351,7 @@ public class OrderImportOrderRequest {
    * Get paymentsInfo
    * @return paymentsInfo
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<OrderDataPaymentInfo> getPaymentsInfo() {
     return paymentsInfo;
   }
@@ -378,7 +378,7 @@ public class OrderImportOrderRequest {
    * Get shipmentsInfo
    * @return shipmentsInfo
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<OrderDataShipmentInfo> getShipmentsInfo() {
     return shipmentsInfo;
   }
@@ -405,7 +405,7 @@ public class OrderImportOrderRequest {
    * Get items
    * @return items
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<OrderOrderDataItem> getItems() {
     return items;
   }
@@ -432,7 +432,7 @@ public class OrderImportOrderRequest {
    * Get subtotals
    * @return subtotals
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public Map<String, OrderDataSubtotal> getSubtotals() {
     return subtotals;
   }
@@ -459,7 +459,7 @@ public class OrderImportOrderRequest {
    * Get totals
    * @return totals
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public Map<String, OrderDataTotal> getTotals() {
     return totals;
   }
@@ -478,7 +478,7 @@ public class OrderImportOrderRequest {
    * Get status
    * @return status
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getStatus() {
     return status;
   }
@@ -497,7 +497,7 @@ public class OrderImportOrderRequest {
    * Get currency
    * @return currency
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderCurrency getCurrency() {
     return currency;
   }
@@ -604,6 +604,21 @@ public class OrderImportOrderRequest {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("number");
+    openapiRequiredFields.add("market");
+    openapiRequiredFields.add("locale");
+    openapiRequiredFields.add("customerInfo");
+    openapiRequiredFields.add("shippingAddress");
+    openapiRequiredFields.add("billingAddress");
+    openapiRequiredFields.add("payments");
+    openapiRequiredFields.add("paymentsInfo");
+    openapiRequiredFields.add("shipmentsInfo");
+    openapiRequiredFields.add("items");
+    openapiRequiredFields.add("subtotals");
+    openapiRequiredFields.add("totals");
+    openapiRequiredFields.add("status");
+    openapiRequiredFields.add("currency");
   }
 
  /**
@@ -626,97 +641,80 @@ public class OrderImportOrderRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderImportOrderRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderImportOrderRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      if ((jsonObj.get("number") != null && !jsonObj.get("number").isJsonNull()) && !jsonObj.get("number").isJsonPrimitive()) {
+      if (!jsonObj.get("number").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `number` to be a primitive type in the JSON string but got `%s`", jsonObj.get("number").toString()));
       }
       if ((jsonObj.get("channel") != null && !jsonObj.get("channel").isJsonNull()) && !jsonObj.get("channel").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `channel` to be a primitive type in the JSON string but got `%s`", jsonObj.get("channel").toString()));
       }
-      if ((jsonObj.get("market") != null && !jsonObj.get("market").isJsonNull()) && !jsonObj.get("market").isJsonPrimitive()) {
+      if (!jsonObj.get("market").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `market` to be a primitive type in the JSON string but got `%s`", jsonObj.get("market").toString()));
       }
-      if ((jsonObj.get("locale") != null && !jsonObj.get("locale").isJsonNull()) && !jsonObj.get("locale").isJsonPrimitive()) {
+      if (!jsonObj.get("locale").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `locale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("locale").toString()));
       }
-      // validate the optional field `customerInfo`
-      if (jsonObj.get("customerInfo") != null && !jsonObj.get("customerInfo").isJsonNull()) {
-        OrderDataCustomerInfo.validateJsonElement(jsonObj.get("customerInfo"));
+      // validate the required field `customerInfo`
+      OrderDataCustomerInfo.validateJsonElement(jsonObj.get("customerInfo"));
+      // validate the required field `shippingAddress`
+      OrderPostalAddress.validateJsonElement(jsonObj.get("shippingAddress"));
+      // validate the required field `billingAddress`
+      OrderPostalAddress.validateJsonElement(jsonObj.get("billingAddress"));
+      // ensure the json data is an array
+      if (!jsonObj.get("payments").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `payments` to be an array in the JSON string but got `%s`", jsonObj.get("payments").toString()));
       }
-      // validate the optional field `shippingAddress`
-      if (jsonObj.get("shippingAddress") != null && !jsonObj.get("shippingAddress").isJsonNull()) {
-        OrderPostalAddress.validateJsonElement(jsonObj.get("shippingAddress"));
-      }
-      // validate the optional field `billingAddress`
-      if (jsonObj.get("billingAddress") != null && !jsonObj.get("billingAddress").isJsonNull()) {
-        OrderPostalAddress.validateJsonElement(jsonObj.get("billingAddress"));
-      }
-      if (jsonObj.get("payments") != null && !jsonObj.get("payments").isJsonNull()) {
-        JsonArray jsonArraypayments = jsonObj.getAsJsonArray("payments");
-        if (jsonArraypayments != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("payments").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `payments` to be an array in the JSON string but got `%s`", jsonObj.get("payments").toString()));
-          }
 
-          // validate the optional field `payments` (array)
-          for (int i = 0; i < jsonArraypayments.size(); i++) {
-            ImportOrderRequestImportedPayment.validateJsonElement(jsonArraypayments.get(i));
-          };
-        }
+      JsonArray jsonArraypayments = jsonObj.getAsJsonArray("payments");
+      // validate the required field `payments` (array)
+      for (int i = 0; i < jsonArraypayments.size(); i++) {
+        ImportOrderRequestImportedPayment.validateJsonElement(jsonArraypayments.get(i));
+      };
+      // ensure the json data is an array
+      if (!jsonObj.get("paymentsInfo").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `paymentsInfo` to be an array in the JSON string but got `%s`", jsonObj.get("paymentsInfo").toString()));
       }
-      if (jsonObj.get("paymentsInfo") != null && !jsonObj.get("paymentsInfo").isJsonNull()) {
-        JsonArray jsonArraypaymentsInfo = jsonObj.getAsJsonArray("paymentsInfo");
-        if (jsonArraypaymentsInfo != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("paymentsInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `paymentsInfo` to be an array in the JSON string but got `%s`", jsonObj.get("paymentsInfo").toString()));
-          }
 
-          // validate the optional field `paymentsInfo` (array)
-          for (int i = 0; i < jsonArraypaymentsInfo.size(); i++) {
-            OrderDataPaymentInfo.validateJsonElement(jsonArraypaymentsInfo.get(i));
-          };
-        }
+      JsonArray jsonArraypaymentsInfo = jsonObj.getAsJsonArray("paymentsInfo");
+      // validate the required field `paymentsInfo` (array)
+      for (int i = 0; i < jsonArraypaymentsInfo.size(); i++) {
+        OrderDataPaymentInfo.validateJsonElement(jsonArraypaymentsInfo.get(i));
+      };
+      // ensure the json data is an array
+      if (!jsonObj.get("shipmentsInfo").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `shipmentsInfo` to be an array in the JSON string but got `%s`", jsonObj.get("shipmentsInfo").toString()));
       }
-      if (jsonObj.get("shipmentsInfo") != null && !jsonObj.get("shipmentsInfo").isJsonNull()) {
-        JsonArray jsonArrayshipmentsInfo = jsonObj.getAsJsonArray("shipmentsInfo");
-        if (jsonArrayshipmentsInfo != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("shipmentsInfo").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `shipmentsInfo` to be an array in the JSON string but got `%s`", jsonObj.get("shipmentsInfo").toString()));
-          }
 
-          // validate the optional field `shipmentsInfo` (array)
-          for (int i = 0; i < jsonArrayshipmentsInfo.size(); i++) {
-            OrderDataShipmentInfo.validateJsonElement(jsonArrayshipmentsInfo.get(i));
-          };
-        }
+      JsonArray jsonArrayshipmentsInfo = jsonObj.getAsJsonArray("shipmentsInfo");
+      // validate the required field `shipmentsInfo` (array)
+      for (int i = 0; i < jsonArrayshipmentsInfo.size(); i++) {
+        OrderDataShipmentInfo.validateJsonElement(jsonArrayshipmentsInfo.get(i));
+      };
+      // ensure the json data is an array
+      if (!jsonObj.get("items").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
       }
-      if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
-        JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
-        if (jsonArrayitems != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("items").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `items` to be an array in the JSON string but got `%s`", jsonObj.get("items").toString()));
-          }
 
-          // validate the optional field `items` (array)
-          for (int i = 0; i < jsonArrayitems.size(); i++) {
-            OrderOrderDataItem.validateJsonElement(jsonArrayitems.get(i));
-          };
-        }
-      }
-      if ((jsonObj.get("status") != null && !jsonObj.get("status").isJsonNull()) && !jsonObj.get("status").isJsonPrimitive()) {
+      JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");
+      // validate the required field `items` (array)
+      for (int i = 0; i < jsonArrayitems.size(); i++) {
+        OrderOrderDataItem.validateJsonElement(jsonArrayitems.get(i));
+      };
+      if (!jsonObj.get("status").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `status` to be a primitive type in the JSON string but got `%s`", jsonObj.get("status").toString()));
       }
-      // validate the optional field `currency`
-      if (jsonObj.get("currency") != null && !jsonObj.get("currency").isJsonNull()) {
-        OrderCurrency.validateJsonElement(jsonObj.get("currency"));
-      }
+      // validate the required field `currency`
+      OrderCurrency.validateJsonElement(jsonObj.get("currency"));
   }
 
   public static class CustomTypeAdapterFactory implements TypeAdapterFactory {

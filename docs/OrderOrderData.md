@@ -6,16 +6,17 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**id**| **String** |   | [optional]
-**grn**| **String** |   | [optional]
+**createdAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
+**updatedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
+**id**| **String** |   | [optional] [readonly]
+**grn**| **String** |   | [optional] [readonly]
 **number**| **String** |   | [optional]
-**status**| **String** |   | [optional]
+**status**| **String** |   | [optional] [readonly]
 **channel**| **String** |   | [optional]
 **market**| **String** |   | [optional]
-**locale**| **String** |   | [optional]
+**locale**| **String** |   |
 **additionalInfo**| **Object** |   | [optional]
+**documents**| [**List<OrderDataDocument>**](OrderDataDocument.md) |   | [optional]
 **items**| [**List<OrderOrderDataItem>**](OrderOrderDataItem.md) |   | [optional]
 **payments**| [**List<OrderPayment>**](OrderPayment.md) |   | [optional]
 **shipments**| [**List<OrderShipment>**](OrderShipment.md) |   | [optional]
@@ -32,11 +33,11 @@ Name | Type | Description | Notes
 **cartGrn**| **String** |   | [optional]
 **onHold**| **Boolean** |   | [optional]
 **historyEvents**| [**List<OrderDataHistory>**](OrderDataHistory.md) |   | [optional]
-**fulfillments**| [**List<OrderFulfillment>**](OrderFulfillment.md) |   | [optional]
+**fulfillments**| [**List<OrderFulfillment>**](OrderFulfillment.md) |   | [optional] [readonly]
 **notes**| **String** |   | [optional]
 **isDeleted**| **Boolean** | this field is used to delete an order in \&quot;soft-delete mode\&quot;. This field must be used from get/list endpoint to exclude these orders.  | [optional]
-**insertedAt**| [**OffsetDateTime**](OffsetDateTime.md) | this field is used to save the original created_at order date. The created_at field is used to filter data.  | [optional]
-**deletedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**insertedAt**| [**OffsetDateTime**](OffsetDateTime.md) | this field is used to save the original created_at order date. The created_at field is used to filter data.  | [optional] [readonly]
+**deletedAt**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional] [readonly]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

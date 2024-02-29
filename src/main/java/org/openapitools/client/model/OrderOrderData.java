@@ -28,6 +28,7 @@ import java.util.List;
 import java.util.Map;
 import org.openapitools.client.model.OrderCurrency;
 import org.openapitools.client.model.OrderDataCustomerInfo;
+import org.openapitools.client.model.OrderDataDocument;
 import org.openapitools.client.model.OrderDataHistory;
 import org.openapitools.client.model.OrderDataPaymentInfo;
 import org.openapitools.client.model.OrderDataPromotionInfo;
@@ -67,7 +68,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderOrderData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderOrderData {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -108,6 +109,10 @@ public class OrderOrderData {
   public static final String SERIALIZED_NAME_ADDITIONAL_INFO = "additionalInfo";
   @SerializedName(SERIALIZED_NAME_ADDITIONAL_INFO)
   private Object additionalInfo;
+
+  public static final String SERIALIZED_NAME_DOCUMENTS = "documents";
+  @SerializedName(SERIALIZED_NAME_DOCUMENTS)
+  private List<OrderDataDocument> documents;
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
@@ -196,9 +201,25 @@ public class OrderOrderData {
   public OrderOrderData() {
   }
 
-  public OrderOrderData createdAt(OffsetDateTime createdAt) {
+  public OrderOrderData(
+     OffsetDateTime createdAt, 
+     OffsetDateTime updatedAt, 
+     String id, 
+     String grn, 
+     String status, 
+     List<OrderFulfillment> fulfillments, 
+     OffsetDateTime insertedAt, 
+     OffsetDateTime deletedAt
+  ) {
+    this();
     this.createdAt = createdAt;
-    return this;
+    this.updatedAt = updatedAt;
+    this.id = id;
+    this.grn = grn;
+    this.status = status;
+    this.fulfillments = fulfillments;
+    this.insertedAt = insertedAt;
+    this.deletedAt = deletedAt;
   }
 
    /**
@@ -210,15 +231,7 @@ public class OrderOrderData {
     return createdAt;
   }
 
-  public void setCreatedAt(OffsetDateTime createdAt) {
-    this.createdAt = createdAt;
-  }
 
-
-  public OrderOrderData updatedAt(OffsetDateTime updatedAt) {
-    this.updatedAt = updatedAt;
-    return this;
-  }
 
    /**
    * Get updatedAt
@@ -229,15 +242,7 @@ public class OrderOrderData {
     return updatedAt;
   }
 
-  public void setUpdatedAt(OffsetDateTime updatedAt) {
-    this.updatedAt = updatedAt;
-  }
 
-
-  public OrderOrderData id(String id) {
-    this.id = id;
-    return this;
-  }
 
    /**
    * Get id
@@ -248,15 +253,7 @@ public class OrderOrderData {
     return id;
   }
 
-  public void setId(String id) {
-    this.id = id;
-  }
 
-
-  public OrderOrderData grn(String grn) {
-    this.grn = grn;
-    return this;
-  }
 
    /**
    * Get grn
@@ -267,9 +264,6 @@ public class OrderOrderData {
     return grn;
   }
 
-  public void setGrn(String grn) {
-    this.grn = grn;
-  }
 
 
   public OrderOrderData number(String number) {
@@ -291,11 +285,6 @@ public class OrderOrderData {
   }
 
 
-  public OrderOrderData status(String status) {
-    this.status = status;
-    return this;
-  }
-
    /**
    * Get status
    * @return status
@@ -305,9 +294,6 @@ public class OrderOrderData {
     return status;
   }
 
-  public void setStatus(String status) {
-    this.status = status;
-  }
 
 
   public OrderOrderData channel(String channel) {
@@ -357,7 +343,7 @@ public class OrderOrderData {
    * Get locale
    * @return locale
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getLocale() {
     return locale;
   }
@@ -383,6 +369,33 @@ public class OrderOrderData {
 
   public void setAdditionalInfo(Object additionalInfo) {
     this.additionalInfo = additionalInfo;
+  }
+
+
+  public OrderOrderData documents(List<OrderDataDocument> documents) {
+    this.documents = documents;
+    return this;
+  }
+
+  public OrderOrderData addDocumentsItem(OrderDataDocument documentsItem) {
+    if (this.documents == null) {
+      this.documents = new ArrayList<>();
+    }
+    this.documents.add(documentsItem);
+    return this;
+  }
+
+   /**
+   * Get documents
+   * @return documents
+  **/
+  @javax.annotation.Nullable
+  public List<OrderDataDocument> getDocuments() {
+    return documents;
+  }
+
+  public void setDocuments(List<OrderDataDocument> documents) {
+    this.documents = documents;
   }
 
 
@@ -762,19 +775,6 @@ public class OrderOrderData {
   }
 
 
-  public OrderOrderData fulfillments(List<OrderFulfillment> fulfillments) {
-    this.fulfillments = fulfillments;
-    return this;
-  }
-
-  public OrderOrderData addFulfillmentsItem(OrderFulfillment fulfillmentsItem) {
-    if (this.fulfillments == null) {
-      this.fulfillments = new ArrayList<>();
-    }
-    this.fulfillments.add(fulfillmentsItem);
-    return this;
-  }
-
    /**
    * Get fulfillments
    * @return fulfillments
@@ -784,9 +784,6 @@ public class OrderOrderData {
     return fulfillments;
   }
 
-  public void setFulfillments(List<OrderFulfillment> fulfillments) {
-    this.fulfillments = fulfillments;
-  }
 
 
   public OrderOrderData notes(String notes) {
@@ -827,11 +824,6 @@ public class OrderOrderData {
   }
 
 
-  public OrderOrderData insertedAt(OffsetDateTime insertedAt) {
-    this.insertedAt = insertedAt;
-    return this;
-  }
-
    /**
    * this field is used to save the original created_at order date. The created_at field is used to filter data.
    * @return insertedAt
@@ -841,15 +833,7 @@ public class OrderOrderData {
     return insertedAt;
   }
 
-  public void setInsertedAt(OffsetDateTime insertedAt) {
-    this.insertedAt = insertedAt;
-  }
 
-
-  public OrderOrderData deletedAt(OffsetDateTime deletedAt) {
-    this.deletedAt = deletedAt;
-    return this;
-  }
 
    /**
    * Get deletedAt
@@ -860,9 +844,6 @@ public class OrderOrderData {
     return deletedAt;
   }
 
-  public void setDeletedAt(OffsetDateTime deletedAt) {
-    this.deletedAt = deletedAt;
-  }
 
 
 
@@ -885,6 +866,7 @@ public class OrderOrderData {
         Objects.equals(this.market, orderOrderData.market) &&
         Objects.equals(this.locale, orderOrderData.locale) &&
         Objects.equals(this.additionalInfo, orderOrderData.additionalInfo) &&
+        Objects.equals(this.documents, orderOrderData.documents) &&
         Objects.equals(this.items, orderOrderData.items) &&
         Objects.equals(this.payments, orderOrderData.payments) &&
         Objects.equals(this.shipments, orderOrderData.shipments) &&
@@ -910,7 +892,7 @@ public class OrderOrderData {
 
   @Override
   public int hashCode() {
-    return Objects.hash(createdAt, updatedAt, id, grn, number, status, channel, market, locale, additionalInfo, items, payments, shipments, paymentsInfo, shipmentsInfo, promotions, currency, subtotals, totals, vatIncluded, billingAddress, shippingAddress, customerInfo, cartGrn, onHold, historyEvents, fulfillments, notes, isDeleted, insertedAt, deletedAt);
+    return Objects.hash(createdAt, updatedAt, id, grn, number, status, channel, market, locale, additionalInfo, documents, items, payments, shipments, paymentsInfo, shipmentsInfo, promotions, currency, subtotals, totals, vatIncluded, billingAddress, shippingAddress, customerInfo, cartGrn, onHold, historyEvents, fulfillments, notes, isDeleted, insertedAt, deletedAt);
   }
 
   @Override
@@ -927,6 +909,7 @@ public class OrderOrderData {
     sb.append("    market: ").append(toIndentedString(market)).append("\n");
     sb.append("    locale: ").append(toIndentedString(locale)).append("\n");
     sb.append("    additionalInfo: ").append(toIndentedString(additionalInfo)).append("\n");
+    sb.append("    documents: ").append(toIndentedString(documents)).append("\n");
     sb.append("    items: ").append(toIndentedString(items)).append("\n");
     sb.append("    payments: ").append(toIndentedString(payments)).append("\n");
     sb.append("    shipments: ").append(toIndentedString(shipments)).append("\n");
@@ -980,6 +963,7 @@ public class OrderOrderData {
     openapiFields.add("market");
     openapiFields.add("locale");
     openapiFields.add("additionalInfo");
+    openapiFields.add("documents");
     openapiFields.add("items");
     openapiFields.add("payments");
     openapiFields.add("shipments");
@@ -1004,6 +988,7 @@ public class OrderOrderData {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("locale");
   }
 
  /**
@@ -1026,6 +1011,13 @@ public class OrderOrderData {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderOrderData` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderOrderData.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("id") != null && !jsonObj.get("id").isJsonNull()) && !jsonObj.get("id").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `id` to be a primitive type in the JSON string but got `%s`", jsonObj.get("id").toString()));
@@ -1045,8 +1037,22 @@ public class OrderOrderData {
       if ((jsonObj.get("market") != null && !jsonObj.get("market").isJsonNull()) && !jsonObj.get("market").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `market` to be a primitive type in the JSON string but got `%s`", jsonObj.get("market").toString()));
       }
-      if ((jsonObj.get("locale") != null && !jsonObj.get("locale").isJsonNull()) && !jsonObj.get("locale").isJsonPrimitive()) {
+      if (!jsonObj.get("locale").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `locale` to be a primitive type in the JSON string but got `%s`", jsonObj.get("locale").toString()));
+      }
+      if (jsonObj.get("documents") != null && !jsonObj.get("documents").isJsonNull()) {
+        JsonArray jsonArraydocuments = jsonObj.getAsJsonArray("documents");
+        if (jsonArraydocuments != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("documents").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `documents` to be an array in the JSON string but got `%s`", jsonObj.get("documents").toString()));
+          }
+
+          // validate the optional field `documents` (array)
+          for (int i = 0; i < jsonArraydocuments.size(); i++) {
+            OrderDataDocument.validateJsonElement(jsonArraydocuments.get(i));
+          };
+        }
       }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
         JsonArray jsonArrayitems = jsonObj.getAsJsonArray("items");

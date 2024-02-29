@@ -23,6 +23,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.client.model.ItemProductConfigurationStep;
 import org.openapitools.client.model.OrderMoney;
 
 import com.google.gson.Gson;
@@ -52,7 +53,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderOrderDataItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderOrderDataItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -106,6 +107,14 @@ public class OrderOrderDataItem {
   @SerializedName(SERIALIZED_NAME_ROW_BASE_PRICE)
   private OrderMoney rowBasePrice;
 
+  public static final String SERIALIZED_NAME_UNIT_CUSTOM_PRICE = "unitCustomPrice";
+  @SerializedName(SERIALIZED_NAME_UNIT_CUSTOM_PRICE)
+  private OrderMoney unitCustomPrice;
+
+  public static final String SERIALIZED_NAME_ROW_CUSTOM_PRICE = "rowCustomPrice";
+  @SerializedName(SERIALIZED_NAME_ROW_CUSTOM_PRICE)
+  private OrderMoney rowCustomPrice;
+
   public static final String SERIALIZED_NAME_VAT_PERCENTAGE = "vatPercentage";
   @SerializedName(SERIALIZED_NAME_VAT_PERCENTAGE)
   private Float vatPercentage;
@@ -153,6 +162,10 @@ public class OrderOrderDataItem {
   public static final String SERIALIZED_NAME_PRODUCT_IS_VIRTUAL = "productIsVirtual";
   @SerializedName(SERIALIZED_NAME_PRODUCT_IS_VIRTUAL)
   private Boolean productIsVirtual;
+
+  public static final String SERIALIZED_NAME_PRODUCT_CONFIGURATION = "productConfiguration";
+  @SerializedName(SERIALIZED_NAME_PRODUCT_CONFIGURATION)
+  private List<ItemProductConfigurationStep> productConfiguration;
 
   public OrderOrderDataItem() {
   }
@@ -404,6 +417,44 @@ public class OrderOrderDataItem {
   }
 
 
+  public OrderOrderDataItem unitCustomPrice(OrderMoney unitCustomPrice) {
+    this.unitCustomPrice = unitCustomPrice;
+    return this;
+  }
+
+   /**
+   * Get unitCustomPrice
+   * @return unitCustomPrice
+  **/
+  @javax.annotation.Nullable
+  public OrderMoney getUnitCustomPrice() {
+    return unitCustomPrice;
+  }
+
+  public void setUnitCustomPrice(OrderMoney unitCustomPrice) {
+    this.unitCustomPrice = unitCustomPrice;
+  }
+
+
+  public OrderOrderDataItem rowCustomPrice(OrderMoney rowCustomPrice) {
+    this.rowCustomPrice = rowCustomPrice;
+    return this;
+  }
+
+   /**
+   * Get rowCustomPrice
+   * @return rowCustomPrice
+  **/
+  @javax.annotation.Nullable
+  public OrderMoney getRowCustomPrice() {
+    return rowCustomPrice;
+  }
+
+  public void setRowCustomPrice(OrderMoney rowCustomPrice) {
+    this.rowCustomPrice = rowCustomPrice;
+  }
+
+
   public OrderOrderDataItem vatPercentage(Float vatPercentage) {
     this.vatPercentage = vatPercentage;
     return this;
@@ -640,6 +691,33 @@ public class OrderOrderDataItem {
   }
 
 
+  public OrderOrderDataItem productConfiguration(List<ItemProductConfigurationStep> productConfiguration) {
+    this.productConfiguration = productConfiguration;
+    return this;
+  }
+
+  public OrderOrderDataItem addProductConfigurationItem(ItemProductConfigurationStep productConfigurationItem) {
+    if (this.productConfiguration == null) {
+      this.productConfiguration = new ArrayList<>();
+    }
+    this.productConfiguration.add(productConfigurationItem);
+    return this;
+  }
+
+   /**
+   * Get productConfiguration
+   * @return productConfiguration
+  **/
+  @javax.annotation.Nullable
+  public List<ItemProductConfigurationStep> getProductConfiguration() {
+    return productConfiguration;
+  }
+
+  public void setProductConfiguration(List<ItemProductConfigurationStep> productConfiguration) {
+    this.productConfiguration = productConfiguration;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -663,6 +741,8 @@ public class OrderOrderDataItem {
         Objects.equals(this.rowVatAmount, orderOrderDataItem.rowVatAmount) &&
         Objects.equals(this.discountAmount, orderOrderDataItem.discountAmount) &&
         Objects.equals(this.rowBasePrice, orderOrderDataItem.rowBasePrice) &&
+        Objects.equals(this.unitCustomPrice, orderOrderDataItem.unitCustomPrice) &&
+        Objects.equals(this.rowCustomPrice, orderOrderDataItem.rowCustomPrice) &&
         Objects.equals(this.vatPercentage, orderOrderDataItem.vatPercentage) &&
         Objects.equals(this.vatInaccurate, orderOrderDataItem.vatInaccurate) &&
         Objects.equals(this.vatCalculated, orderOrderDataItem.vatCalculated) &&
@@ -674,12 +754,13 @@ public class OrderOrderDataItem {
         Objects.equals(this.productData, orderOrderDataItem.productData) &&
         Objects.equals(this.shipmentInfoReference, orderOrderDataItem.shipmentInfoReference) &&
         Objects.equals(this.promotionGrn, orderOrderDataItem.promotionGrn) &&
-        Objects.equals(this.productIsVirtual, orderOrderDataItem.productIsVirtual);
+        Objects.equals(this.productIsVirtual, orderOrderDataItem.productIsVirtual) &&
+        Objects.equals(this.productConfiguration, orderOrderDataItem.productConfiguration);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, productGrn, qtyOrdered, qtyCommitted, unitSalePrice, unitListPrice, unitBasePrice, unitVatAmount, rowSalePrice, rowListPrice, rowVatAmount, discountAmount, rowBasePrice, vatPercentage, vatInaccurate, vatCalculated, productName, productCode, productSku, productOptions, productImg, productData, shipmentInfoReference, promotionGrn, productIsVirtual);
+    return Objects.hash(id, productGrn, qtyOrdered, qtyCommitted, unitSalePrice, unitListPrice, unitBasePrice, unitVatAmount, rowSalePrice, rowListPrice, rowVatAmount, discountAmount, rowBasePrice, unitCustomPrice, rowCustomPrice, vatPercentage, vatInaccurate, vatCalculated, productName, productCode, productSku, productOptions, productImg, productData, shipmentInfoReference, promotionGrn, productIsVirtual, productConfiguration);
   }
 
   @Override
@@ -699,6 +780,8 @@ public class OrderOrderDataItem {
     sb.append("    rowVatAmount: ").append(toIndentedString(rowVatAmount)).append("\n");
     sb.append("    discountAmount: ").append(toIndentedString(discountAmount)).append("\n");
     sb.append("    rowBasePrice: ").append(toIndentedString(rowBasePrice)).append("\n");
+    sb.append("    unitCustomPrice: ").append(toIndentedString(unitCustomPrice)).append("\n");
+    sb.append("    rowCustomPrice: ").append(toIndentedString(rowCustomPrice)).append("\n");
     sb.append("    vatPercentage: ").append(toIndentedString(vatPercentage)).append("\n");
     sb.append("    vatInaccurate: ").append(toIndentedString(vatInaccurate)).append("\n");
     sb.append("    vatCalculated: ").append(toIndentedString(vatCalculated)).append("\n");
@@ -711,6 +794,7 @@ public class OrderOrderDataItem {
     sb.append("    shipmentInfoReference: ").append(toIndentedString(shipmentInfoReference)).append("\n");
     sb.append("    promotionGrn: ").append(toIndentedString(promotionGrn)).append("\n");
     sb.append("    productIsVirtual: ").append(toIndentedString(productIsVirtual)).append("\n");
+    sb.append("    productConfiguration: ").append(toIndentedString(productConfiguration)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -746,6 +830,8 @@ public class OrderOrderDataItem {
     openapiFields.add("rowVatAmount");
     openapiFields.add("discountAmount");
     openapiFields.add("rowBasePrice");
+    openapiFields.add("unitCustomPrice");
+    openapiFields.add("rowCustomPrice");
     openapiFields.add("vatPercentage");
     openapiFields.add("vatInaccurate");
     openapiFields.add("vatCalculated");
@@ -758,6 +844,7 @@ public class OrderOrderDataItem {
     openapiFields.add("shipmentInfoReference");
     openapiFields.add("promotionGrn");
     openapiFields.add("productIsVirtual");
+    openapiFields.add("productConfiguration");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -826,6 +913,14 @@ public class OrderOrderDataItem {
       if (jsonObj.get("rowBasePrice") != null && !jsonObj.get("rowBasePrice").isJsonNull()) {
         OrderMoney.validateJsonElement(jsonObj.get("rowBasePrice"));
       }
+      // validate the optional field `unitCustomPrice`
+      if (jsonObj.get("unitCustomPrice") != null && !jsonObj.get("unitCustomPrice").isJsonNull()) {
+        OrderMoney.validateJsonElement(jsonObj.get("unitCustomPrice"));
+      }
+      // validate the optional field `rowCustomPrice`
+      if (jsonObj.get("rowCustomPrice") != null && !jsonObj.get("rowCustomPrice").isJsonNull()) {
+        OrderMoney.validateJsonElement(jsonObj.get("rowCustomPrice"));
+      }
       if ((jsonObj.get("productName") != null && !jsonObj.get("productName").isJsonNull()) && !jsonObj.get("productName").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `productName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("productName").toString()));
       }
@@ -850,6 +945,20 @@ public class OrderOrderDataItem {
       // ensure the optional json data is an array if present
       if (jsonObj.get("promotionGrn") != null && !jsonObj.get("promotionGrn").isJsonNull() && !jsonObj.get("promotionGrn").isJsonArray()) {
         throw new IllegalArgumentException(String.format("Expected the field `promotionGrn` to be an array in the JSON string but got `%s`", jsonObj.get("promotionGrn").toString()));
+      }
+      if (jsonObj.get("productConfiguration") != null && !jsonObj.get("productConfiguration").isJsonNull()) {
+        JsonArray jsonArrayproductConfiguration = jsonObj.getAsJsonArray("productConfiguration");
+        if (jsonArrayproductConfiguration != null) {
+          // ensure the json data is an array
+          if (!jsonObj.get("productConfiguration").isJsonArray()) {
+            throw new IllegalArgumentException(String.format("Expected the field `productConfiguration` to be an array in the JSON string but got `%s`", jsonObj.get("productConfiguration").toString()));
+          }
+
+          // validate the optional field `productConfiguration` (array)
+          for (int i = 0; i < jsonArrayproductConfiguration.size(); i++) {
+            ItemProductConfigurationStep.validateJsonElement(jsonArrayproductConfiguration.get(i));
+          };
+        }
       }
   }
 

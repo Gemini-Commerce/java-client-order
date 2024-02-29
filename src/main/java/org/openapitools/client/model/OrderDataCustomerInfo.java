@@ -49,7 +49,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderDataCustomerInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderDataCustomerInfo {
   public static final String SERIALIZED_NAME_GRN = "grn";
   @SerializedName(SERIALIZED_NAME_GRN)
@@ -87,6 +87,22 @@ public class OrderDataCustomerInfo {
   @SerializedName(SERIALIZED_NAME_TAX_CODE)
   private String taxCode;
 
+  public static final String SERIALIZED_NAME_SDI_CODE = "sdiCode";
+  @SerializedName(SERIALIZED_NAME_SDI_CODE)
+  private String sdiCode;
+
+  public static final String SERIALIZED_NAME_FISCAL_CODE = "fiscalCode";
+  @SerializedName(SERIALIZED_NAME_FISCAL_CODE)
+  private String fiscalCode;
+
+  public static final String SERIALIZED_NAME_COMPANY_NAME = "companyName";
+  @SerializedName(SERIALIZED_NAME_COMPANY_NAME)
+  private String companyName;
+
+  public static final String SERIALIZED_NAME_AGENT_GRN = "agentGrn";
+  @SerializedName(SERIALIZED_NAME_AGENT_GRN)
+  private String agentGrn;
+
   public OrderDataCustomerInfo() {
   }
 
@@ -118,7 +134,7 @@ public class OrderDataCustomerInfo {
    * Get firstname
    * @return firstname
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getFirstname() {
     return firstname;
   }
@@ -137,7 +153,7 @@ public class OrderDataCustomerInfo {
    * Get lastname
    * @return lastname
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getLastname() {
     return lastname;
   }
@@ -156,7 +172,7 @@ public class OrderDataCustomerInfo {
    * Get email
    * @return email
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getEmail() {
     return email;
   }
@@ -261,6 +277,82 @@ public class OrderDataCustomerInfo {
   }
 
 
+  public OrderDataCustomerInfo sdiCode(String sdiCode) {
+    this.sdiCode = sdiCode;
+    return this;
+  }
+
+   /**
+   * Get sdiCode
+   * @return sdiCode
+  **/
+  @javax.annotation.Nullable
+  public String getSdiCode() {
+    return sdiCode;
+  }
+
+  public void setSdiCode(String sdiCode) {
+    this.sdiCode = sdiCode;
+  }
+
+
+  public OrderDataCustomerInfo fiscalCode(String fiscalCode) {
+    this.fiscalCode = fiscalCode;
+    return this;
+  }
+
+   /**
+   * Get fiscalCode
+   * @return fiscalCode
+  **/
+  @javax.annotation.Nullable
+  public String getFiscalCode() {
+    return fiscalCode;
+  }
+
+  public void setFiscalCode(String fiscalCode) {
+    this.fiscalCode = fiscalCode;
+  }
+
+
+  public OrderDataCustomerInfo companyName(String companyName) {
+    this.companyName = companyName;
+    return this;
+  }
+
+   /**
+   * Get companyName
+   * @return companyName
+  **/
+  @javax.annotation.Nullable
+  public String getCompanyName() {
+    return companyName;
+  }
+
+  public void setCompanyName(String companyName) {
+    this.companyName = companyName;
+  }
+
+
+  public OrderDataCustomerInfo agentGrn(String agentGrn) {
+    this.agentGrn = agentGrn;
+    return this;
+  }
+
+   /**
+   * Get agentGrn
+   * @return agentGrn
+  **/
+  @javax.annotation.Nullable
+  public String getAgentGrn() {
+    return agentGrn;
+  }
+
+  public void setAgentGrn(String agentGrn) {
+    this.agentGrn = agentGrn;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -279,12 +371,16 @@ public class OrderDataCustomerInfo {
         Objects.equals(this.segment, orderDataCustomerInfo.segment) &&
         Objects.equals(this.data, orderDataCustomerInfo.data) &&
         Objects.equals(this.certifiedEmail, orderDataCustomerInfo.certifiedEmail) &&
-        Objects.equals(this.taxCode, orderDataCustomerInfo.taxCode);
+        Objects.equals(this.taxCode, orderDataCustomerInfo.taxCode) &&
+        Objects.equals(this.sdiCode, orderDataCustomerInfo.sdiCode) &&
+        Objects.equals(this.fiscalCode, orderDataCustomerInfo.fiscalCode) &&
+        Objects.equals(this.companyName, orderDataCustomerInfo.companyName) &&
+        Objects.equals(this.agentGrn, orderDataCustomerInfo.agentGrn);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(grn, firstname, lastname, email, phone, segment, data, certifiedEmail, taxCode);
+    return Objects.hash(grn, firstname, lastname, email, phone, segment, data, certifiedEmail, taxCode, sdiCode, fiscalCode, companyName, agentGrn);
   }
 
   @Override
@@ -300,6 +396,10 @@ public class OrderDataCustomerInfo {
     sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("    certifiedEmail: ").append(toIndentedString(certifiedEmail)).append("\n");
     sb.append("    taxCode: ").append(toIndentedString(taxCode)).append("\n");
+    sb.append("    sdiCode: ").append(toIndentedString(sdiCode)).append("\n");
+    sb.append("    fiscalCode: ").append(toIndentedString(fiscalCode)).append("\n");
+    sb.append("    companyName: ").append(toIndentedString(companyName)).append("\n");
+    sb.append("    agentGrn: ").append(toIndentedString(agentGrn)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -331,9 +431,16 @@ public class OrderDataCustomerInfo {
     openapiFields.add("data");
     openapiFields.add("certifiedEmail");
     openapiFields.add("taxCode");
+    openapiFields.add("sdiCode");
+    openapiFields.add("fiscalCode");
+    openapiFields.add("companyName");
+    openapiFields.add("agentGrn");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("firstname");
+    openapiRequiredFields.add("lastname");
+    openapiRequiredFields.add("email");
   }
 
  /**
@@ -356,17 +463,24 @@ public class OrderDataCustomerInfo {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderDataCustomerInfo` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderDataCustomerInfo.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
       if ((jsonObj.get("grn") != null && !jsonObj.get("grn").isJsonNull()) && !jsonObj.get("grn").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `grn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("grn").toString()));
       }
-      if ((jsonObj.get("firstname") != null && !jsonObj.get("firstname").isJsonNull()) && !jsonObj.get("firstname").isJsonPrimitive()) {
+      if (!jsonObj.get("firstname").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `firstname` to be a primitive type in the JSON string but got `%s`", jsonObj.get("firstname").toString()));
       }
-      if ((jsonObj.get("lastname") != null && !jsonObj.get("lastname").isJsonNull()) && !jsonObj.get("lastname").isJsonPrimitive()) {
+      if (!jsonObj.get("lastname").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `lastname` to be a primitive type in the JSON string but got `%s`", jsonObj.get("lastname").toString()));
       }
-      if ((jsonObj.get("email") != null && !jsonObj.get("email").isJsonNull()) && !jsonObj.get("email").isJsonPrimitive()) {
+      if (!jsonObj.get("email").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `email` to be a primitive type in the JSON string but got `%s`", jsonObj.get("email").toString()));
       }
       if ((jsonObj.get("phone") != null && !jsonObj.get("phone").isJsonNull()) && !jsonObj.get("phone").isJsonPrimitive()) {
@@ -383,6 +497,18 @@ public class OrderDataCustomerInfo {
       }
       if ((jsonObj.get("taxCode") != null && !jsonObj.get("taxCode").isJsonNull()) && !jsonObj.get("taxCode").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `taxCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("taxCode").toString()));
+      }
+      if ((jsonObj.get("sdiCode") != null && !jsonObj.get("sdiCode").isJsonNull()) && !jsonObj.get("sdiCode").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `sdiCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("sdiCode").toString()));
+      }
+      if ((jsonObj.get("fiscalCode") != null && !jsonObj.get("fiscalCode").isJsonNull()) && !jsonObj.get("fiscalCode").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `fiscalCode` to be a primitive type in the JSON string but got `%s`", jsonObj.get("fiscalCode").toString()));
+      }
+      if ((jsonObj.get("companyName") != null && !jsonObj.get("companyName").isJsonNull()) && !jsonObj.get("companyName").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `companyName` to be a primitive type in the JSON string but got `%s`", jsonObj.get("companyName").toString()));
+      }
+      if ((jsonObj.get("agentGrn") != null && !jsonObj.get("agentGrn").isJsonNull()) && !jsonObj.get("agentGrn").isJsonPrimitive()) {
+        throw new IllegalArgumentException(String.format("Expected the field `agentGrn` to be a primitive type in the JSON string but got `%s`", jsonObj.get("agentGrn").toString()));
       }
   }
 

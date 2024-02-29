@@ -22,6 +22,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import org.openapitools.client.model.ItemProductConfigurationStep;
 import org.openapitools.client.model.OrderMoney;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
@@ -145,6 +146,22 @@ public class OrderOrderDataItemTest {
     }
 
     /**
+     * Test the property 'unitCustomPrice'
+     */
+    @Test
+    public void unitCustomPriceTest() {
+        // TODO: test unitCustomPrice
+    }
+
+    /**
+     * Test the property 'rowCustomPrice'
+     */
+    @Test
+    public void rowCustomPriceTest() {
+        // TODO: test rowCustomPrice
+    }
+
+    /**
      * Test the property 'vatPercentage'
      */
     @Test
@@ -238,6 +255,14 @@ public class OrderOrderDataItemTest {
     @Test
     public void productIsVirtualTest() {
         // TODO: test productIsVirtual
+    }
+
+    /**
+     * Test the property 'productConfiguration'
+     */
+    @Test
+    public void productConfigurationTest() {
+        // TODO: test productConfiguration
     }
 
 }

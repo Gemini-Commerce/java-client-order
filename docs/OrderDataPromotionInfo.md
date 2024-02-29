@@ -7,11 +7,11 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **promotionGrn**| **String** |   | [optional]
-**type**| **String** |   | [optional]
+**type**| **String** |   |
 **additionalInfo**| **String** |   | [optional]
-**name**| **String** |   | [optional]
+**name**| **String** |   |
 **description**| **String** |   | [optional]
-**amount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**amount**| [**OrderMoney**](OrderMoney.md) |   |
 **couponCode**| **String** |   | [optional]
 **vatAmount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatPercentage**| **Float** |   | [optional]

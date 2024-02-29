@@ -24,7 +24,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 
 /**
- * Gets or Sets orderCurrency
+ * Stands for Albania, not all ;-)
  */
 @JsonAdapter(OrderCurrency.Adapter.class)
 public enum OrderCurrency {

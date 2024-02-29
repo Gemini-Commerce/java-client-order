@@ -6,9 +6,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code**| **String** |   | [optional]
+**code**| **String** |   |
 **additionalInfo**| **String** |   | [optional]
-**amount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**amount**| [**OrderMoney**](OrderMoney.md) |   |
 **ccInfo**| [**PaymentCcInfo**](PaymentCcInfo.md) |   | [optional]
 **transaction**| [**InitialPaymentInitialTransaction**](InitialPaymentInitialTransaction.md) |   | [optional]
 

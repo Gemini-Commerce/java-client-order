@@ -50,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * InitialPaymentInitialTransaction
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class InitialPaymentInitialTransaction {
   public static final String SERIALIZED_NAME_TYPE = "type";
   @SerializedName(SERIALIZED_NAME_TYPE)
@@ -72,7 +72,7 @@ public class InitialPaymentInitialTransaction {
    * Get type
    * @return type
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public OrderTransactionType getType() {
     return type;
   }
@@ -153,6 +153,7 @@ public class InitialPaymentInitialTransaction {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("type");
   }
 
  /**
@@ -175,11 +176,16 @@ public class InitialPaymentInitialTransaction {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `InitialPaymentInitialTransaction` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
-        JsonObject jsonObj = jsonElement.getAsJsonObject();
-      // validate the optional field `type`
-      if (jsonObj.get("type") != null && !jsonObj.get("type").isJsonNull()) {
-        OrderTransactionType.validateJsonElement(jsonObj.get("type"));
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : InitialPaymentInitialTransaction.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
       }
+        JsonObject jsonObj = jsonElement.getAsJsonObject();
+      // validate the required field `type`
+      OrderTransactionType.validateJsonElement(jsonObj.get("type"));
       if ((jsonObj.get("additionalInfo") != null && !jsonObj.get("additionalInfo").isJsonNull()) && !jsonObj.get("additionalInfo").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `additionalInfo` to be a primitive type in the JSON string but got `%s`", jsonObj.get("additionalInfo").toString()));
       }

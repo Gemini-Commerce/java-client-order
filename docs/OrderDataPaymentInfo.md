@@ -6,9 +6,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code**| **String** |   | [optional]
+**code**| **String** |   |
 **additionalInfo**| **String** |   | [optional]
-**amount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**amount**| [**OrderMoney**](OrderMoney.md) |   |
 **fee**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatAmount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatPercentage**| **Float** |   | [optional]

@@ -6,12 +6,12 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**reference**| **String** |   | [optional]
-**code**| **String** |   | [optional]
+**reference**| **String** |   |
+**code**| **String** |   |
 **method**| **String** |   | [optional]
 **title**| **String** |   | [optional]
 **additionalInfo**| **String** |   | [optional]
-**amount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
+**amount**| [**OrderMoney**](OrderMoney.md) |   |
 **fee**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatAmount**| [**OrderMoney**](OrderMoney.md) |   | [optional]
 **vatPercentage**| **Float** |   | [optional]

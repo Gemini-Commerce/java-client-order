@@ -27,6 +27,7 @@ import java.util.List;
 import java.util.Map;
 import org.openapitools.client.model.OrderCurrency;
 import org.openapitools.client.model.OrderDataCustomerInfo;
+import org.openapitools.client.model.OrderDataDocument;
 import org.openapitools.client.model.OrderDataHistory;
 import org.openapitools.client.model.OrderDataPaymentInfo;
 import org.openapitools.client.model.OrderDataPromotionInfo;
@@ -133,6 +134,14 @@ public class OrderOrderDataTest {
     @Test
     public void additionalInfoTest() {
         // TODO: test additionalInfo
+    }
+
+    /**
+     * Test the property 'documents'
+     */
+    @Test
+    public void documentsTest() {
+        // TODO: test documents
     }
 
     /**

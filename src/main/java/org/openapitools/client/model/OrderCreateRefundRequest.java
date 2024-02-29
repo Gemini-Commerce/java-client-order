@@ -53,7 +53,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderCreateRefundRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T15:22:43.018455504Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
 public class OrderCreateRefundRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -69,7 +69,7 @@ public class OrderCreateRefundRequest {
 
   public static final String SERIALIZED_NAME_AMOUNTS = "amounts";
   @SerializedName(SERIALIZED_NAME_AMOUNTS)
-  private List<OrderRefundAmount> amounts;
+  private List<OrderRefundAmount> amounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NOTE = "note";
   @SerializedName(SERIALIZED_NAME_NOTE)
@@ -91,7 +91,7 @@ public class OrderCreateRefundRequest {
    * Get tenantId
    * @return tenantId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
   }
@@ -110,7 +110,7 @@ public class OrderCreateRefundRequest {
    * Get paymentId
    * @return paymentId
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public String getPaymentId() {
     return paymentId;
   }
@@ -164,7 +164,7 @@ public class OrderCreateRefundRequest {
    * Get amounts
    * @return amounts
   **/
-  @javax.annotation.Nullable
+  @javax.annotation.Nonnull
   public List<OrderRefundAmount> getAmounts() {
     return amounts;
   }
@@ -276,6 +276,9 @@ public class OrderCreateRefundRequest {
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
+    openapiRequiredFields.add("tenantId");
+    openapiRequiredFields.add("paymentId");
+    openapiRequiredFields.add("amounts");
   }
 
  /**
@@ -298,11 +301,18 @@ public class OrderCreateRefundRequest {
           throw new IllegalArgumentException(String.format("The field `%s` in the JSON string is not defined in the `OrderCreateRefundRequest` properties. JSON: %s", entry.getKey(), jsonElement.toString()));
         }
       }
+
+      // check to make sure all required properties/fields are present in the JSON string
+      for (String requiredField : OrderCreateRefundRequest.openapiRequiredFields) {
+        if (jsonElement.getAsJsonObject().get(requiredField) == null) {
+          throw new IllegalArgumentException(String.format("The required field `%s` is not found in the JSON string: %s", requiredField, jsonElement.toString()));
+        }
+      }
         JsonObject jsonObj = jsonElement.getAsJsonObject();
-      if ((jsonObj.get("tenantId") != null && !jsonObj.get("tenantId").isJsonNull()) && !jsonObj.get("tenantId").isJsonPrimitive()) {
+      if (!jsonObj.get("tenantId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `tenantId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("tenantId").toString()));
       }
-      if ((jsonObj.get("paymentId") != null && !jsonObj.get("paymentId").isJsonNull()) && !jsonObj.get("paymentId").isJsonPrimitive()) {
+      if (!jsonObj.get("paymentId").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `paymentId` to be a primitive type in the JSON string but got `%s`", jsonObj.get("paymentId").toString()));
       }
       if (jsonObj.get("items") != null && !jsonObj.get("items").isJsonNull()) {
@@ -319,20 +329,16 @@ public class OrderCreateRefundRequest {
           };
         }
       }
-      if (jsonObj.get("amounts") != null && !jsonObj.get("amounts").isJsonNull()) {
-        JsonArray jsonArrayamounts = jsonObj.getAsJsonArray("amounts");
-        if (jsonArrayamounts != null) {
-          // ensure the json data is an array
-          if (!jsonObj.get("amounts").isJsonArray()) {
-            throw new IllegalArgumentException(String.format("Expected the field `amounts` to be an array in the JSON string but got `%s`", jsonObj.get("amounts").toString()));
-          }
-
-          // validate the optional field `amounts` (array)
-          for (int i = 0; i < jsonArrayamounts.size(); i++) {
-            OrderRefundAmount.validateJsonElement(jsonArrayamounts.get(i));
-          };
-        }
+      // ensure the json data is an array
+      if (!jsonObj.get("amounts").isJsonArray()) {
+        throw new IllegalArgumentException(String.format("Expected the field `amounts` to be an array in the JSON string but got `%s`", jsonObj.get("amounts").toString()));
       }
+
+      JsonArray jsonArrayamounts = jsonObj.getAsJsonArray("amounts");
+      // validate the required field `amounts` (array)
+      for (int i = 0; i < jsonArrayamounts.size(); i++) {
+        OrderRefundAmount.validateJsonElement(jsonArrayamounts.get(i));
+      };
       if ((jsonObj.get("note") != null && !jsonObj.get("note").isJsonNull()) && !jsonObj.get("note").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `note` to be a primitive type in the JSON string but got `%s`", jsonObj.get("note").toString()));
       }

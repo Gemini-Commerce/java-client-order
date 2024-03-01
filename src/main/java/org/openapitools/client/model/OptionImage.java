@@ -49,7 +49,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OptionImage
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-01T08:57:36.631247747Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-01T09:30:33.882650478Z[Etc/UTC]")
 public class OptionImage {
   public static final String SERIALIZED_NAME_GRN = "grn";
   @SerializedName(SERIALIZED_NAME_GRN)

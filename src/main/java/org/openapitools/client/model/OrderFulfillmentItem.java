@@ -49,7 +49,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderFulfillmentItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-02-29T16:50:50.918819528Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-01T08:52:24.392095764Z[Etc/UTC]")
 public class OrderFulfillmentItem {
   public static final String SERIALIZED_NAME_ORDER_ITEM_ID = "orderItemId";
   @SerializedName(SERIALIZED_NAME_ORDER_ITEM_ID)

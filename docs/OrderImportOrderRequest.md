@@ -23,6 +23,7 @@ Name | Type | Description | Notes
 **totals**| [**Map<String, OrderDataTotal>**](OrderDataTotal.md) |   | [default to new HashMap<>()]
 **status**| **String** |   |
 **currency**| [**OrderCurrency**](OrderCurrency.md) |  for more information please, see Model/OrderCurrency.php  | [default to OrderCurrency.XXX]
+**vatIncluded**| **Boolean** |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

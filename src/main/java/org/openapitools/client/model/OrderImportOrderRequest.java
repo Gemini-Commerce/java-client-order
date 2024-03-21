@@ -63,7 +63,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderImportOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-01T09:30:33.882650478Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-03-21T15:58:39.262121098Z[Etc/UTC]")
 public class OrderImportOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -132,6 +132,10 @@ public class OrderImportOrderRequest {
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
   private OrderCurrency currency = OrderCurrency.XXX;
+
+  public static final String SERIALIZED_NAME_VAT_INCLUDED = "vatIncluded";
+  @SerializedName(SERIALIZED_NAME_VAT_INCLUDED)
+  private Boolean vatIncluded;
 
   public OrderImportOrderRequest() {
   }
@@ -507,6 +511,25 @@ public class OrderImportOrderRequest {
   }
 
 
+  public OrderImportOrderRequest vatIncluded(Boolean vatIncluded) {
+    this.vatIncluded = vatIncluded;
+    return this;
+  }
+
+   /**
+   * Get vatIncluded
+   * @return vatIncluded
+  **/
+  @javax.annotation.Nullable
+  public Boolean getVatIncluded() {
+    return vatIncluded;
+  }
+
+  public void setVatIncluded(Boolean vatIncluded) {
+    this.vatIncluded = vatIncluded;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -533,12 +556,13 @@ public class OrderImportOrderRequest {
         Objects.equals(this.subtotals, orderImportOrderRequest.subtotals) &&
         Objects.equals(this.totals, orderImportOrderRequest.totals) &&
         Objects.equals(this.status, orderImportOrderRequest.status) &&
-        Objects.equals(this.currency, orderImportOrderRequest.currency);
+        Objects.equals(this.currency, orderImportOrderRequest.currency) &&
+        Objects.equals(this.vatIncluded, orderImportOrderRequest.vatIncluded);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, createdAt, number, channel, market, locale, customerInfo, shippingAddress, billingAddress, payments, paymentsInfo, shipmentsInfo, items, subtotals, totals, status, currency);
+    return Objects.hash(tenantId, createdAt, number, channel, market, locale, customerInfo, shippingAddress, billingAddress, payments, paymentsInfo, shipmentsInfo, items, subtotals, totals, status, currency, vatIncluded);
   }
 
   @Override
@@ -562,6 +586,7 @@ public class OrderImportOrderRequest {
     sb.append("    totals: ").append(toIndentedString(totals)).append("\n");
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    currency: ").append(toIndentedString(currency)).append("\n");
+    sb.append("    vatIncluded: ").append(toIndentedString(vatIncluded)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -601,6 +626,7 @@ public class OrderImportOrderRequest {
     openapiFields.add("totals");
     openapiFields.add("status");
     openapiFields.add("currency");
+    openapiFields.add("vatIncluded");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

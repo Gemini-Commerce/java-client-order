@@ -187,4 +187,12 @@ public class OrderImportOrderRequestTest {
         // TODO: test currency
     }
 
+    /**
+     * Test the property 'vatIncluded'
+     */
+    @Test
+    public void vatIncludedTest() {
+        // TODO: test vatIncluded
+    }
+
 }

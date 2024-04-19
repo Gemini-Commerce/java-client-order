@@ -123,4 +123,20 @@ public class OrderSearchOrdersRequestTest {
         // TODO: test agentGrn
     }
 
+    /**
+     * Test the property 'updatedFrom'
+     */
+    @Test
+    public void updatedFromTest() {
+        // TODO: test updatedFrom
+    }
+
+    /**
+     * Test the property 'updatedTo'
+     */
+    @Test
+    public void updatedToTest() {
+        // TODO: test updatedTo
+    }
+
 }

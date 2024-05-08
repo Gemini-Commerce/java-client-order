@@ -124,19 +124,19 @@ public class OrderSearchOrdersRequestTest {
     }
 
     /**
-     * Test the property 'updatedFrom'
+     * Test the property 'updatedAtFrom'
      */
     @Test
-    public void updatedFromTest() {
-        // TODO: test updatedFrom
+    public void updatedAtFromTest() {
+        // TODO: test updatedAtFrom
     }
 
     /**
-     * Test the property 'updatedTo'
+     * Test the property 'updatedAtTo'
      */
     @Test
-    public void updatedToTest() {
-        // TODO: test updatedTo
+    public void updatedAtToTest() {
+        // TODO: test updatedAtTo
     }
 
 }

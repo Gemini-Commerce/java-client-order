@@ -16,8 +16,8 @@ Name | Type | Description | Notes
 **toDate**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **paymentFilter**| [**OrderPaymentFilter**](OrderPaymentFilter.md) |   | [optional]
 **agentGrn**| **String** |   | [optional]
-**updatedFrom**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
-**updatedTo**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**updatedAtFrom**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**updatedAtTo**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

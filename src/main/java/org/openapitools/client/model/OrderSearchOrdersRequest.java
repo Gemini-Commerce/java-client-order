@@ -55,7 +55,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderSearchOrdersRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-04-19T12:24:21.184775995Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-08T08:00:51.469011516Z[Etc/UTC]")
 public class OrderSearchOrdersRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -97,13 +97,13 @@ public class OrderSearchOrdersRequest {
   @SerializedName(SERIALIZED_NAME_AGENT_GRN)
   private String agentGrn;
 
-  public static final String SERIALIZED_NAME_UPDATED_FROM = "updatedFrom";
-  @SerializedName(SERIALIZED_NAME_UPDATED_FROM)
-  private OffsetDateTime updatedFrom;
+  public static final String SERIALIZED_NAME_UPDATED_AT_FROM = "updatedAtFrom";
+  @SerializedName(SERIALIZED_NAME_UPDATED_AT_FROM)
+  private OffsetDateTime updatedAtFrom;
 
-  public static final String SERIALIZED_NAME_UPDATED_TO = "updatedTo";
-  @SerializedName(SERIALIZED_NAME_UPDATED_TO)
-  private OffsetDateTime updatedTo;
+  public static final String SERIALIZED_NAME_UPDATED_AT_TO = "updatedAtTo";
+  @SerializedName(SERIALIZED_NAME_UPDATED_AT_TO)
+  private OffsetDateTime updatedAtTo;
 
   public OrderSearchOrdersRequest() {
   }
@@ -306,41 +306,41 @@ public class OrderSearchOrdersRequest {
   }
 
 
-  public OrderSearchOrdersRequest updatedFrom(OffsetDateTime updatedFrom) {
-    this.updatedFrom = updatedFrom;
+  public OrderSearchOrdersRequest updatedAtFrom(OffsetDateTime updatedAtFrom) {
+    this.updatedAtFrom = updatedAtFrom;
     return this;
   }
 
    /**
-   * Get updatedFrom
-   * @return updatedFrom
+   * Get updatedAtFrom
+   * @return updatedAtFrom
   **/
   @javax.annotation.Nullable
-  public OffsetDateTime getUpdatedFrom() {
-    return updatedFrom;
+  public OffsetDateTime getUpdatedAtFrom() {
+    return updatedAtFrom;
   }
 
-  public void setUpdatedFrom(OffsetDateTime updatedFrom) {
-    this.updatedFrom = updatedFrom;
+  public void setUpdatedAtFrom(OffsetDateTime updatedAtFrom) {
+    this.updatedAtFrom = updatedAtFrom;
   }
 
 
-  public OrderSearchOrdersRequest updatedTo(OffsetDateTime updatedTo) {
-    this.updatedTo = updatedTo;
+  public OrderSearchOrdersRequest updatedAtTo(OffsetDateTime updatedAtTo) {
+    this.updatedAtTo = updatedAtTo;
     return this;
   }
 
    /**
-   * Get updatedTo
-   * @return updatedTo
+   * Get updatedAtTo
+   * @return updatedAtTo
   **/
   @javax.annotation.Nullable
-  public OffsetDateTime getUpdatedTo() {
-    return updatedTo;
+  public OffsetDateTime getUpdatedAtTo() {
+    return updatedAtTo;
   }
 
-  public void setUpdatedTo(OffsetDateTime updatedTo) {
-    this.updatedTo = updatedTo;
+  public void setUpdatedAtTo(OffsetDateTime updatedAtTo) {
+    this.updatedAtTo = updatedAtTo;
   }
 
 
@@ -364,13 +364,13 @@ public class OrderSearchOrdersRequest {
         Objects.equals(this.toDate, orderSearchOrdersRequest.toDate) &&
         Objects.equals(this.paymentFilter, orderSearchOrdersRequest.paymentFilter) &&
         Objects.equals(this.agentGrn, orderSearchOrdersRequest.agentGrn) &&
-        Objects.equals(this.updatedFrom, orderSearchOrdersRequest.updatedFrom) &&
-        Objects.equals(this.updatedTo, orderSearchOrdersRequest.updatedTo);
+        Objects.equals(this.updatedAtFrom, orderSearchOrdersRequest.updatedAtFrom) &&
+        Objects.equals(this.updatedAtTo, orderSearchOrdersRequest.updatedAtTo);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter, agentGrn, updatedFrom, updatedTo);
+    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter, agentGrn, updatedAtFrom, updatedAtTo);
   }
 
   @Override
@@ -387,8 +387,8 @@ public class OrderSearchOrdersRequest {
     sb.append("    toDate: ").append(toIndentedString(toDate)).append("\n");
     sb.append("    paymentFilter: ").append(toIndentedString(paymentFilter)).append("\n");
     sb.append("    agentGrn: ").append(toIndentedString(agentGrn)).append("\n");
-    sb.append("    updatedFrom: ").append(toIndentedString(updatedFrom)).append("\n");
-    sb.append("    updatedTo: ").append(toIndentedString(updatedTo)).append("\n");
+    sb.append("    updatedAtFrom: ").append(toIndentedString(updatedAtFrom)).append("\n");
+    sb.append("    updatedAtTo: ").append(toIndentedString(updatedAtTo)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -421,8 +421,8 @@ public class OrderSearchOrdersRequest {
     openapiFields.add("toDate");
     openapiFields.add("paymentFilter");
     openapiFields.add("agentGrn");
-    openapiFields.add("updatedFrom");
-    openapiFields.add("updatedTo");
+    openapiFields.add("updatedAtFrom");
+    openapiFields.add("updatedAtTo");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

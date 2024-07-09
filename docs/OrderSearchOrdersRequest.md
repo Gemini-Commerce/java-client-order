@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **agentGrn**| **String** |   | [optional]
 **updatedAtFrom**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
 **updatedAtTo**| [**OffsetDateTime**](OffsetDateTime.md) |   | [optional]
+**onHold**| **Boolean** |   | [optional]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

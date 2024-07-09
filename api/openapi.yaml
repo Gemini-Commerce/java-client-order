@@ -10019,6 +10019,8 @@ components:
         updatedAtTo:
           format: date-time
           type: string
+        onHold:
+          type: boolean
       required:
       - tenantId
       type: object

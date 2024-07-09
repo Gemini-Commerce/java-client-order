@@ -55,7 +55,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderSearchOrdersRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-05-08T08:00:51.469011516Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-09T08:27:48.551903220Z[Etc/UTC]")
 public class OrderSearchOrdersRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -104,6 +104,10 @@ public class OrderSearchOrdersRequest {
   public static final String SERIALIZED_NAME_UPDATED_AT_TO = "updatedAtTo";
   @SerializedName(SERIALIZED_NAME_UPDATED_AT_TO)
   private OffsetDateTime updatedAtTo;
+
+  public static final String SERIALIZED_NAME_ON_HOLD = "onHold";
+  @SerializedName(SERIALIZED_NAME_ON_HOLD)
+  private Boolean onHold;
 
   public OrderSearchOrdersRequest() {
   }
@@ -344,6 +348,25 @@ public class OrderSearchOrdersRequest {
   }
 
 
+  public OrderSearchOrdersRequest onHold(Boolean onHold) {
+    this.onHold = onHold;
+    return this;
+  }
+
+   /**
+   * Get onHold
+   * @return onHold
+  **/
+  @javax.annotation.Nullable
+  public Boolean getOnHold() {
+    return onHold;
+  }
+
+  public void setOnHold(Boolean onHold) {
+    this.onHold = onHold;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -365,12 +388,13 @@ public class OrderSearchOrdersRequest {
         Objects.equals(this.paymentFilter, orderSearchOrdersRequest.paymentFilter) &&
         Objects.equals(this.agentGrn, orderSearchOrdersRequest.agentGrn) &&
         Objects.equals(this.updatedAtFrom, orderSearchOrdersRequest.updatedAtFrom) &&
-        Objects.equals(this.updatedAtTo, orderSearchOrdersRequest.updatedAtTo);
+        Objects.equals(this.updatedAtTo, orderSearchOrdersRequest.updatedAtTo) &&
+        Objects.equals(this.onHold, orderSearchOrdersRequest.onHold);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter, agentGrn, updatedAtFrom, updatedAtTo);
+    return Objects.hash(tenantId, searchQuery, pageSize, pageToken, orderBy, statusFilter, fromDate, toDate, paymentFilter, agentGrn, updatedAtFrom, updatedAtTo, onHold);
   }
 
   @Override
@@ -389,6 +413,7 @@ public class OrderSearchOrdersRequest {
     sb.append("    agentGrn: ").append(toIndentedString(agentGrn)).append("\n");
     sb.append("    updatedAtFrom: ").append(toIndentedString(updatedAtFrom)).append("\n");
     sb.append("    updatedAtTo: ").append(toIndentedString(updatedAtTo)).append("\n");
+    sb.append("    onHold: ").append(toIndentedString(onHold)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -423,6 +448,7 @@ public class OrderSearchOrdersRequest {
     openapiFields.add("agentGrn");
     openapiFields.add("updatedAtFrom");
     openapiFields.add("updatedAtTo");
+    openapiFields.add("onHold");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();

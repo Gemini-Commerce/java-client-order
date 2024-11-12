@@ -5,6 +5,11 @@ README.md
 api/openapi.yaml
 build.gradle
 build.sbt
+docs/BehaviorOptionsInventory.md
+docs/BehaviorOptionsInventoryAction.md
+docs/BehaviorOptionsPaymentAction.md
+docs/CancelOrderRequestBehaviorOptions.md
+docs/CancelOrderRequestBehaviorOptionsPayment.md
 docs/CreateOrderRequestInitialPayment.md
 docs/ImportOrderRequestImportedPayment.md
 docs/InitialPaymentInitialTransaction.md
@@ -145,6 +150,11 @@ src/main/java/GeminiCommerce_Order/auth/OAuthOkHttpClient.java
 src/main/java/GeminiCommerce_Order/auth/RetryingOAuth.java
 src/main/java/org/openapitools/client/api/OrderApi.java
 src/main/java/org/openapitools/client/model/AbstractOpenApiSchema.java
+src/main/java/org/openapitools/client/model/BehaviorOptionsInventory.java
+src/main/java/org/openapitools/client/model/BehaviorOptionsInventoryAction.java
+src/main/java/org/openapitools/client/model/BehaviorOptionsPaymentAction.java
+src/main/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptions.java
+src/main/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptionsPayment.java
 src/main/java/org/openapitools/client/model/CreateOrderRequestInitialPayment.java
 src/main/java/org/openapitools/client/model/ImportOrderRequestImportedPayment.java
 src/main/java/org/openapitools/client/model/InitialPaymentInitialTransaction.java
@@ -252,3 +262,8 @@ src/main/java/org/openapitools/client/model/ProtobufNullValue.java
 src/main/java/org/openapitools/client/model/RpcStatus.java
 src/main/java/org/openapitools/client/model/ShipmentTracking.java
 src/main/java/org/openapitools/client/model/UpdateOrderRequestPayload.java
+src/test/java/org/openapitools/client/model/BehaviorOptionsInventoryActionTest.java
+src/test/java/org/openapitools/client/model/BehaviorOptionsInventoryTest.java
+src/test/java/org/openapitools/client/model/BehaviorOptionsPaymentActionTest.java
+src/test/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptionsPaymentTest.java
+src/test/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptionsTest.java

@@ -45,7 +45,9 @@ public enum OrderTransactionType {
   
   PENDING("PENDING"),
   
-  FRAUD("FRAUD");
+  FRAUD("FRAUD"),
+  
+  NOOP("NOOP");
 
   private String value;
 

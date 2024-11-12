@@ -53,7 +53,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderOrderDataItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-09T08:27:48.551903220Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:01:22.022764061Z[Etc/UTC]")
 public class OrderOrderDataItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -66,6 +66,10 @@ public class OrderOrderDataItem {
   public static final String SERIALIZED_NAME_QTY_ORDERED = "qtyOrdered";
   @SerializedName(SERIALIZED_NAME_QTY_ORDERED)
   private Long qtyOrdered;
+
+  public static final String SERIALIZED_NAME_FREE_QTY = "freeQty";
+  @SerializedName(SERIALIZED_NAME_FREE_QTY)
+  private Long freeQty;
 
   public static final String SERIALIZED_NAME_QTY_COMMITTED = "qtyCommitted";
   @SerializedName(SERIALIZED_NAME_QTY_COMMITTED)
@@ -224,6 +228,25 @@ public class OrderOrderDataItem {
 
   public void setQtyOrdered(Long qtyOrdered) {
     this.qtyOrdered = qtyOrdered;
+  }
+
+
+  public OrderOrderDataItem freeQty(Long freeQty) {
+    this.freeQty = freeQty;
+    return this;
+  }
+
+   /**
+   * Get freeQty
+   * @return freeQty
+  **/
+  @javax.annotation.Nullable
+  public Long getFreeQty() {
+    return freeQty;
+  }
+
+  public void setFreeQty(Long freeQty) {
+    this.freeQty = freeQty;
   }
 
 
@@ -731,6 +754,7 @@ public class OrderOrderDataItem {
     return Objects.equals(this.id, orderOrderDataItem.id) &&
         Objects.equals(this.productGrn, orderOrderDataItem.productGrn) &&
         Objects.equals(this.qtyOrdered, orderOrderDataItem.qtyOrdered) &&
+        Objects.equals(this.freeQty, orderOrderDataItem.freeQty) &&
         Objects.equals(this.qtyCommitted, orderOrderDataItem.qtyCommitted) &&
         Objects.equals(this.unitSalePrice, orderOrderDataItem.unitSalePrice) &&
         Objects.equals(this.unitListPrice, orderOrderDataItem.unitListPrice) &&
@@ -760,7 +784,7 @@ public class OrderOrderDataItem {
 
   @Override
   public int hashCode() {
-    return Objects.hash(id, productGrn, qtyOrdered, qtyCommitted, unitSalePrice, unitListPrice, unitBasePrice, unitVatAmount, rowSalePrice, rowListPrice, rowVatAmount, discountAmount, rowBasePrice, unitCustomPrice, rowCustomPrice, vatPercentage, vatInaccurate, vatCalculated, productName, productCode, productSku, productOptions, productImg, productData, shipmentInfoReference, promotionGrn, productIsVirtual, productConfiguration);
+    return Objects.hash(id, productGrn, qtyOrdered, freeQty, qtyCommitted, unitSalePrice, unitListPrice, unitBasePrice, unitVatAmount, rowSalePrice, rowListPrice, rowVatAmount, discountAmount, rowBasePrice, unitCustomPrice, rowCustomPrice, vatPercentage, vatInaccurate, vatCalculated, productName, productCode, productSku, productOptions, productImg, productData, shipmentInfoReference, promotionGrn, productIsVirtual, productConfiguration);
   }
 
   @Override
@@ -770,6 +794,7 @@ public class OrderOrderDataItem {
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
     sb.append("    productGrn: ").append(toIndentedString(productGrn)).append("\n");
     sb.append("    qtyOrdered: ").append(toIndentedString(qtyOrdered)).append("\n");
+    sb.append("    freeQty: ").append(toIndentedString(freeQty)).append("\n");
     sb.append("    qtyCommitted: ").append(toIndentedString(qtyCommitted)).append("\n");
     sb.append("    unitSalePrice: ").append(toIndentedString(unitSalePrice)).append("\n");
     sb.append("    unitListPrice: ").append(toIndentedString(unitListPrice)).append("\n");
@@ -820,6 +845,7 @@ public class OrderOrderDataItem {
     openapiFields.add("id");
     openapiFields.add("productGrn");
     openapiFields.add("qtyOrdered");
+    openapiFields.add("freeQty");
     openapiFields.add("qtyCommitted");
     openapiFields.add("unitSalePrice");
     openapiFields.add("unitListPrice");

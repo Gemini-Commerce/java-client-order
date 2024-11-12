@@ -21,6 +21,7 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 import java.util.Arrays;
+import org.openapitools.client.model.CancelOrderRequestBehaviorOptions;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -49,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * OrderCancelOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-07-09T08:27:48.551903220Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:01:22.022764061Z[Etc/UTC]")
 public class OrderCancelOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -62,6 +63,10 @@ public class OrderCancelOrderRequest {
   public static final String SERIALIZED_NAME_REASON = "reason";
   @SerializedName(SERIALIZED_NAME_REASON)
   private String reason;
+
+  public static final String SERIALIZED_NAME_OPTIONS = "options";
+  @SerializedName(SERIALIZED_NAME_OPTIONS)
+  private CancelOrderRequestBehaviorOptions options;
 
   public OrderCancelOrderRequest() {
   }
@@ -123,6 +128,25 @@ public class OrderCancelOrderRequest {
   }
 
 
+  public OrderCancelOrderRequest options(CancelOrderRequestBehaviorOptions options) {
+    this.options = options;
+    return this;
+  }
+
+   /**
+   * Get options
+   * @return options
+  **/
+  @javax.annotation.Nullable
+  public CancelOrderRequestBehaviorOptions getOptions() {
+    return options;
+  }
+
+  public void setOptions(CancelOrderRequestBehaviorOptions options) {
+    this.options = options;
+  }
+
+
 
   @Override
   public boolean equals(Object o) {
@@ -135,12 +159,13 @@ public class OrderCancelOrderRequest {
     OrderCancelOrderRequest orderCancelOrderRequest = (OrderCancelOrderRequest) o;
     return Objects.equals(this.tenantId, orderCancelOrderRequest.tenantId) &&
         Objects.equals(this.orderId, orderCancelOrderRequest.orderId) &&
-        Objects.equals(this.reason, orderCancelOrderRequest.reason);
+        Objects.equals(this.reason, orderCancelOrderRequest.reason) &&
+        Objects.equals(this.options, orderCancelOrderRequest.options);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(tenantId, orderId, reason);
+    return Objects.hash(tenantId, orderId, reason, options);
   }
 
   @Override
@@ -150,6 +175,7 @@ public class OrderCancelOrderRequest {
     sb.append("    tenantId: ").append(toIndentedString(tenantId)).append("\n");
     sb.append("    orderId: ").append(toIndentedString(orderId)).append("\n");
     sb.append("    reason: ").append(toIndentedString(reason)).append("\n");
+    sb.append("    options: ").append(toIndentedString(options)).append("\n");
     sb.append("}");
     return sb.toString();
   }
@@ -175,6 +201,7 @@ public class OrderCancelOrderRequest {
     openapiFields.add("tenantId");
     openapiFields.add("orderId");
     openapiFields.add("reason");
+    openapiFields.add("options");
 
     // a set of required properties/fields (JSON key names)
     openapiRequiredFields = new HashSet<String>();
@@ -218,6 +245,10 @@ public class OrderCancelOrderRequest {
       }
       if ((jsonObj.get("reason") != null && !jsonObj.get("reason").isJsonNull()) && !jsonObj.get("reason").isJsonPrimitive()) {
         throw new IllegalArgumentException(String.format("Expected the field `reason` to be a primitive type in the JSON string but got `%s`", jsonObj.get("reason").toString()));
+      }
+      // validate the optional field `options`
+      if (jsonObj.get("options") != null && !jsonObj.get("options").isJsonNull()) {
+        CancelOrderRequestBehaviorOptions.validateJsonElement(jsonObj.get("options"));
       }
   }
 

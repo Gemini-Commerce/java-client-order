@@ -262,8 +262,3 @@ src/main/java/org/openapitools/client/model/ProtobufNullValue.java
 src/main/java/org/openapitools/client/model/RpcStatus.java
 src/main/java/org/openapitools/client/model/ShipmentTracking.java
 src/main/java/org/openapitools/client/model/UpdateOrderRequestPayload.java
-src/test/java/org/openapitools/client/model/BehaviorOptionsInventoryActionTest.java
-src/test/java/org/openapitools/client/model/BehaviorOptionsInventoryTest.java
-src/test/java/org/openapitools/client/model/BehaviorOptionsPaymentActionTest.java
-src/test/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptionsPaymentTest.java
-src/test/java/org/openapitools/client/model/CancelOrderRequestBehaviorOptionsTest.java

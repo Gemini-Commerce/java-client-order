@@ -50,7 +50,7 @@ import GeminiCommerce_Order.JSON;
 /**
  * BehaviorOptionsInventory
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:01:22.022764061Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:04:54.260689632Z[Etc/UTC]")
 public class BehaviorOptionsInventory {
   public static final String SERIALIZED_NAME_ACTION = "action";
   @SerializedName(SERIALIZED_NAME_ACTION)

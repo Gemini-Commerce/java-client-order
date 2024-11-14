@@ -49,7 +49,7 @@ import GeminiCommerce.Order.JSON;
 /**
  * CancelOrderRequestBehaviorOptionsPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:05:15.601530751Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:11:08.866010172Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CancelOrderRequestBehaviorOptionsPayment {
   public static final String SERIALIZED_NAME_ACTION = "action";
   @SerializedName(SERIALIZED_NAME_ACTION)

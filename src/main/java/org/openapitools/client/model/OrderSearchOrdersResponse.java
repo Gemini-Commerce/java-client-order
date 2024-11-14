@@ -40,23 +40,22 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderSearchOrdersResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderSearchOrdersResponse {
   public static final String SERIALIZED_NAME_ORDERS = "orders";
   @SerializedName(SERIALIZED_NAME_ORDERS)
-  private List<OrderOrderData> orders;
+  private List<OrderOrderData> orders = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NEXT_PAGE_TOKEN = "nextPageToken";
   @SerializedName(SERIALIZED_NAME_NEXT_PAGE_TOKEN)
@@ -78,10 +77,10 @@ public class OrderSearchOrdersResponse {
     return this;
   }
 
-   /**
+  /**
    * Get orders
    * @return orders
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderOrderData> getOrders() {
     return orders;
@@ -97,10 +96,10 @@ public class OrderSearchOrdersResponse {
     return this;
   }
 
-   /**
+  /**
    * A token that can be sent as &#x60;page_token&#x60; to retrieve the next page. If this field is omitted, there are no subsequent pages.
    * @return nextPageToken
-  **/
+   */
   @javax.annotation.Nullable
   public String getNextPageToken() {
     return nextPageToken;
@@ -165,12 +164,12 @@ public class OrderSearchOrdersResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderSearchOrdersResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderSearchOrdersResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderSearchOrdersResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -234,22 +233,22 @@ public class OrderSearchOrdersResponse {
     }
   }
 
- /**
-  * Create an instance of OrderSearchOrdersResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderSearchOrdersResponse
-  * @throws IOException if the JSON string is invalid with respect to OrderSearchOrdersResponse
-  */
+  /**
+   * Create an instance of OrderSearchOrdersResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderSearchOrdersResponse
+   * @throws IOException if the JSON string is invalid with respect to OrderSearchOrdersResponse
+   */
   public static OrderSearchOrdersResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderSearchOrdersResponse.class);
   }
 
- /**
-  * Convert an instance of OrderSearchOrdersResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderSearchOrdersResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

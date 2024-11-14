@@ -42,19 +42,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderPayment {
   public static final String SERIALIZED_NAME_ORDER_ID = "orderId";
   @SerializedName(SERIALIZED_NAME_ORDER_ID)
@@ -74,7 +73,7 @@ public class OrderPayment {
 
   public static final String SERIALIZED_NAME_AMOUNTS = "amounts";
   @SerializedName(SERIALIZED_NAME_AMOUNTS)
-  private List<OrderPaymentAmount> amounts;
+  private List<OrderPaymentAmount> amounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CC_INFO = "ccInfo";
   @SerializedName(SERIALIZED_NAME_CC_INFO)
@@ -82,7 +81,7 @@ public class OrderPayment {
 
   public static final String SERIALIZED_NAME_TRANSACTIONS = "transactions";
   @SerializedName(SERIALIZED_NAME_TRANSACTIONS)
-  private List<OrderTransaction> transactions;
+  private List<OrderTransaction> transactions = new ArrayList<>();
 
   public OrderPayment() {
   }
@@ -92,10 +91,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderId() {
     return orderId;
@@ -111,10 +110,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -130,10 +129,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * payment type stripe, paypal..
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public String getCode() {
     return code;
@@ -149,10 +148,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -176,10 +175,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get amounts
    * @return amounts
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderPaymentAmount> getAmounts() {
     return amounts;
@@ -195,10 +194,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get ccInfo
    * @return ccInfo
-  **/
+   */
   @javax.annotation.Nullable
   public PaymentCcInfo getCcInfo() {
     return ccInfo;
@@ -222,10 +221,10 @@ public class OrderPayment {
     return this;
   }
 
-   /**
+  /**
    * Get transactions
    * @return transactions
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderTransaction> getTransactions() {
     return transactions;
@@ -305,12 +304,12 @@ public class OrderPayment {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderPayment
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderPayment
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderPayment.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -401,22 +400,22 @@ public class OrderPayment {
     }
   }
 
- /**
-  * Create an instance of OrderPayment given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderPayment
-  * @throws IOException if the JSON string is invalid with respect to OrderPayment
-  */
+  /**
+   * Create an instance of OrderPayment given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderPayment
+   * @throws IOException if the JSON string is invalid with respect to OrderPayment
+   */
   public static OrderPayment fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderPayment.class);
   }
 
- /**
-  * Convert an instance of OrderPayment to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderPayment to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

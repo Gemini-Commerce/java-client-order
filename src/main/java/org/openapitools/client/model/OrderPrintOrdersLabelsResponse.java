@@ -40,19 +40,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderPrintOrdersLabelsResponse
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderPrintOrdersLabelsResponse {
   public static final String SERIALIZED_NAME_DOWNLOAD_URL = "downloadUrl";
   @SerializedName(SERIALIZED_NAME_DOWNLOAD_URL)
@@ -60,7 +59,7 @@ public class OrderPrintOrdersLabelsResponse {
 
   public static final String SERIALIZED_NAME_FAILED_ORDERS = "failedOrders";
   @SerializedName(SERIALIZED_NAME_FAILED_ORDERS)
-  private List<PrintOrdersLabelsResponseFailedOrder> failedOrders;
+  private List<PrintOrdersLabelsResponseFailedOrder> failedOrders = new ArrayList<>();
 
   public OrderPrintOrdersLabelsResponse() {
   }
@@ -70,10 +69,10 @@ public class OrderPrintOrdersLabelsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get downloadUrl
    * @return downloadUrl
-  **/
+   */
   @javax.annotation.Nullable
   public String getDownloadUrl() {
     return downloadUrl;
@@ -97,10 +96,10 @@ public class OrderPrintOrdersLabelsResponse {
     return this;
   }
 
-   /**
+  /**
    * Get failedOrders
    * @return failedOrders
-  **/
+   */
   @javax.annotation.Nullable
   public List<PrintOrdersLabelsResponseFailedOrder> getFailedOrders() {
     return failedOrders;
@@ -165,12 +164,12 @@ public class OrderPrintOrdersLabelsResponse {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderPrintOrdersLabelsResponse
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderPrintOrdersLabelsResponse
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderPrintOrdersLabelsResponse.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -234,22 +233,22 @@ public class OrderPrintOrdersLabelsResponse {
     }
   }
 
- /**
-  * Create an instance of OrderPrintOrdersLabelsResponse given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderPrintOrdersLabelsResponse
-  * @throws IOException if the JSON string is invalid with respect to OrderPrintOrdersLabelsResponse
-  */
+  /**
+   * Create an instance of OrderPrintOrdersLabelsResponse given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderPrintOrdersLabelsResponse
+   * @throws IOException if the JSON string is invalid with respect to OrderPrintOrdersLabelsResponse
+   */
   public static OrderPrintOrdersLabelsResponse fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderPrintOrdersLabelsResponse.class);
   }
 
- /**
-  * Convert an instance of OrderPrintOrdersLabelsResponse to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderPrintOrdersLabelsResponse to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

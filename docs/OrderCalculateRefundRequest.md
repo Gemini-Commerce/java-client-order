@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenantId**| **String** |   |
 **paymentId**| **String** |   |
-**items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional]
+**items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional] [default to new ArrayList<>()]
 **shipping**| **Boolean** | Boolean indicating whether to calculate refund for shipping.  | [optional]
 
 

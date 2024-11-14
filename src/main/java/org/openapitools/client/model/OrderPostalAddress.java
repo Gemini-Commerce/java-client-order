@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * Represents a postal address, e.g. for postal delivery or payments addresses. Given a postal address, a postal service can deliver items to a premise, P.O. Box or similar. It is not intended to model geographical locations (roads, towns, mountains).  In typical usage an address would be created via user input or from importing existing data, depending on the type of process.  Advice on address input / editing:  - Use an i18n-ready address widget such as    https://github.com/google/libaddressinput) - Users should not be presented with UI elements for input or editing of   fields outside countries where that field is used.  For more guidance on how to use this schema, please see: https://support.google.com/business/answer/6397478
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderPostalAddress {
   public static final String SERIALIZED_NAME_REVISION = "revision";
   @SerializedName(SERIALIZED_NAME_REVISION)
@@ -87,11 +86,11 @@ public class OrderPostalAddress {
 
   public static final String SERIALIZED_NAME_ADDRESS_LINES = "addressLines";
   @SerializedName(SERIALIZED_NAME_ADDRESS_LINES)
-  private List<String> addressLines;
+  private List<String> addressLines = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_RECIPIENTS = "recipients";
   @SerializedName(SERIALIZED_NAME_RECIPIENTS)
-  private List<String> recipients;
+  private List<String> recipients = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ORGANIZATION = "organization";
   @SerializedName(SERIALIZED_NAME_ORGANIZATION)
@@ -113,10 +112,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * The schema revision of the &#x60;PostalAddress&#x60;. This must be set to 0, which is the latest revision.  All new revisions **must** be backward compatible with old revisions.
    * @return revision
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getRevision() {
     return revision;
@@ -132,10 +131,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Required. CLDR region code of the country/region of the address. This is never inferred and it is up to the user to ensure the value is correct. See http://cldr.unicode.org/ and http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html for details. Example: \&quot;CH\&quot; for Switzerland.
    * @return regionCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getRegionCode() {
     return regionCode;
@@ -151,10 +150,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. BCP-47 language code of the contents of this address (if known). This is often the UI language of the input form or is expected to match one of the languages used in the address&#39; country/region, or their transliterated equivalents. This can affect formatting in certain countries, but is not critical to the correctness of the data and will never affect any validation or other non-formatting related operations.  If this value is not known, it should be omitted (rather than specifying a possibly incorrect default).  Examples: \&quot;zh-Hant\&quot;, \&quot;ja\&quot;, \&quot;ja-Latn\&quot;, \&quot;en\&quot;.
    * @return languageCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getLanguageCode() {
     return languageCode;
@@ -170,10 +169,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. Postal code of the address. Not all countries use or require postal codes to be present, but where they are used, they may trigger additional validation with other parts of the address (e.g. state/zip validation in the U.S.A.).
    * @return postalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getPostalCode() {
     return postalCode;
@@ -189,10 +188,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. Additional, country-specific, sorting code. This is not used in most regions. Where it is used, the value is either a string like \&quot;CEDEX\&quot;, optionally followed by a number (e.g. \&quot;CEDEX 7\&quot;), or just a number alone, representing the \&quot;sector code\&quot; (Jamaica), \&quot;delivery area indicator\&quot; (Malawi) or \&quot;post office indicator\&quot; (e.g. Côte d&#39;Ivoire).
    * @return sortingCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getSortingCode() {
     return sortingCode;
@@ -208,10 +207,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. Highest administrative subdivision which is used for postal addresses of a country or region. For example, this can be a state, a province, an oblast, or a prefecture. Specifically, for Spain this is the province and not the autonomous community (e.g. \&quot;Barcelona\&quot; and not \&quot;Catalonia\&quot;). Many countries don&#39;t use an administrative area in postal addresses. E.g. in Switzerland this should be left unpopulated.
    * @return administrativeArea
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdministrativeArea() {
     return administrativeArea;
@@ -227,10 +226,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. Generally refers to the city/town portion of the address. Examples: US city, IT comune, UK post town. In regions of the world where localities are not well defined or do not fit into this structure well, leave locality empty and use address_lines.
    * @return locality
-  **/
+   */
   @javax.annotation.Nullable
   public String getLocality() {
     return locality;
@@ -246,10 +245,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. Sublocality of the address. For example, this can be neighborhoods, boroughs, districts.
    * @return sublocality
-  **/
+   */
   @javax.annotation.Nullable
   public String getSublocality() {
     return sublocality;
@@ -273,10 +272,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Unstructured address lines describing the lower levels of an address.  Because values in address_lines do not have type information and may sometimes contain multiple values in a single field (e.g. \&quot;Austin, TX\&quot;), it is important that the line order is clear. The order of address lines should be \&quot;envelope order\&quot; for the country/region of the address. In places where this can vary (e.g. Japan), address_language is used to make it explicit (e.g. \&quot;ja\&quot; for large-to-small ordering and \&quot;ja-Latn\&quot; or \&quot;en\&quot; for small-to-large). This way, the most specific line of an address can be selected based on the language.  The minimum permitted structural representation of an address consists of a region_code with all remaining information placed in the address_lines. It would be possible to format such an address very approximately without geocoding, but no semantic reasoning could be made about any of the address components until it was at least partially resolved.  Creating an address only containing a region_code and address_lines, and then geocoding is the recommended way to handle completely unstructured addresses (as opposed to guessing which parts of the address should be localities or administrative areas).
    * @return addressLines
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getAddressLines() {
     return addressLines;
@@ -300,10 +299,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. The recipient at the address. This field may, under certain circumstances, contain multiline information. For example, it might contain \&quot;care of\&quot; information.
    * @return recipients
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getRecipients() {
     return recipients;
@@ -319,10 +318,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional. The name of the organization at the address.
    * @return organization
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrganization() {
     return organization;
@@ -338,10 +337,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional.
    * @return phoneNumber
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhoneNumber() {
     return phoneNumber;
@@ -357,10 +356,10 @@ public class OrderPostalAddress {
     return this;
   }
 
-   /**
+  /**
    * Optional.
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public Object getAdditionalInfo() {
     return additionalInfo;
@@ -458,12 +457,12 @@ public class OrderPostalAddress {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderPostalAddress
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderPostalAddress
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderPostalAddress.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -545,22 +544,22 @@ public class OrderPostalAddress {
     }
   }
 
- /**
-  * Create an instance of OrderPostalAddress given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderPostalAddress
-  * @throws IOException if the JSON string is invalid with respect to OrderPostalAddress
-  */
+  /**
+   * Create an instance of OrderPostalAddress given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderPostalAddress
+   * @throws IOException if the JSON string is invalid with respect to OrderPostalAddress
+   */
   public static OrderPostalAddress fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderPostalAddress.class);
   }
 
- /**
-  * Convert an instance of OrderPostalAddress to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderPostalAddress to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

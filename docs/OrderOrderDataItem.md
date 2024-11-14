@@ -32,9 +32,9 @@ Name | Type | Description | Notes
 **productImg**| **String** |   | [optional]
 **productData**| **String** |   | [optional]
 **shipmentInfoReference**| **String** |   | [optional]
-**promotionGrn**| **List<String>** |   | [optional]
+**promotionGrn**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **productIsVirtual**| **Boolean** |   | [optional]
-**productConfiguration**| [**List<ItemProductConfigurationStep>**](ItemProductConfigurationStep.md) |   | [optional]
+**productConfiguration**| [**List<ItemProductConfigurationStep>**](ItemProductConfigurationStep.md) |   | [optional] [default to new ArrayList<>()]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

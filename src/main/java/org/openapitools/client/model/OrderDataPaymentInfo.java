@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderDataPaymentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderDataPaymentInfo {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -101,10 +100,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCode() {
     return code;
@@ -120,10 +119,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -139,10 +138,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderMoney getAmount() {
     return amount;
@@ -158,10 +157,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get fee
    * @return fee
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getFee() {
     return fee;
@@ -177,10 +176,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatAmount
    * @return vatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getVatAmount() {
     return vatAmount;
@@ -196,10 +195,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatPercentage
    * @return vatPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Float getVatPercentage() {
     return vatPercentage;
@@ -215,10 +214,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatInaccurate
    * @return vatInaccurate
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatInaccurate() {
     return vatInaccurate;
@@ -234,10 +233,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatCalculated
    * @return vatCalculated
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatCalculated() {
     return vatCalculated;
@@ -253,10 +252,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   public OrderLocalizedText getTitle() {
     return title;
@@ -272,10 +271,10 @@ public class OrderDataPaymentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @javax.annotation.Nullable
   public OrderLocalizedText getLabel() {
     return label;
@@ -366,12 +365,12 @@ public class OrderDataPaymentInfo {
     openapiRequiredFields.add("amount");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDataPaymentInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDataPaymentInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDataPaymentInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -449,22 +448,22 @@ public class OrderDataPaymentInfo {
     }
   }
 
- /**
-  * Create an instance of OrderDataPaymentInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDataPaymentInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderDataPaymentInfo
-  */
+  /**
+   * Create an instance of OrderDataPaymentInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDataPaymentInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderDataPaymentInfo
+   */
   public static OrderDataPaymentInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDataPaymentInfo.class);
   }
 
- /**
-  * Convert an instance of OrderDataPaymentInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDataPaymentInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

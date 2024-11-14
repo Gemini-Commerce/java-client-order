@@ -43,19 +43,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderSearchOrdersRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderSearchOrdersRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -75,7 +74,7 @@ public class OrderSearchOrdersRequest {
 
   public static final String SERIALIZED_NAME_ORDER_BY = "orderBy";
   @SerializedName(SERIALIZED_NAME_ORDER_BY)
-  private List<OrderOrderBy> orderBy;
+  private List<OrderOrderBy> orderBy = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_STATUS_FILTER = "statusFilter";
   @SerializedName(SERIALIZED_NAME_STATUS_FILTER)
@@ -117,10 +116,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -136,10 +135,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get searchQuery
    * @return searchQuery
-  **/
+   */
   @javax.annotation.Nullable
   public String getSearchQuery() {
     return searchQuery;
@@ -155,10 +154,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * The maximum number of orders to return. The service may return fewer than this value. If unspecified, at most 10 orders will be returned. The maximum value is 100; values above 100 will be coerced to 100.
    * @return pageSize
-  **/
+   */
   @javax.annotation.Nullable
   public Long getPageSize() {
     return pageSize;
@@ -174,10 +173,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * A page token, received from a previous &#x60;ListOrders&#x60; call. Provide this to retrieve the subsequent page.   When paginating, all other parameters provided to &#x60;ListOrders&#x60; must match the call that provided the page token.
    * @return pageToken
-  **/
+   */
   @javax.annotation.Nullable
   public String getPageToken() {
     return pageToken;
@@ -201,10 +200,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get orderBy
    * @return orderBy
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderOrderBy> getOrderBy() {
     return orderBy;
@@ -220,10 +219,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get statusFilter
    * @return statusFilter
-  **/
+   */
   @javax.annotation.Nullable
   public OrderStatusFilter getStatusFilter() {
     return statusFilter;
@@ -239,10 +238,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get fromDate
    * @return fromDate
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getFromDate() {
     return fromDate;
@@ -258,10 +257,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get toDate
    * @return toDate
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getToDate() {
     return toDate;
@@ -277,10 +276,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get paymentFilter
    * @return paymentFilter
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPaymentFilter getPaymentFilter() {
     return paymentFilter;
@@ -296,10 +295,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get agentGrn
    * @return agentGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getAgentGrn() {
     return agentGrn;
@@ -315,10 +314,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get updatedAtFrom
    * @return updatedAtFrom
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAtFrom() {
     return updatedAtFrom;
@@ -334,10 +333,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get updatedAtTo
    * @return updatedAtTo
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAtTo() {
     return updatedAtTo;
@@ -353,10 +352,10 @@ public class OrderSearchOrdersRequest {
     return this;
   }
 
-   /**
+  /**
    * Get onHold
    * @return onHold
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getOnHold() {
     return onHold;
@@ -455,12 +454,12 @@ public class OrderSearchOrdersRequest {
     openapiRequiredFields.add("tenantId");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderSearchOrdersRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderSearchOrdersRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderSearchOrdersRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -548,22 +547,22 @@ public class OrderSearchOrdersRequest {
     }
   }
 
- /**
-  * Create an instance of OrderSearchOrdersRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderSearchOrdersRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderSearchOrdersRequest
-  */
+  /**
+   * Create an instance of OrderSearchOrdersRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderSearchOrdersRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderSearchOrdersRequest
+   */
   public static OrderSearchOrdersRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderSearchOrdersRequest.class);
   }
 
- /**
-  * Convert an instance of OrderSearchOrdersRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderSearchOrdersRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

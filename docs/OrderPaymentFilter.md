@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**codes**| **List<String>** |   | [optional]
+**codes**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **condition**| [**OrderPaymentFilterCondition**](OrderPaymentFilterCondition.md) |  for more information please, see Model/OrderPaymentFilterCondition.php  | [optional] [default to OrderPaymentFilterCondition.IN]
 
 

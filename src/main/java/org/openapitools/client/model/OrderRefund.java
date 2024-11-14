@@ -42,19 +42,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderRefund
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderRefund {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -70,11 +69,11 @@ public class OrderRefund {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderRefundItem> items;
+  private List<OrderRefundItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_AMOUNTS = "amounts";
   @SerializedName(SERIALIZED_NAME_AMOUNTS)
-  private List<OrderRefundAmount> amounts;
+  private List<OrderRefundAmount> amounts = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NOTE = "note";
   @SerializedName(SERIALIZED_NAME_NOTE)
@@ -86,7 +85,7 @@ public class OrderRefund {
 
   public static final String SERIALIZED_NAME_TRANSACTION_IDS = "transactionIds";
   @SerializedName(SERIALIZED_NAME_TRANSACTION_IDS)
-  private List<String> transactionIds;
+  private List<String> transactionIds = new ArrayList<>();
 
   public OrderRefund() {
   }
@@ -98,10 +97,10 @@ public class OrderRefund {
     this.createdAt = createdAt;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -114,10 +113,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get paymentId
    * @return paymentId
-  **/
+   */
   @javax.annotation.Nullable
   public String getPaymentId() {
     return paymentId;
@@ -133,10 +132,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -160,10 +159,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderRefundItem> getItems() {
     return items;
@@ -187,10 +186,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get amounts
    * @return amounts
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderRefundAmount> getAmounts() {
     return amounts;
@@ -206,10 +205,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get note
    * @return note
-  **/
+   */
   @javax.annotation.Nullable
   public String getNote() {
     return note;
@@ -225,10 +224,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -252,10 +251,10 @@ public class OrderRefund {
     return this;
   }
 
-   /**
+  /**
    * Get transactionIds
    * @return transactionIds
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getTransactionIds() {
     return transactionIds;
@@ -338,12 +337,12 @@ public class OrderRefund {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderRefund
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderRefund
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderRefund.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -434,22 +433,22 @@ public class OrderRefund {
     }
   }
 
- /**
-  * Create an instance of OrderRefund given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderRefund
-  * @throws IOException if the JSON string is invalid with respect to OrderRefund
-  */
+  /**
+   * Create an instance of OrderRefund given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderRefund
+   * @throws IOException if the JSON string is invalid with respect to OrderRefund
+   */
   public static OrderRefund fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderRefund.class);
   }
 
- /**
-  * Convert an instance of OrderRefund to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderRefund to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

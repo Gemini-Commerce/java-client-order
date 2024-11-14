@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **orderId**| **String** |   | [optional]
 **id**| **String** |   | [optional]
 **status**| **String** |   | [optional]
-**items**| [**List<OrderFulfillmentItem>**](OrderFulfillmentItem.md) |   | [optional]
+**items**| [**List<OrderFulfillmentItem>**](OrderFulfillmentItem.md) |   | [optional] [default to new ArrayList<>()]
 
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

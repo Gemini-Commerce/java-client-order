@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderDataCustomerInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderDataCustomerInfo {
   public static final String SERIALIZED_NAME_GRN = "grn";
   @SerializedName(SERIALIZED_NAME_GRN)
@@ -111,10 +110,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -130,10 +129,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get firstname
    * @return firstname
-  **/
+   */
   @javax.annotation.Nonnull
   public String getFirstname() {
     return firstname;
@@ -149,10 +148,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get lastname
    * @return lastname
-  **/
+   */
   @javax.annotation.Nonnull
   public String getLastname() {
     return lastname;
@@ -168,10 +167,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get email
    * @return email
-  **/
+   */
   @javax.annotation.Nonnull
   public String getEmail() {
     return email;
@@ -187,10 +186,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get phone
    * @return phone
-  **/
+   */
   @javax.annotation.Nullable
   public String getPhone() {
     return phone;
@@ -206,10 +205,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get segment
    * @return segment
-  **/
+   */
   @javax.annotation.Nullable
   public String getSegment() {
     return segment;
@@ -225,10 +224,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get data
    * @return data
-  **/
+   */
   @javax.annotation.Nullable
   public String getData() {
     return data;
@@ -244,10 +243,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get certifiedEmail
    * @return certifiedEmail
-  **/
+   */
   @javax.annotation.Nullable
   public String getCertifiedEmail() {
     return certifiedEmail;
@@ -263,10 +262,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get taxCode
    * @return taxCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getTaxCode() {
     return taxCode;
@@ -282,10 +281,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get sdiCode
    * @return sdiCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getSdiCode() {
     return sdiCode;
@@ -301,10 +300,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get fiscalCode
    * @return fiscalCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getFiscalCode() {
     return fiscalCode;
@@ -320,10 +319,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get companyName
    * @return companyName
-  **/
+   */
   @javax.annotation.Nullable
   public String getCompanyName() {
     return companyName;
@@ -339,10 +338,10 @@ public class OrderDataCustomerInfo {
     return this;
   }
 
-   /**
+  /**
    * Get agentGrn
    * @return agentGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getAgentGrn() {
     return agentGrn;
@@ -443,12 +442,12 @@ public class OrderDataCustomerInfo {
     openapiRequiredFields.add("email");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDataCustomerInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDataCustomerInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDataCustomerInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -541,22 +540,22 @@ public class OrderDataCustomerInfo {
     }
   }
 
- /**
-  * Create an instance of OrderDataCustomerInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDataCustomerInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderDataCustomerInfo
-  */
+  /**
+   * Create an instance of OrderDataCustomerInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDataCustomerInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderDataCustomerInfo
+   */
   public static OrderDataCustomerInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDataCustomerInfo.class);
   }
 
- /**
-  * Convert an instance of OrderDataCustomerInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDataCustomerInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

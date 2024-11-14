@@ -40,19 +40,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderCreateFulfillmentRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateFulfillmentRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -74,10 +73,10 @@ public class OrderCreateFulfillmentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -93,10 +92,10 @@ public class OrderCreateFulfillmentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getOrderId() {
     return orderId;
@@ -120,10 +119,10 @@ public class OrderCreateFulfillmentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nonnull
   public List<OrderFulfillmentItem> getItems() {
     return items;
@@ -194,12 +193,12 @@ public class OrderCreateFulfillmentRequest {
     openapiRequiredFields.add("items");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreateFulfillmentRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreateFulfillmentRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreateFulfillmentRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -269,22 +268,22 @@ public class OrderCreateFulfillmentRequest {
     }
   }
 
- /**
-  * Create an instance of OrderCreateFulfillmentRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreateFulfillmentRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderCreateFulfillmentRequest
-  */
+  /**
+   * Create an instance of OrderCreateFulfillmentRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreateFulfillmentRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderCreateFulfillmentRequest
+   */
   public static OrderCreateFulfillmentRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreateFulfillmentRequest.class);
   }
 
- /**
-  * Convert an instance of OrderCreateFulfillmentRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreateFulfillmentRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -13,14 +13,14 @@
 
 package org.openapitools.client.api;
 
-import GeminiCommerce_Order.ApiCallback;
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.ApiResponse;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.Pair;
-import GeminiCommerce_Order.ProgressRequestBody;
-import GeminiCommerce_Order.ProgressResponseBody;
+import GeminiCommerce.Order.ApiCallback;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.ApiResponse;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.Pair;
+import GeminiCommerce.Order.ProgressRequestBody;
+import GeminiCommerce.Order.ProgressResponseBody;
 
 import com.google.gson.reflect.TypeToken;
 

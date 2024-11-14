@@ -56,19 +56,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderOrderData
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderOrderData {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -112,31 +111,31 @@ public class OrderOrderData {
 
   public static final String SERIALIZED_NAME_DOCUMENTS = "documents";
   @SerializedName(SERIALIZED_NAME_DOCUMENTS)
-  private List<OrderDataDocument> documents;
+  private List<OrderDataDocument> documents = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderOrderDataItem> items;
+  private List<OrderOrderDataItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENTS = "payments";
   @SerializedName(SERIALIZED_NAME_PAYMENTS)
-  private List<OrderPayment> payments;
+  private List<OrderPayment> payments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SHIPMENTS = "shipments";
   @SerializedName(SERIALIZED_NAME_SHIPMENTS)
-  private List<OrderShipment> shipments;
+  private List<OrderShipment> shipments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PAYMENTS_INFO = "paymentsInfo";
   @SerializedName(SERIALIZED_NAME_PAYMENTS_INFO)
-  private List<OrderDataPaymentInfo> paymentsInfo;
+  private List<OrderDataPaymentInfo> paymentsInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_SHIPMENTS_INFO = "shipmentsInfo";
   @SerializedName(SERIALIZED_NAME_SHIPMENTS_INFO)
-  private List<OrderDataShipmentInfo> shipmentsInfo;
+  private List<OrderDataShipmentInfo> shipmentsInfo = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PROMOTIONS = "promotions";
   @SerializedName(SERIALIZED_NAME_PROMOTIONS)
-  private List<OrderDataPromotionInfo> promotions;
+  private List<OrderDataPromotionInfo> promotions = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_CURRENCY = "currency";
   @SerializedName(SERIALIZED_NAME_CURRENCY)
@@ -176,11 +175,11 @@ public class OrderOrderData {
 
   public static final String SERIALIZED_NAME_HISTORY_EVENTS = "historyEvents";
   @SerializedName(SERIALIZED_NAME_HISTORY_EVENTS)
-  private List<OrderDataHistory> historyEvents;
+  private List<OrderDataHistory> historyEvents = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_FULFILLMENTS = "fulfillments";
   @SerializedName(SERIALIZED_NAME_FULFILLMENTS)
-  private List<OrderFulfillment> fulfillments;
+  private List<OrderFulfillment> fulfillments = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_NOTES = "notes";
   @SerializedName(SERIALIZED_NAME_NOTES)
@@ -222,10 +221,10 @@ public class OrderOrderData {
     this.deletedAt = deletedAt;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -233,10 +232,10 @@ public class OrderOrderData {
 
 
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -244,10 +243,10 @@ public class OrderOrderData {
 
 
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -255,10 +254,10 @@ public class OrderOrderData {
 
 
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -271,10 +270,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get number
    * @return number
-  **/
+   */
   @javax.annotation.Nullable
   public String getNumber() {
     return number;
@@ -285,10 +284,10 @@ public class OrderOrderData {
   }
 
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -301,10 +300,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get channel
    * @return channel
-  **/
+   */
   @javax.annotation.Nullable
   public String getChannel() {
     return channel;
@@ -320,10 +319,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get market
    * @return market
-  **/
+   */
   @javax.annotation.Nullable
   public String getMarket() {
     return market;
@@ -339,10 +338,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get locale
    * @return locale
-  **/
+   */
   @javax.annotation.Nonnull
   public String getLocale() {
     return locale;
@@ -358,10 +357,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public Object getAdditionalInfo() {
     return additionalInfo;
@@ -385,10 +384,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get documents
    * @return documents
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDataDocument> getDocuments() {
     return documents;
@@ -412,10 +411,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderOrderDataItem> getItems() {
     return items;
@@ -439,10 +438,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get payments
    * @return payments
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderPayment> getPayments() {
     return payments;
@@ -466,10 +465,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get shipments
    * @return shipments
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderShipment> getShipments() {
     return shipments;
@@ -493,10 +492,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get paymentsInfo
    * @return paymentsInfo
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDataPaymentInfo> getPaymentsInfo() {
     return paymentsInfo;
@@ -520,10 +519,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentsInfo
    * @return shipmentsInfo
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDataShipmentInfo> getShipmentsInfo() {
     return shipmentsInfo;
@@ -547,10 +546,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get promotions
    * @return promotions
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDataPromotionInfo> getPromotions() {
     return promotions;
@@ -566,10 +565,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nullable
   public OrderCurrency getCurrency() {
     return currency;
@@ -593,10 +592,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get subtotals
    * @return subtotals
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, OrderDataSubtotal> getSubtotals() {
     return subtotals;
@@ -620,10 +619,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get totals
    * @return totals
-  **/
+   */
   @javax.annotation.Nullable
   public Map<String, OrderDataTotal> getTotals() {
     return totals;
@@ -639,10 +638,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get vatIncluded
    * @return vatIncluded
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatIncluded() {
     return vatIncluded;
@@ -658,10 +657,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get billingAddress
    * @return billingAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getBillingAddress() {
     return billingAddress;
@@ -677,10 +676,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get shippingAddress
    * @return shippingAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getShippingAddress() {
     return shippingAddress;
@@ -696,10 +695,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get customerInfo
    * @return customerInfo
-  **/
+   */
   @javax.annotation.Nullable
   public OrderDataCustomerInfo getCustomerInfo() {
     return customerInfo;
@@ -715,10 +714,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get cartGrn
    * @return cartGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getCartGrn() {
     return cartGrn;
@@ -734,10 +733,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get onHold
    * @return onHold
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getOnHold() {
     return onHold;
@@ -761,10 +760,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get historyEvents
    * @return historyEvents
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderDataHistory> getHistoryEvents() {
     return historyEvents;
@@ -775,10 +774,10 @@ public class OrderOrderData {
   }
 
 
-   /**
+  /**
    * Get fulfillments
    * @return fulfillments
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderFulfillment> getFulfillments() {
     return fulfillments;
@@ -791,10 +790,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * Get notes
    * @return notes
-  **/
+   */
   @javax.annotation.Nullable
   public String getNotes() {
     return notes;
@@ -810,10 +809,10 @@ public class OrderOrderData {
     return this;
   }
 
-   /**
+  /**
    * this field is used to delete an order in \&quot;soft-delete mode\&quot;. This field must be used from get/list endpoint to exclude these orders.
    * @return isDeleted
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsDeleted() {
     return isDeleted;
@@ -824,10 +823,10 @@ public class OrderOrderData {
   }
 
 
-   /**
+  /**
    * this field is used to save the original created_at order date. The created_at field is used to filter data.
    * @return insertedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getInsertedAt() {
     return insertedAt;
@@ -835,10 +834,10 @@ public class OrderOrderData {
 
 
 
-   /**
+  /**
    * Get deletedAt
    * @return deletedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getDeletedAt() {
     return deletedAt;
@@ -991,12 +990,12 @@ public class OrderOrderData {
     openapiRequiredFields.add("locale");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderOrderData
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderOrderData
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderOrderData.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -1219,22 +1218,22 @@ public class OrderOrderData {
     }
   }
 
- /**
-  * Create an instance of OrderOrderData given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderOrderData
-  * @throws IOException if the JSON string is invalid with respect to OrderOrderData
-  */
+  /**
+   * Create an instance of OrderOrderData given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderOrderData
+   * @throws IOException if the JSON string is invalid with respect to OrderOrderData
+   */
   public static OrderOrderData fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderOrderData.class);
   }
 
- /**
-  * Convert an instance of OrderOrderData to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderOrderData to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

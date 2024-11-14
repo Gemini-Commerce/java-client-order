@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderDataTotal
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderDataTotal {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -69,10 +68,10 @@ public class OrderDataTotal {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderDataTotalCode getCode() {
     return code;
@@ -88,10 +87,10 @@ public class OrderDataTotal {
     return this;
   }
 
-   /**
+  /**
    * Get value
    * @return value
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderMoney getValue() {
     return value;
@@ -158,12 +157,12 @@ public class OrderDataTotal {
     openapiRequiredFields.add("value");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDataTotal
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDataTotal
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDataTotal.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -221,22 +220,22 @@ public class OrderDataTotal {
     }
   }
 
- /**
-  * Create an instance of OrderDataTotal given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDataTotal
-  * @throws IOException if the JSON string is invalid with respect to OrderDataTotal
-  */
+  /**
+   * Create an instance of OrderDataTotal given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDataTotal
+   * @throws IOException if the JSON string is invalid with respect to OrderDataTotal
+   */
   public static OrderDataTotal fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDataTotal.class);
   }
 
- /**
-  * Convert an instance of OrderDataTotal to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDataTotal to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -51,19 +51,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderImportOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderImportOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -145,10 +144,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -164,10 +163,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -183,10 +182,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get number
    * @return number
-  **/
+   */
   @javax.annotation.Nonnull
   public String getNumber() {
     return number;
@@ -202,10 +201,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get channel
    * @return channel
-  **/
+   */
   @javax.annotation.Nullable
   public String getChannel() {
     return channel;
@@ -221,10 +220,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get market
    * @return market
-  **/
+   */
   @javax.annotation.Nonnull
   public String getMarket() {
     return market;
@@ -240,10 +239,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get locale
    * @return locale
-  **/
+   */
   @javax.annotation.Nonnull
   public String getLocale() {
     return locale;
@@ -259,10 +258,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get customerInfo
    * @return customerInfo
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderDataCustomerInfo getCustomerInfo() {
     return customerInfo;
@@ -278,10 +277,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get shippingAddress
    * @return shippingAddress
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderPostalAddress getShippingAddress() {
     return shippingAddress;
@@ -297,10 +296,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get billingAddress
    * @return billingAddress
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderPostalAddress getBillingAddress() {
     return billingAddress;
@@ -324,10 +323,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get payments
    * @return payments
-  **/
+   */
   @javax.annotation.Nonnull
   public List<ImportOrderRequestImportedPayment> getPayments() {
     return payments;
@@ -351,10 +350,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get paymentsInfo
    * @return paymentsInfo
-  **/
+   */
   @javax.annotation.Nonnull
   public List<OrderDataPaymentInfo> getPaymentsInfo() {
     return paymentsInfo;
@@ -378,10 +377,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentsInfo
    * @return shipmentsInfo
-  **/
+   */
   @javax.annotation.Nonnull
   public List<OrderDataShipmentInfo> getShipmentsInfo() {
     return shipmentsInfo;
@@ -405,10 +404,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nonnull
   public List<OrderOrderDataItem> getItems() {
     return items;
@@ -432,10 +431,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get subtotals
    * @return subtotals
-  **/
+   */
   @javax.annotation.Nonnull
   public Map<String, OrderDataSubtotal> getSubtotals() {
     return subtotals;
@@ -459,10 +458,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get totals
    * @return totals
-  **/
+   */
   @javax.annotation.Nonnull
   public Map<String, OrderDataTotal> getTotals() {
     return totals;
@@ -478,10 +477,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nonnull
   public String getStatus() {
     return status;
@@ -497,10 +496,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get currency
    * @return currency
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderCurrency getCurrency() {
     return currency;
@@ -516,10 +515,10 @@ public class OrderImportOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get vatIncluded
    * @return vatIncluded
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatIncluded() {
     return vatIncluded;
@@ -647,12 +646,12 @@ public class OrderImportOrderRequest {
     openapiRequiredFields.add("currency");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderImportOrderRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderImportOrderRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderImportOrderRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -772,22 +771,22 @@ public class OrderImportOrderRequest {
     }
   }
 
- /**
-  * Create an instance of OrderImportOrderRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderImportOrderRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderImportOrderRequest
-  */
+  /**
+   * Create an instance of OrderImportOrderRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderImportOrderRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderImportOrderRequest
+   */
   public static OrderImportOrderRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderImportOrderRequest.class);
   }
 
- /**
-  * Convert an instance of OrderImportOrderRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderImportOrderRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

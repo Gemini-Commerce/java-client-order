@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**orders**| [**List<OrderOrderData>**](OrderOrderData.md) |   | [optional]
+**orders**| [**List<OrderOrderData>**](OrderOrderData.md) |   | [optional] [default to new ArrayList<>()]
 **nextPageToken**| **String** | A token that can be sent as &#x60;page_token&#x60; to retrieve the next page. If this field is omitted, there are no subsequent pages.  | [optional]
 
 

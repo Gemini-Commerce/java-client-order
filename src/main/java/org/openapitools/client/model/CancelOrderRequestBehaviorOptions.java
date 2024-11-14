@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * CancelOrderRequestBehaviorOptions
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class CancelOrderRequestBehaviorOptions {
   public static final String SERIALIZED_NAME_INVENTORY = "inventory";
   @SerializedName(SERIALIZED_NAME_INVENTORY)
@@ -69,10 +68,10 @@ public class CancelOrderRequestBehaviorOptions {
     return this;
   }
 
-   /**
+  /**
    * Get inventory
    * @return inventory
-  **/
+   */
   @javax.annotation.Nullable
   public BehaviorOptionsInventory getInventory() {
     return inventory;
@@ -88,10 +87,10 @@ public class CancelOrderRequestBehaviorOptions {
     return this;
   }
 
-   /**
+  /**
    * Get payment
    * @return payment
-  **/
+   */
   @javax.annotation.Nullable
   public CancelOrderRequestBehaviorOptionsPayment getPayment() {
     return payment;
@@ -156,12 +155,12 @@ public class CancelOrderRequestBehaviorOptions {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to CancelOrderRequestBehaviorOptions
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to CancelOrderRequestBehaviorOptions
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!CancelOrderRequestBehaviorOptions.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -216,22 +215,22 @@ public class CancelOrderRequestBehaviorOptions {
     }
   }
 
- /**
-  * Create an instance of CancelOrderRequestBehaviorOptions given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of CancelOrderRequestBehaviorOptions
-  * @throws IOException if the JSON string is invalid with respect to CancelOrderRequestBehaviorOptions
-  */
+  /**
+   * Create an instance of CancelOrderRequestBehaviorOptions given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of CancelOrderRequestBehaviorOptions
+   * @throws IOException if the JSON string is invalid with respect to CancelOrderRequestBehaviorOptions
+   */
   public static CancelOrderRequestBehaviorOptions fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, CancelOrderRequestBehaviorOptions.class);
   }
 
- /**
-  * Convert an instance of CancelOrderRequestBehaviorOptions to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of CancelOrderRequestBehaviorOptions to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

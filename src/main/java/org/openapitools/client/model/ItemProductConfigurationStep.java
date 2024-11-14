@@ -40,19 +40,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * ItemProductConfigurationStep
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ItemProductConfigurationStep {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -72,7 +71,7 @@ public class ItemProductConfigurationStep {
 
   public static final String SERIALIZED_NAME_OPTIONS = "options";
   @SerializedName(SERIALIZED_NAME_OPTIONS)
-  private List<ProductConfigurationStepOption> options;
+  private List<ProductConfigurationStepOption> options = new ArrayList<>();
 
   public ItemProductConfigurationStep() {
   }
@@ -82,10 +81,10 @@ public class ItemProductConfigurationStep {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -101,10 +100,10 @@ public class ItemProductConfigurationStep {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -120,10 +119,10 @@ public class ItemProductConfigurationStep {
     return this;
   }
 
-   /**
+  /**
    * Get label
    * @return label
-  **/
+   */
   @javax.annotation.Nullable
   public String getLabel() {
     return label;
@@ -139,10 +138,10 @@ public class ItemProductConfigurationStep {
     return this;
   }
 
-   /**
+  /**
    * Get description
    * @return description
-  **/
+   */
   @javax.annotation.Nullable
   public String getDescription() {
     return description;
@@ -166,10 +165,10 @@ public class ItemProductConfigurationStep {
     return this;
   }
 
-   /**
+  /**
    * Get options
    * @return options
-  **/
+   */
   @javax.annotation.Nullable
   public List<ProductConfigurationStepOption> getOptions() {
     return options;
@@ -243,12 +242,12 @@ public class ItemProductConfigurationStep {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ItemProductConfigurationStep
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ItemProductConfigurationStep
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ItemProductConfigurationStep.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -321,22 +320,22 @@ public class ItemProductConfigurationStep {
     }
   }
 
- /**
-  * Create an instance of ItemProductConfigurationStep given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ItemProductConfigurationStep
-  * @throws IOException if the JSON string is invalid with respect to ItemProductConfigurationStep
-  */
+  /**
+   * Create an instance of ItemProductConfigurationStep given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ItemProductConfigurationStep
+   * @throws IOException if the JSON string is invalid with respect to ItemProductConfigurationStep
+   */
   public static ItemProductConfigurationStep fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ItemProductConfigurationStep.class);
   }
 
- /**
-  * Convert an instance of ItemProductConfigurationStep to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ItemProductConfigurationStep to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

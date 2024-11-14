@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderUnholdOrderRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderUnholdOrderRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -67,10 +66,10 @@ public class OrderUnholdOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -86,10 +85,10 @@ public class OrderUnholdOrderRequest {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getOrderId() {
     return orderId;
@@ -156,12 +155,12 @@ public class OrderUnholdOrderRequest {
     openapiRequiredFields.add("orderId");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderUnholdOrderRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderUnholdOrderRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderUnholdOrderRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -221,22 +220,22 @@ public class OrderUnholdOrderRequest {
     }
   }
 
- /**
-  * Create an instance of OrderUnholdOrderRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderUnholdOrderRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderUnholdOrderRequest
-  */
+  /**
+   * Create an instance of OrderUnholdOrderRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderUnholdOrderRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderUnholdOrderRequest
+   */
   public static OrderUnholdOrderRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderUnholdOrderRequest.class);
   }
 
- /**
-  * Convert an instance of OrderUnholdOrderRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderUnholdOrderRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

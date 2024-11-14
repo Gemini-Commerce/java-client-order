@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **tenantId**| **String** |   |
 **paymentId**| **String** |   |
-**items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional]
+**items**| [**List<OrderRefundItem>**](OrderRefundItem.md) |   | [optional] [default to new ArrayList<>()]
 **amounts**| [**List<OrderRefundAmount>**](OrderRefundAmount.md) |   | [default to new ArrayList<>()]
 **note**| **String** |   | [optional]
 **additionalInfo**| **String** |   | [optional]

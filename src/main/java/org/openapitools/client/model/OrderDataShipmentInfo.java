@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderDataShipmentInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderDataShipmentInfo {
   public static final String SERIALIZED_NAME_REFERENCE = "reference";
   @SerializedName(SERIALIZED_NAME_REFERENCE)
@@ -117,10 +116,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get reference
    * @return reference
-  **/
+   */
   @javax.annotation.Nonnull
   public String getReference() {
     return reference;
@@ -136,10 +135,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCode() {
     return code;
@@ -155,10 +154,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get method
    * @return method
-  **/
+   */
   @javax.annotation.Nullable
   public String getMethod() {
     return method;
@@ -174,10 +173,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get title
    * @return title
-  **/
+   */
   @javax.annotation.Nullable
   public String getTitle() {
     return title;
@@ -193,10 +192,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -212,10 +211,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderMoney getAmount() {
     return amount;
@@ -231,10 +230,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get fee
    * @return fee
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getFee() {
     return fee;
@@ -250,10 +249,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatAmount
    * @return vatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getVatAmount() {
     return vatAmount;
@@ -269,10 +268,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatPercentage
    * @return vatPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Float getVatPercentage() {
     return vatPercentage;
@@ -288,10 +287,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatInaccurate
    * @return vatInaccurate
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatInaccurate() {
     return vatInaccurate;
@@ -307,10 +306,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get vatCalculated
    * @return vatCalculated
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatCalculated() {
     return vatCalculated;
@@ -326,10 +325,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get grn
    * @return grn
-  **/
+   */
   @javax.annotation.Nullable
   public String getGrn() {
     return grn;
@@ -345,10 +344,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get fromAddress
    * @return fromAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getFromAddress() {
     return fromAddress;
@@ -364,10 +363,10 @@ public class OrderDataShipmentInfo {
     return this;
   }
 
-   /**
+  /**
    * Get returnAddress
    * @return returnAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getReturnAddress() {
     return returnAddress;
@@ -471,12 +470,12 @@ public class OrderDataShipmentInfo {
     openapiRequiredFields.add("amount");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderDataShipmentInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderDataShipmentInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderDataShipmentInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -566,22 +565,22 @@ public class OrderDataShipmentInfo {
     }
   }
 
- /**
-  * Create an instance of OrderDataShipmentInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderDataShipmentInfo
-  * @throws IOException if the JSON string is invalid with respect to OrderDataShipmentInfo
-  */
+  /**
+   * Create an instance of OrderDataShipmentInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderDataShipmentInfo
+   * @throws IOException if the JSON string is invalid with respect to OrderDataShipmentInfo
+   */
   public static OrderDataShipmentInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderDataShipmentInfo.class);
   }
 
- /**
-  * Convert an instance of OrderDataShipmentInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderDataShipmentInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -41,19 +41,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderOrderDataItem
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderOrderDataItem {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
@@ -161,7 +160,7 @@ public class OrderOrderDataItem {
 
   public static final String SERIALIZED_NAME_PROMOTION_GRN = "promotionGrn";
   @SerializedName(SERIALIZED_NAME_PROMOTION_GRN)
-  private List<String> promotionGrn;
+  private List<String> promotionGrn = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_PRODUCT_IS_VIRTUAL = "productIsVirtual";
   @SerializedName(SERIALIZED_NAME_PRODUCT_IS_VIRTUAL)
@@ -169,7 +168,7 @@ public class OrderOrderDataItem {
 
   public static final String SERIALIZED_NAME_PRODUCT_CONFIGURATION = "productConfiguration";
   @SerializedName(SERIALIZED_NAME_PRODUCT_CONFIGURATION)
-  private List<ItemProductConfigurationStep> productConfiguration;
+  private List<ItemProductConfigurationStep> productConfiguration = new ArrayList<>();
 
   public OrderOrderDataItem() {
   }
@@ -179,10 +178,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -198,10 +197,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productGrn
    * @return productGrn
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductGrn() {
     return productGrn;
@@ -217,10 +216,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get qtyOrdered
    * @return qtyOrdered
-  **/
+   */
   @javax.annotation.Nullable
   public Long getQtyOrdered() {
     return qtyOrdered;
@@ -236,10 +235,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get freeQty
    * @return freeQty
-  **/
+   */
   @javax.annotation.Nullable
   public Long getFreeQty() {
     return freeQty;
@@ -255,10 +254,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get qtyCommitted
    * @return qtyCommitted
-  **/
+   */
   @javax.annotation.Nullable
   public Long getQtyCommitted() {
     return qtyCommitted;
@@ -274,10 +273,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get unitSalePrice
    * @return unitSalePrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getUnitSalePrice() {
     return unitSalePrice;
@@ -293,10 +292,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get unitListPrice
    * @return unitListPrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getUnitListPrice() {
     return unitListPrice;
@@ -312,10 +311,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get unitBasePrice
    * @return unitBasePrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getUnitBasePrice() {
     return unitBasePrice;
@@ -331,10 +330,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get unitVatAmount
    * @return unitVatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getUnitVatAmount() {
     return unitVatAmount;
@@ -350,10 +349,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get rowSalePrice
    * @return rowSalePrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getRowSalePrice() {
     return rowSalePrice;
@@ -369,10 +368,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get rowListPrice
    * @return rowListPrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getRowListPrice() {
     return rowListPrice;
@@ -388,10 +387,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get rowVatAmount
    * @return rowVatAmount
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getRowVatAmount() {
     return rowVatAmount;
@@ -407,10 +406,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get discountAmount
    * @return discountAmount
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getDiscountAmount() {
     return discountAmount;
@@ -426,10 +425,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get rowBasePrice
    * @return rowBasePrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getRowBasePrice() {
     return rowBasePrice;
@@ -445,10 +444,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get unitCustomPrice
    * @return unitCustomPrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getUnitCustomPrice() {
     return unitCustomPrice;
@@ -464,10 +463,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get rowCustomPrice
    * @return rowCustomPrice
-  **/
+   */
   @javax.annotation.Nullable
   public OrderMoney getRowCustomPrice() {
     return rowCustomPrice;
@@ -483,10 +482,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatPercentage
    * @return vatPercentage
-  **/
+   */
   @javax.annotation.Nullable
   public Float getVatPercentage() {
     return vatPercentage;
@@ -502,10 +501,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatInaccurate
    * @return vatInaccurate
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatInaccurate() {
     return vatInaccurate;
@@ -521,10 +520,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get vatCalculated
    * @return vatCalculated
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getVatCalculated() {
     return vatCalculated;
@@ -540,10 +539,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productName
    * @return productName
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductName() {
     return productName;
@@ -559,10 +558,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productCode
    * @return productCode
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductCode() {
     return productCode;
@@ -578,10 +577,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productSku
    * @return productSku
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductSku() {
     return productSku;
@@ -597,10 +596,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productOptions
    * @return productOptions
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductOptions() {
     return productOptions;
@@ -616,10 +615,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productImg
    * @return productImg
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductImg() {
     return productImg;
@@ -635,10 +634,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productData
    * @return productData
-  **/
+   */
   @javax.annotation.Nullable
   public String getProductData() {
     return productData;
@@ -654,10 +653,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentInfoReference
    * @return shipmentInfoReference
-  **/
+   */
   @javax.annotation.Nullable
   public String getShipmentInfoReference() {
     return shipmentInfoReference;
@@ -681,10 +680,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get promotionGrn
    * @return promotionGrn
-  **/
+   */
   @javax.annotation.Nullable
   public List<String> getPromotionGrn() {
     return promotionGrn;
@@ -700,10 +699,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productIsVirtual
    * @return productIsVirtual
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getProductIsVirtual() {
     return productIsVirtual;
@@ -727,10 +726,10 @@ public class OrderOrderDataItem {
     return this;
   }
 
-   /**
+  /**
    * Get productConfiguration
    * @return productConfiguration
-  **/
+   */
   @javax.annotation.Nullable
   public List<ItemProductConfigurationStep> getProductConfiguration() {
     return productConfiguration;
@@ -876,12 +875,12 @@ public class OrderOrderDataItem {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderOrderDataItem
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderOrderDataItem
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderOrderDataItem.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -1017,22 +1016,22 @@ public class OrderOrderDataItem {
     }
   }
 
- /**
-  * Create an instance of OrderOrderDataItem given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderOrderDataItem
-  * @throws IOException if the JSON string is invalid with respect to OrderOrderDataItem
-  */
+  /**
+   * Create an instance of OrderOrderDataItem given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderOrderDataItem
+   * @throws IOException if the JSON string is invalid with respect to OrderOrderDataItem
+   */
   public static OrderOrderDataItem fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderOrderDataItem.class);
   }
 
- /**
-  * Convert an instance of OrderOrderDataItem to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderOrderDataItem to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

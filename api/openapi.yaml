@@ -45,7 +45,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ApproveOrder:
     post:
       operationId: ApproveOrder
@@ -86,7 +87,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/AssignShipment:
     post:
       operationId: AssignShipment
@@ -127,7 +129,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CalculateRefund:
     post:
       operationId: CalculateRefund
@@ -168,7 +171,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CancelFulfillment:
     post:
       operationId: CancelFulfillment
@@ -209,7 +213,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CancelOrder:
     post:
       operationId: CancelOrder
@@ -250,7 +255,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CancelShipment:
     post:
       operationId: CancelShipment
@@ -291,7 +297,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CompleteShipmentPacking:
     post:
       operationId: CompleteShipmentPacking
@@ -332,7 +339,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateFulfillment:
     post:
       operationId: CreateFulfillment
@@ -373,7 +381,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateHistory:
     post:
       operationId: CreateOrderHistory
@@ -414,7 +423,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateOrder:
     post:
       operationId: CreateOrder
@@ -455,7 +465,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreatePayment:
     post:
       operationId: CreatePayment
@@ -496,7 +507,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreatePaymentTransaction:
     post:
       operationId: CreatePaymentTransaction
@@ -537,7 +549,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateRefund:
     post:
       operationId: CreateRefund
@@ -578,7 +591,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateRefundTransaction:
     post:
       operationId: CreateRefundTransaction
@@ -619,7 +633,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/CreateShipment:
     post:
       operationId: CreateShipment
@@ -660,7 +675,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/DeleteOrder:
     post:
       operationId: DeleteOrder
@@ -701,7 +717,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetFulfillment:
     post:
       operationId: GetFulfillment
@@ -742,7 +759,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetOrder:
     post:
       operationId: GetOrder
@@ -783,7 +801,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetOrderByCartId:
     post:
       operationId: GetOrderByCartId
@@ -824,7 +843,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetOrderByOrderNumber:
     post:
       operationId: GetOrderByOrderNumber
@@ -865,7 +885,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetPayment:
     post:
       operationId: GetPayment
@@ -906,7 +927,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetShipment:
     post:
       operationId: GetShipment
@@ -947,7 +969,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/GetTransaction:
     post:
       operationId: GetTransaction
@@ -988,7 +1011,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/HoldOrder:
     post:
       operationId: HoldOrder
@@ -1029,7 +1053,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ImportOrder:
     post:
       operationId: ImportOrder
@@ -1070,7 +1095,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ListFulfillments:
     post:
       operationId: ListFulfillments
@@ -1111,7 +1137,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ListOrders:
     post:
       operationId: ListOrders
@@ -1152,7 +1179,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ListOrdersByCustomer:
     post:
       operationId: ListOrdersByCustomer
@@ -1193,7 +1221,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ListOrdersByNumbers:
     post:
       operationId: ListOrdersByNumbers
@@ -1234,7 +1263,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ListShipments:
     post:
       operationId: ListShipments
@@ -1275,7 +1305,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/PrintOrdersLabels:
     post:
       operationId: PrintOrdersLabels
@@ -1316,7 +1347,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/QuashFulfillment:
     post:
       operationId: QuashFulfillment
@@ -1357,7 +1389,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/QuashShipment:
     post:
       operationId: QuashShipment
@@ -1398,7 +1431,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReceiveFulfillment:
     post:
       operationId: ReceiveFulfillment
@@ -1439,7 +1473,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/RemoveDocumentByCode:
     post:
       operationId: Order_RemoveDocumentByCode
@@ -1466,7 +1501,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReportFulfillmentError:
     post:
       operationId: ReportFulfillmentError
@@ -1507,7 +1543,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReportFulfillmentNotResolvable:
     post:
       operationId: ReportFulfillmentNotResolvable
@@ -1548,7 +1585,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReportFulfillmentReady:
     post:
       operationId: ReportFulfillmentReady
@@ -1589,7 +1627,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReportShipmentDelivery:
     post:
       operationId: ReportShipmentDelivery
@@ -1630,7 +1669,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ReportShipmentMissingStock:
     post:
       operationId: ReportShipmentMissingStock
@@ -1671,7 +1711,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/ResolveShipmentMissingStock:
     post:
       operationId: ResolveShipmentMissingStock
@@ -1712,7 +1753,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/RetryFulfillment:
     post:
       operationId: RetryFulfillment
@@ -1753,7 +1795,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/SearchOrders:
     post:
       operationId: SearchOrders
@@ -1794,7 +1837,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/SendFulfillment:
     post:
       operationId: SendFulfillment
@@ -1835,7 +1879,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/SendOrderNotification:
     post:
       operationId: SendOrderNotification
@@ -1876,7 +1921,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/StartFulfillmentProcessing:
     post:
       operationId: StartFulfillmentProcessing
@@ -1917,7 +1963,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/StartShipmentProcessing:
     post:
       operationId: StartShipmentProcessing
@@ -1958,7 +2005,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/UnholdOrder:
     post:
       operationId: UnholdOrder
@@ -1999,7 +2047,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/UpdateOrder:
     post:
       operationId: UpdateOrder
@@ -2040,7 +2089,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
   /order.Order/UpdatePayment:
     post:
       operationId: UpdatePayment
@@ -2081,7 +2131,8 @@ paths:
       - Order
       x-codegen-request-body-name: body
       x-content-type: application/json
-      x-accepts: application/json
+      x-accepts:
+      - application/json
 components:
   schemas:
     BehaviorOptionsInventory:
@@ -2501,7 +2552,7 @@ components:
       type: object
     OrderDataSubtotal:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 6
           units: units
@@ -2531,7 +2582,7 @@ components:
       type: string
     OrderDataTotal:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 6
           units: units
@@ -2721,11 +2772,11 @@ components:
         createRefundRequest:
           note: note
           amounts:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
@@ -2933,11 +2984,11 @@ components:
       example:
         note: note
         amounts:
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
@@ -3509,11 +3560,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -3537,7 +3588,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -3545,14 +3596,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -3576,7 +3627,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -3584,7 +3635,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -3626,7 +3677,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -3781,7 +3832,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -3790,7 +3841,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -4280,11 +4331,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -4308,7 +4359,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -4316,14 +4367,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -4347,7 +4398,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -4355,7 +4406,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -4397,7 +4448,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -4552,7 +4603,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -4561,7 +4612,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5095,11 +5146,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5123,7 +5174,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -5131,14 +5182,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5162,7 +5213,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -5170,7 +5221,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -5212,7 +5263,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -5367,7 +5418,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5376,7 +5427,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5866,11 +5917,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5894,7 +5945,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -5902,14 +5953,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -5933,7 +5984,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -5941,7 +5992,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -5983,7 +6034,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -6138,7 +6189,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -6147,7 +6198,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -6682,11 +6733,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -6710,7 +6761,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -6718,14 +6769,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -6749,7 +6800,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -6757,7 +6808,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -6799,7 +6850,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -6954,7 +7005,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -6963,7 +7014,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -7453,11 +7504,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -7481,7 +7532,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -7489,14 +7540,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -7520,7 +7571,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -7528,7 +7579,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -7570,7 +7621,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -7725,7 +7776,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -7734,7 +7785,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -8470,11 +8521,11 @@ components:
         payments:
         - code: code
           amounts:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
@@ -8498,7 +8549,7 @@ components:
             - null
             additionalInfo: additionalInfo
             id: id
-            type: null
+            type: UNKNOWN
           - createdAt: 2000-01-23T04:56:07.000+00:00
             paymentId: paymentId
             childTransactions:
@@ -8506,14 +8557,14 @@ components:
             - null
             additionalInfo: additionalInfo
             id: id
-            type: null
+            type: UNKNOWN
         - code: code
           amounts:
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
-          - code: null
+          - code: UNKNOWN
             value:
               micros: 6
               units: units
@@ -8537,7 +8588,7 @@ components:
             - null
             additionalInfo: additionalInfo
             id: id
-            type: null
+            type: UNKNOWN
           - createdAt: 2000-01-23T04:56:07.000+00:00
             paymentId: paymentId
             childTransactions:
@@ -8545,7 +8596,7 @@ components:
             - null
             additionalInfo: additionalInfo
             id: id
-            type: null
+            type: UNKNOWN
         channel: channel
         customerInfo:
           grn: grn
@@ -8587,7 +8638,7 @@ components:
           status: status
         isDeleted: true
         additionalInfo: "{}"
-        currency: null
+        currency: XXX
         id: id
         paymentsInfo:
         - amount:
@@ -8742,7 +8793,7 @@ components:
           vatInaccurate: true
         subtotals:
           key:
-            code: null
+            code: UNKNOWN
             value:
               micros: 6
               units: units
@@ -8751,7 +8802,7 @@ components:
         cartGrn: cartGrn
         totals:
           key:
-            code: null
+            code: UNKNOWN
             value:
               micros: 6
               units: units
@@ -9516,11 +9567,11 @@ components:
       example:
         code: code
         amounts:
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
@@ -9544,7 +9595,7 @@ components:
           - null
           additionalInfo: additionalInfo
           id: id
-          type: null
+          type: UNKNOWN
         - createdAt: 2000-01-23T04:56:07.000+00:00
           paymentId: paymentId
           childTransactions:
@@ -9552,7 +9603,7 @@ components:
           - null
           additionalInfo: additionalInfo
           id: id
-          type: null
+          type: UNKNOWN
       properties:
         orderId:
           title: order id
@@ -9578,7 +9629,7 @@ components:
       type: object
     orderPaymentAmount:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 6
           units: units
@@ -9844,11 +9895,11 @@ components:
         - transactionIds
         - transactionIds
         amounts:
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
-        - code: null
+        - code: UNKNOWN
           value:
             micros: 6
             units: units
@@ -9890,7 +9941,7 @@ components:
       type: object
     orderRefundAmount:
       example:
-        code: null
+        code: UNKNOWN
         value:
           micros: 6
           units: units
@@ -10100,11 +10151,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10128,7 +10179,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -10136,14 +10187,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10167,7 +10218,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -10175,7 +10226,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -10217,7 +10268,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -10372,7 +10423,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10381,7 +10432,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10871,11 +10922,11 @@ components:
           payments:
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10899,7 +10950,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -10907,14 +10958,14 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           - code: code
             amounts:
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
-            - code: null
+            - code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -10938,7 +10989,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
             - createdAt: 2000-01-23T04:56:07.000+00:00
               paymentId: paymentId
               childTransactions:
@@ -10946,7 +10997,7 @@ components:
               - null
               additionalInfo: additionalInfo
               id: id
-              type: null
+              type: UNKNOWN
           channel: channel
           customerInfo:
             grn: grn
@@ -10988,7 +11039,7 @@ components:
             status: status
           isDeleted: true
           additionalInfo: "{}"
-          currency: null
+          currency: XXX
           id: id
           paymentsInfo:
           - amount:
@@ -11143,7 +11194,7 @@ components:
             vatInaccurate: true
           subtotals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -11152,7 +11203,7 @@ components:
           cartGrn: cartGrn
           totals:
             key:
-              code: null
+              code: UNKNOWN
               value:
                 micros: 6
                 units: units
@@ -11840,7 +11891,7 @@ components:
         - null
         additionalInfo: additionalInfo
         id: id
-        type: null
+        type: UNKNOWN
       properties:
         createdAt:
           format: date-time
@@ -11920,6 +11971,8 @@ components:
     protobufAny:
       additionalProperties:
         type: object
+      example:
+        '@type': '@type'
       properties:
         '@type':
           type: string
@@ -11937,6 +11990,12 @@ components:
       - NULL_VALUE
       type: string
     rpcStatus:
+      example:
+        code: 0
+        details:
+        - '@type': '@type'
+        - '@type': '@type'
+        message: message
       properties:
         code:
           format: int32

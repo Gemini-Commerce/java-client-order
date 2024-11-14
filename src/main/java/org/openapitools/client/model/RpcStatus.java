@@ -40,19 +40,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * RpcStatus
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class RpcStatus {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -64,7 +63,7 @@ public class RpcStatus {
 
   public static final String SERIALIZED_NAME_DETAILS = "details";
   @SerializedName(SERIALIZED_NAME_DETAILS)
-  private List<ProtobufAny> details;
+  private List<ProtobufAny> details = new ArrayList<>();
 
   public RpcStatus() {
   }
@@ -74,10 +73,10 @@ public class RpcStatus {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getCode() {
     return code;
@@ -93,10 +92,10 @@ public class RpcStatus {
     return this;
   }
 
-   /**
+  /**
    * Get message
    * @return message
-  **/
+   */
   @javax.annotation.Nullable
   public String getMessage() {
     return message;
@@ -120,10 +119,10 @@ public class RpcStatus {
     return this;
   }
 
-   /**
+  /**
    * Get details
    * @return details
-  **/
+   */
   @javax.annotation.Nullable
   public List<ProtobufAny> getDetails() {
     return details;
@@ -191,12 +190,12 @@ public class RpcStatus {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to RpcStatus
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to RpcStatus
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!RpcStatus.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -250,22 +249,22 @@ public class RpcStatus {
     }
   }
 
- /**
-  * Create an instance of RpcStatus given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of RpcStatus
-  * @throws IOException if the JSON string is invalid with respect to RpcStatus
-  */
+  /**
+   * Create an instance of RpcStatus given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of RpcStatus
+   * @throws IOException if the JSON string is invalid with respect to RpcStatus
+   */
   public static RpcStatus fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, RpcStatus.class);
   }
 
- /**
-  * Convert an instance of RpcStatus to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of RpcStatus to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

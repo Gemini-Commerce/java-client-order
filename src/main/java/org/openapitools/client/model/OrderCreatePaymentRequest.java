@@ -39,19 +39,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderCreatePaymentRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreatePaymentRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -85,10 +84,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -104,10 +103,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getOrderId() {
     return orderId;
@@ -123,10 +122,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCode() {
     return code;
@@ -142,10 +141,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -161,10 +160,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get amount
    * @return amount
-  **/
+   */
   @javax.annotation.Nonnull
   public OrderMoney getAmount() {
     return amount;
@@ -180,10 +179,10 @@ public class OrderCreatePaymentRequest {
     return this;
   }
 
-   /**
+  /**
    * Get ccInfo
    * @return ccInfo
-  **/
+   */
   @javax.annotation.Nullable
   public PaymentCcInfo getCcInfo() {
     return ccInfo;
@@ -264,12 +263,12 @@ public class OrderCreatePaymentRequest {
     openapiRequiredFields.add("amount");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCreatePaymentRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCreatePaymentRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCreatePaymentRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -341,22 +340,22 @@ public class OrderCreatePaymentRequest {
     }
   }
 
- /**
-  * Create an instance of OrderCreatePaymentRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCreatePaymentRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderCreatePaymentRequest
-  */
+  /**
+   * Create an instance of OrderCreatePaymentRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCreatePaymentRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderCreatePaymentRequest
+   */
   public static OrderCreatePaymentRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCreatePaymentRequest.class);
   }
 
- /**
-  * Convert an instance of OrderCreatePaymentRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCreatePaymentRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

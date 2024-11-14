@@ -12,10 +12,10 @@ Name | Type | Description | Notes
 **market**| **String** |   |
 **locale**| **String** |   |
 **items**| [**List<OrderOrderDataItem>**](OrderOrderDataItem.md) |   | [default to new ArrayList<>()]
-**paymentsInfo**| [**List<OrderDataPaymentInfo>**](OrderDataPaymentInfo.md) |   | [optional]
-**shipmentsInfo**| [**List<OrderDataShipmentInfo>**](OrderDataShipmentInfo.md) |   | [optional]
-**promotions**| [**List<OrderDataPromotionInfo>**](OrderDataPromotionInfo.md) |   | [optional]
-**payments**| [**List<CreateOrderRequestInitialPayment>**](CreateOrderRequestInitialPayment.md) |   | [optional]
+**paymentsInfo**| [**List<OrderDataPaymentInfo>**](OrderDataPaymentInfo.md) |   | [optional] [default to new ArrayList<>()]
+**shipmentsInfo**| [**List<OrderDataShipmentInfo>**](OrderDataShipmentInfo.md) |   | [optional] [default to new ArrayList<>()]
+**promotions**| [**List<OrderDataPromotionInfo>**](OrderDataPromotionInfo.md) |   | [optional] [default to new ArrayList<>()]
+**payments**| [**List<CreateOrderRequestInitialPayment>**](CreateOrderRequestInitialPayment.md) |   | [optional] [default to new ArrayList<>()]
 **currency**| [**OrderCurrency**](OrderCurrency.md) |  for more information please, see Model/OrderCurrency.php  | [default to OrderCurrency.XXX]
 **subtotals**| [**Map<String, OrderDataSubtotal>**](OrderDataSubtotal.md) |   | [default to new HashMap<>()]
 **totals**| [**Map<String, OrderDataTotal>**](OrderDataTotal.md) |   | [default to new HashMap<>()]

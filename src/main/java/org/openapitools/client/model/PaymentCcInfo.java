@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * PaymentCcInfo
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class PaymentCcInfo {
   public static final String SERIALIZED_NAME_APPROVAL = "approval";
   @SerializedName(SERIALIZED_NAME_APPROVAL)
@@ -91,10 +90,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get approval
    * @return approval
-  **/
+   */
   @javax.annotation.Nullable
   public String getApproval() {
     return approval;
@@ -110,10 +109,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get expMonth
    * @return expMonth
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getExpMonth() {
     return expMonth;
@@ -129,10 +128,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get expYear
    * @return expYear
-  **/
+   */
   @javax.annotation.Nullable
   public String getExpYear() {
     return expYear;
@@ -148,10 +147,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get last4
    * @return last4
-  **/
+   */
   @javax.annotation.Nullable
   public String getLast4() {
     return last4;
@@ -167,10 +166,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get numberEnc
    * @return numberEnc
-  **/
+   */
   @javax.annotation.Nullable
   public String getNumberEnc() {
     return numberEnc;
@@ -186,10 +185,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get owner
    * @return owner
-  **/
+   */
   @javax.annotation.Nullable
   public String getOwner() {
     return owner;
@@ -205,10 +204,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * Get avsStatus
    * @return avsStatus
-  **/
+   */
   @javax.annotation.Nullable
   public String getAvsStatus() {
     return avsStatus;
@@ -224,10 +223,10 @@ public class PaymentCcInfo {
     return this;
   }
 
-   /**
+  /**
    * card type MasterCard, Visa..
    * @return type
-  **/
+   */
   @javax.annotation.Nullable
   public String getType() {
     return type;
@@ -310,12 +309,12 @@ public class PaymentCcInfo {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to PaymentCcInfo
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to PaymentCcInfo
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!PaymentCcInfo.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -383,22 +382,22 @@ public class PaymentCcInfo {
     }
   }
 
- /**
-  * Create an instance of PaymentCcInfo given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of PaymentCcInfo
-  * @throws IOException if the JSON string is invalid with respect to PaymentCcInfo
-  */
+  /**
+   * Create an instance of PaymentCcInfo given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of PaymentCcInfo
+   * @throws IOException if the JSON string is invalid with respect to PaymentCcInfo
+   */
   public static PaymentCcInfo fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, PaymentCcInfo.class);
   }
 
- /**
-  * Convert an instance of PaymentCcInfo to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of PaymentCcInfo to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -66,11 +66,11 @@ Approve Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -136,11 +136,11 @@ Assign Shipment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -206,11 +206,11 @@ Calculate Refund
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -276,11 +276,11 @@ Cancel Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -346,11 +346,11 @@ Cancel Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -416,11 +416,11 @@ Cancel Shipment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -486,11 +486,11 @@ Complete Shipment Packing
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -556,11 +556,11 @@ Create Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -626,11 +626,11 @@ Create Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -696,11 +696,11 @@ Create Order History
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -766,11 +766,11 @@ Create Payment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -836,11 +836,11 @@ Create Payment Transaction
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -906,11 +906,11 @@ Create Refund
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -976,11 +976,11 @@ Create Refund Transaction
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1046,11 +1046,11 @@ Create Shipment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1116,11 +1116,11 @@ Delete Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1186,11 +1186,11 @@ Get Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1256,11 +1256,11 @@ Get Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1326,11 +1326,11 @@ Get Order by Cart ID
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1396,11 +1396,11 @@ Get Order by Order Number
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1466,11 +1466,11 @@ Get Payment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1536,11 +1536,11 @@ Get Shipment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1606,11 +1606,11 @@ Get Transaction
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1676,11 +1676,11 @@ Hold Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1746,11 +1746,11 @@ Import Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1816,11 +1816,11 @@ List Fulfillments
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1886,11 +1886,11 @@ List Orders
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -1956,11 +1956,11 @@ List Orders by Customer
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2026,11 +2026,11 @@ List Orders by Numbers
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2096,11 +2096,11 @@ List Shipments
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2166,11 +2166,11 @@ Documents
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2234,11 +2234,11 @@ public class Example {
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2302,11 +2302,11 @@ Print Orders Labels
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2372,11 +2372,11 @@ Quash Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2442,11 +2442,11 @@ Quash Shipment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2512,11 +2512,11 @@ Receive Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2582,11 +2582,11 @@ Report Fulfillment Error
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2652,11 +2652,11 @@ Report Fulfillment Not Resolvable
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2722,11 +2722,11 @@ Report Fulfillment Ready
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2792,11 +2792,11 @@ Report Shipment Delivery
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2862,11 +2862,11 @@ Report Shipment Missing Stock
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -2932,11 +2932,11 @@ Resolve Shipment Missing Stock
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3002,11 +3002,11 @@ Retry Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3072,11 +3072,11 @@ Search Orders
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3142,11 +3142,11 @@ Send Fulfillment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3212,11 +3212,11 @@ Send Order Notification
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3282,11 +3282,11 @@ Start Fulfillment Processing
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3352,11 +3352,11 @@ Start Shipment Processing
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3422,11 +3422,11 @@ Unhold Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3492,11 +3492,11 @@ Update Order
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {
@@ -3562,11 +3562,11 @@ Update Payment
 ### Example
 ```java
 // Import classes:
-import GeminiCommerce_Order.ApiClient;
-import GeminiCommerce_Order.ApiException;
-import GeminiCommerce_Order.Configuration;
-import GeminiCommerce_Order.auth.*;
-import GeminiCommerce_Order.models.*;
+import GeminiCommerce.Order.ApiClient;
+import GeminiCommerce.Order.ApiException;
+import GeminiCommerce.Order.Configuration;
+import GeminiCommerce.Order.auth.*;
+import GeminiCommerce.Order.models.*;
 import org.openapitools.client.api.OrderApi;
 
 public class Example {

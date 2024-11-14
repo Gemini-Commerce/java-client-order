@@ -41,19 +41,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * ImportOrderRequestImportedPayment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ImportOrderRequestImportedPayment {
   public static final String SERIALIZED_NAME_CODE = "code";
   @SerializedName(SERIALIZED_NAME_CODE)
@@ -83,10 +82,10 @@ public class ImportOrderRequestImportedPayment {
     return this;
   }
 
-   /**
+  /**
    * Get code
    * @return code
-  **/
+   */
   @javax.annotation.Nonnull
   public String getCode() {
     return code;
@@ -102,10 +101,10 @@ public class ImportOrderRequestImportedPayment {
     return this;
   }
 
-   /**
+  /**
    * Get additionalInfo
    * @return additionalInfo
-  **/
+   */
   @javax.annotation.Nullable
   public String getAdditionalInfo() {
     return additionalInfo;
@@ -129,10 +128,10 @@ public class ImportOrderRequestImportedPayment {
     return this;
   }
 
-   /**
+  /**
    * Get amounts
    * @return amounts
-  **/
+   */
   @javax.annotation.Nonnull
   public List<OrderPaymentAmount> getAmounts() {
     return amounts;
@@ -148,10 +147,10 @@ public class ImportOrderRequestImportedPayment {
     return this;
   }
 
-   /**
+  /**
    * Get ccInfo
    * @return ccInfo
-  **/
+   */
   @javax.annotation.Nullable
   public PaymentCcInfo getCcInfo() {
     return ccInfo;
@@ -167,10 +166,10 @@ public class ImportOrderRequestImportedPayment {
     return this;
   }
 
-   /**
+  /**
    * Get isUpfront
    * @return isUpfront
-  **/
+   */
   @javax.annotation.Nullable
   public Boolean getIsUpfront() {
     return isUpfront;
@@ -246,12 +245,12 @@ public class ImportOrderRequestImportedPayment {
     openapiRequiredFields.add("amounts");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to ImportOrderRequestImportedPayment
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to ImportOrderRequestImportedPayment
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!ImportOrderRequestImportedPayment.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -325,22 +324,22 @@ public class ImportOrderRequestImportedPayment {
     }
   }
 
- /**
-  * Create an instance of ImportOrderRequestImportedPayment given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of ImportOrderRequestImportedPayment
-  * @throws IOException if the JSON string is invalid with respect to ImportOrderRequestImportedPayment
-  */
+  /**
+   * Create an instance of ImportOrderRequestImportedPayment given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of ImportOrderRequestImportedPayment
+   * @throws IOException if the JSON string is invalid with respect to ImportOrderRequestImportedPayment
+   */
   public static ImportOrderRequestImportedPayment fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, ImportOrderRequestImportedPayment.class);
   }
 
- /**
-  * Convert an instance of ImportOrderRequestImportedPayment to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of ImportOrderRequestImportedPayment to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

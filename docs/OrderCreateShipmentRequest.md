@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **address**| [**OrderPostalAddress**](OrderPostalAddress.md) |   |
 **fromAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
 **returnAddress**| [**OrderPostalAddress**](OrderPostalAddress.md) |   | [optional]
-**tracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional]
-**returnTracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional]
+**tracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional] [default to new ArrayList<>()]
+**returnTracking**| [**List<ShipmentTracking>**](ShipmentTracking.md) |   | [optional] [default to new ArrayList<>()]
 **code**| **String** |   | [optional]
 **method**| **String** |   | [optional]
 

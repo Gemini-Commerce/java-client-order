@@ -43,19 +43,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderShipment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderShipment {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -79,7 +78,7 @@ public class OrderShipment {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderShipmentItem> items;
+  private List<OrderShipmentItem> items = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_ADDRESS = "address";
   @SerializedName(SERIALIZED_NAME_ADDRESS)
@@ -95,11 +94,11 @@ public class OrderShipment {
 
   public static final String SERIALIZED_NAME_TRACKING = "tracking";
   @SerializedName(SERIALIZED_NAME_TRACKING)
-  private List<ShipmentTracking> tracking;
+  private List<ShipmentTracking> tracking = new ArrayList<>();
 
   public static final String SERIALIZED_NAME_RETURN_TRACKING = "returnTracking";
   @SerializedName(SERIALIZED_NAME_RETURN_TRACKING)
-  private List<ShipmentTracking> returnTracking;
+  private List<ShipmentTracking> returnTracking = new ArrayList<>();
 
   public OrderShipment() {
   }
@@ -113,10 +112,10 @@ public class OrderShipment {
     this.updatedAt = updatedAt;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -124,10 +123,10 @@ public class OrderShipment {
 
 
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -140,10 +139,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderId() {
     return orderId;
@@ -159,10 +158,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -178,10 +177,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -205,10 +204,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderShipmentItem> getItems() {
     return items;
@@ -224,10 +223,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get address
    * @return address
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getAddress() {
     return address;
@@ -243,10 +242,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get fromAddress
    * @return fromAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getFromAddress() {
     return fromAddress;
@@ -262,10 +261,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get returnAddress
    * @return returnAddress
-  **/
+   */
   @javax.annotation.Nullable
   public OrderPostalAddress getReturnAddress() {
     return returnAddress;
@@ -289,10 +288,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get tracking
    * @return tracking
-  **/
+   */
   @javax.annotation.Nullable
   public List<ShipmentTracking> getTracking() {
     return tracking;
@@ -316,10 +315,10 @@ public class OrderShipment {
     return this;
   }
 
-   /**
+  /**
    * Get returnTracking
    * @return returnTracking
-  **/
+   */
   @javax.annotation.Nullable
   public List<ShipmentTracking> getReturnTracking() {
     return returnTracking;
@@ -411,12 +410,12 @@ public class OrderShipment {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderShipment
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderShipment
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderShipment.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -526,22 +525,22 @@ public class OrderShipment {
     }
   }
 
- /**
-  * Create an instance of OrderShipment given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderShipment
-  * @throws IOException if the JSON string is invalid with respect to OrderShipment
-  */
+  /**
+   * Create an instance of OrderShipment given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderShipment
+   * @throws IOException if the JSON string is invalid with respect to OrderShipment
+   */
   public static OrderShipment fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderShipment.class);
   }
 
- /**
-  * Convert an instance of OrderShipment to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderShipment to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

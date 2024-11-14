@@ -6,7 +6,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**statuses**| **List<String>** |   | [optional]
+**statuses**| **List<String>** |   | [optional] [default to new ArrayList<>()]
 **condition**| [**OrderStatusFilterCondition**](OrderStatusFilterCondition.md) |  for more information please, see Model/OrderStatusFilterCondition.php  | [optional] [default to OrderStatusFilterCondition.IN]
 
 

@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderMoney
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderMoney {
   public static final String SERIALIZED_NAME_UNITS = "units";
   @SerializedName(SERIALIZED_NAME_UNITS)
@@ -67,10 +66,10 @@ public class OrderMoney {
     return this;
   }
 
-   /**
+  /**
    * The whole units of the amount. For example if &#x60;currencyCode&#x60; is &#x60;\&quot;USD\&quot;&#x60;, then 1 unit is one US dollar.
    * @return units
-  **/
+   */
   @javax.annotation.Nullable
   public String getUnits() {
     return units;
@@ -86,10 +85,10 @@ public class OrderMoney {
     return this;
   }
 
-   /**
+  /**
    * Number of micro (10^-6) units of the amount. The value must be between -999,999 and +999,999 inclusive. If &#x60;units&#x60; is positive, &#x60;micros&#x60; must be positive or zero. If &#x60;units&#x60; is zero, &#x60;micros&#x60; can be positive, zero, or negative. If &#x60;units&#x60; is negative, &#x60;micros&#x60; must be negative or zero. For example $-1.75 is represented as &#x60;units&#x60;&#x3D;-1 and &#x60;micros&#x60;&#x3D;-750,000.
    * @return micros
-  **/
+   */
   @javax.annotation.Nullable
   public Integer getMicros() {
     return micros;
@@ -154,12 +153,12 @@ public class OrderMoney {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderMoney
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderMoney
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderMoney.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -209,22 +208,22 @@ public class OrderMoney {
     }
   }
 
- /**
-  * Create an instance of OrderMoney given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderMoney
-  * @throws IOException if the JSON string is invalid with respect to OrderMoney
-  */
+  /**
+   * Create an instance of OrderMoney given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderMoney
+   * @throws IOException if the JSON string is invalid with respect to OrderMoney
+   */
   public static OrderMoney fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderMoney.class);
   }
 
- /**
-  * Convert an instance of OrderMoney to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderMoney to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

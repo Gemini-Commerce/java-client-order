@@ -41,19 +41,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderFulfillment
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderFulfillment {
   public static final String SERIALIZED_NAME_CREATED_AT = "createdAt";
   @SerializedName(SERIALIZED_NAME_CREATED_AT)
@@ -77,7 +76,7 @@ public class OrderFulfillment {
 
   public static final String SERIALIZED_NAME_ITEMS = "items";
   @SerializedName(SERIALIZED_NAME_ITEMS)
-  private List<OrderFulfillmentItem> items;
+  private List<OrderFulfillmentItem> items = new ArrayList<>();
 
   public OrderFulfillment() {
   }
@@ -91,10 +90,10 @@ public class OrderFulfillment {
     this.updatedAt = updatedAt;
   }
 
-   /**
+  /**
    * Get createdAt
    * @return createdAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getCreatedAt() {
     return createdAt;
@@ -102,10 +101,10 @@ public class OrderFulfillment {
 
 
 
-   /**
+  /**
    * Get updatedAt
    * @return updatedAt
-  **/
+   */
   @javax.annotation.Nullable
   public OffsetDateTime getUpdatedAt() {
     return updatedAt;
@@ -118,10 +117,10 @@ public class OrderFulfillment {
     return this;
   }
 
-   /**
+  /**
    * Get orderId
    * @return orderId
-  **/
+   */
   @javax.annotation.Nullable
   public String getOrderId() {
     return orderId;
@@ -137,10 +136,10 @@ public class OrderFulfillment {
     return this;
   }
 
-   /**
+  /**
    * Get id
    * @return id
-  **/
+   */
   @javax.annotation.Nullable
   public String getId() {
     return id;
@@ -156,10 +155,10 @@ public class OrderFulfillment {
     return this;
   }
 
-   /**
+  /**
    * Get status
    * @return status
-  **/
+   */
   @javax.annotation.Nullable
   public String getStatus() {
     return status;
@@ -183,10 +182,10 @@ public class OrderFulfillment {
     return this;
   }
 
-   /**
+  /**
    * Get items
    * @return items
-  **/
+   */
   @javax.annotation.Nullable
   public List<OrderFulfillmentItem> getItems() {
     return items;
@@ -263,12 +262,12 @@ public class OrderFulfillment {
     openapiRequiredFields = new HashSet<String>();
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderFulfillment
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderFulfillment
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderFulfillment.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -338,22 +337,22 @@ public class OrderFulfillment {
     }
   }
 
- /**
-  * Create an instance of OrderFulfillment given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderFulfillment
-  * @throws IOException if the JSON string is invalid with respect to OrderFulfillment
-  */
+  /**
+   * Create an instance of OrderFulfillment given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderFulfillment
+   * @throws IOException if the JSON string is invalid with respect to OrderFulfillment
+   */
   public static OrderFulfillment fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderFulfillment.class);
   }
 
- /**
-  * Convert an instance of OrderFulfillment to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderFulfillment to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

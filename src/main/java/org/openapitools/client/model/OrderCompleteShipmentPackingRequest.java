@@ -37,19 +37,18 @@ import com.google.gson.stream.JsonReader;
 import com.google.gson.stream.JsonWriter;
 import java.io.IOException;
 
-import java.lang.reflect.Type;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import GeminiCommerce_Order.JSON;
+import GeminiCommerce.Order.JSON;
 
 /**
  * OrderCompleteShipmentPackingRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-12T15:15:23.622602582Z[Etc/UTC]")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:54:44.095360442Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCompleteShipmentPackingRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)
@@ -67,10 +66,10 @@ public class OrderCompleteShipmentPackingRequest {
     return this;
   }
 
-   /**
+  /**
    * Get tenantId
    * @return tenantId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getTenantId() {
     return tenantId;
@@ -86,10 +85,10 @@ public class OrderCompleteShipmentPackingRequest {
     return this;
   }
 
-   /**
+  /**
    * Get shipmentId
    * @return shipmentId
-  **/
+   */
   @javax.annotation.Nonnull
   public String getShipmentId() {
     return shipmentId;
@@ -156,12 +155,12 @@ public class OrderCompleteShipmentPackingRequest {
     openapiRequiredFields.add("shipmentId");
   }
 
- /**
-  * Validates the JSON Element and throws an exception if issues found
-  *
-  * @param jsonElement JSON Element
-  * @throws IOException if the JSON Element is invalid with respect to OrderCompleteShipmentPackingRequest
-  */
+  /**
+   * Validates the JSON Element and throws an exception if issues found
+   *
+   * @param jsonElement JSON Element
+   * @throws IOException if the JSON Element is invalid with respect to OrderCompleteShipmentPackingRequest
+   */
   public static void validateJsonElement(JsonElement jsonElement) throws IOException {
       if (jsonElement == null) {
         if (!OrderCompleteShipmentPackingRequest.openapiRequiredFields.isEmpty()) { // has required fields but JSON element is null
@@ -221,22 +220,22 @@ public class OrderCompleteShipmentPackingRequest {
     }
   }
 
- /**
-  * Create an instance of OrderCompleteShipmentPackingRequest given an JSON string
-  *
-  * @param jsonString JSON string
-  * @return An instance of OrderCompleteShipmentPackingRequest
-  * @throws IOException if the JSON string is invalid with respect to OrderCompleteShipmentPackingRequest
-  */
+  /**
+   * Create an instance of OrderCompleteShipmentPackingRequest given an JSON string
+   *
+   * @param jsonString JSON string
+   * @return An instance of OrderCompleteShipmentPackingRequest
+   * @throws IOException if the JSON string is invalid with respect to OrderCompleteShipmentPackingRequest
+   */
   public static OrderCompleteShipmentPackingRequest fromJson(String jsonString) throws IOException {
     return JSON.getGson().fromJson(jsonString, OrderCompleteShipmentPackingRequest.class);
   }
 
- /**
-  * Convert an instance of OrderCompleteShipmentPackingRequest to an JSON string
-  *
-  * @return JSON string
-  */
+  /**
+   * Convert an instance of OrderCompleteShipmentPackingRequest to an JSON string
+   *
+   * @return JSON string
+   */
   public String toJson() {
     return JSON.getGson().toJson(this);
   }

@@ -49,7 +49,7 @@ import GeminiCommerce.Order.JSON;
 /**
  * OrderCreateRefundTransactionRequest
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T10:56:55.125435784Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:05:15.601530751Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class OrderCreateRefundTransactionRequest {
   public static final String SERIALIZED_NAME_TENANT_ID = "tenantId";
   @SerializedName(SERIALIZED_NAME_TENANT_ID)

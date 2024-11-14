@@ -51,7 +51,7 @@ import GeminiCommerce.Order.JSON;
 /**
  * ItemProductConfigurationStep
  */
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:11:08.866010172Z[Etc/UTC]", comments = "Generator version: 7.9.0")
+@javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2024-11-14T11:56:24.788972479Z[Etc/UTC]", comments = "Generator version: 7.9.0")
 public class ItemProductConfigurationStep {
   public static final String SERIALIZED_NAME_ID = "id";
   @SerializedName(SERIALIZED_NAME_ID)
